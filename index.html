@@ -2,7 +2,17 @@
 <html>
 
 <head>
+    <title>Club Atlético Rosario Central</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Sitio Oficial del Club Atlético Rosario Central">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+   <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">-->
+   <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png" href="favicon-32x32.png">
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="index.css" />
+    
 </head>
 
 <body>
@@ -52,8 +62,14 @@
             </div>
         </div>
         <div class="navbar-container bg-blue">
-            <div class="data container">
-                <nav>
+            <div class="data container flex a-center j-between">
+                <a href="javascript:void(0);" class="mobile-navigatio" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                  </a>
+             
+                <nav class="main-navigation" id="navigation">
                     <ul>
                         <li class="over-blue">
                             NOTICIAS
@@ -140,24 +156,24 @@
             <div class="iconos flex j-between">
                 <div class="icon flex a-center">
                     <img src="imagenes/social/facebook.png">
-                    445 k
+                    <span> 445 k</span>
                 </div>
                 <div class="icon flex a-center">
                     <img src="imagenes/social/twitter.png">
 
-                    290 k
+                    <span>290 k</span>
                 </div>
                 <div class="icon flex a-center">
                     <img src="imagenes/social/instagram.png">
-                    198 k
+                    <span>198 k</span>
                 </div>
                 <div class="icon flex a-center">
                     <img src="imagenes/social/youtube.png">
-                    16.900
+                    <span>16.900</span>
                 </div>
                 <div class="icon flex a-center">
                     <img src="imagenes/social/socios.png">
-                    60.000 Socios
+                    <span>60.000 Socios</span>
                 </div>
             </div>
             <div class="seguinos">
@@ -472,7 +488,7 @@
         <div class="container flex a-center">
             <div class="flex-column carc-videos-titulo azul-fg">
                 <h2><b>CARC</b><br>TV</h2>
-                <button class="radius-button  todos-videos-button azul-claro-fg bg-blue">Ver todos los videos
+                <button class="radius-button gt-xs  todos-videos-button azul-claro-fg bg-blue">Ver todos los videos
                     <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.711" viewBox="0 0 20.559 13.711">
                         <path id="Icon_ionic-ios-arrow-round-forward" data-name="Icon ionic-ios-arrow-round-forward"
                             d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
@@ -502,7 +518,7 @@
                     </div>
                 </div>
                 <div class="videos-carousel-list flex a-center">
-                    <div class="video  over-scale">
+                    <div class="video pointer over-scale">
                         <img src="imagenes/videos/kily.png">
                         <div class="info flex-column  azul-fg">
                             <span class="fecha bold">20 / 11</span>
@@ -511,7 +527,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="video  over-scale">
+                    <div class="video pointer over-scale">
                         <img src="imagenes/videos/kily.png">
                         <div class="info flex-column azul-fg">
                             <span class="fecha bold">20 / 11</span>
@@ -520,7 +536,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="video  over-scale">
+                    <div class="video pointer  over-scale">
                         <img src="imagenes/videos/kily.png">
                         <div class="info flex-column azul-fg">
                             <span class="fecha bold">20 / 11</span>
@@ -529,7 +545,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="video  over-scale">
+                    <div class="video  pointer over-scale">
                         <img src="imagenes/videos/kily.png">
                         <div class="info flex-column azul-fg">
                             <span class="fecha bold">20 / 11</span>
@@ -540,6 +556,15 @@
                     </div>
                 </div>
             </div>
+            <button class="radius-button xs  todos-videos-button azul-claro-fg bg-blue">Ver todos los videos
+                <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.711" viewBox="0 0 20.559 13.711">
+                    <path id="Icon_ionic-ios-arrow-round-forward" data-name="Icon ionic-ios-arrow-round-forward"
+                        d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
+                        transform="translate(-7.875 -11.252)" fill="#2680eb" />
+                </svg>
+
+
+            </button>
         </div>
 
     </section>
@@ -574,7 +599,7 @@
                 </div>
             </div>
             <div class="imagen-container h-100-p">
-                <img src="imagenes/plantel/vecchio.webp" class="h-100-pffooter
+                <img src="imagenes/plantel/vecchio.webp" class="h-100-p
                 ">
             </div>
             <div class="flechas flex j-between">
@@ -600,7 +625,7 @@
             <div class="flex-column section-title azul-fg">
                 <h3 class="gris-fg">TIENDAS OFICIALES</h3>
                 <h2><b>PUNTO</b><br>CENTRAL</h2>
-                <button class="radius-button  todos-productos-button azul-claro-fg bg-blue">Ver todos los productos
+                <button class="radius-button gt-xs  todos-productos-button azul-claro-fg bg-blue">Ver todos los productos
                     <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.711" viewBox="0 0 20.559 13.711">
                         <path id="Icon_ionic-ios-arrow-round-forward" data-name="Icon ionic-ios-arrow-round-forward"
                             d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
@@ -623,7 +648,7 @@
 
             </div>
             <div class="productos-list flex a-center j-between">
-                <div class="producto bg-white  over-scale">
+                <div class="producto pointer bg-white  over-scale">
                     <img src="imagenes/productos/camiseta.png">
                     <div class="info flex-column  azul-fg">
                         <span class="categoria amarillo-fg bold">CAMISETAS</span>
@@ -641,7 +666,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="producto bg-white  over-scale">
+                <div class="producto pointer bg-white  over-scale">
                     <img src="imagenes/productos/camiseta.png">
                     <div class="info flex-column  azul-fg">
                         <span class="categoria amarillo-fg bold">CAMISETAS</span>
@@ -659,7 +684,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="producto bg-white  over-scale">
+                <div class="producto  pointer bg-white  over-scale">
                     <img src="imagenes/productos/camiseta.png">
                     <div class="info flex-column  azul-fg">
                         <span class="categoria amarillo-fg bold">CAMISETAS</span>
@@ -679,6 +704,13 @@
                 </div>
 
             </div>
+            <button class="radius-button xs  todos-productos-button azul-claro-fg bg-blue">Ver todos los productos
+                <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.711" viewBox="0 0 20.559 13.711">
+                    <path id="Icon_ionic-ios-arrow-round-forward" data-name="Icon ionic-ios-arrow-round-forward"
+                        d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
+                        transform="translate(-7.875 -11.252)" fill="#2680eb" />
+                </svg>
+            </button>
         </div>
 
     </section>
@@ -887,7 +919,7 @@
     <footer class="footer bg-blue ">
         <div class="container flex-column j-center">
             <div class="footer-navigation flex a-center j-between">
-                <div class="flex a-center">
+                <div class="flex a-center w-100-p escudo-nav">
                     <img src="imagenes/escudo.png">
                     <nav>
                         <ul>
@@ -902,7 +934,7 @@
                     </nav>
                 </div>
                 <div class="flex a-center">
-                    <div class="enlaces-externos flex a-center azul-claro-fg">
+                    <div class="enlaces-externos w-100-p flex a-center azul-claro-fg">
                         <div class="enlace  over-yellow  flex a-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20.218" height="26.947"
                                 viewBox="0 0 20.218 26.947">
@@ -955,7 +987,17 @@
 
         </div>
     </footer>
-
+    <script>
+        function myFunction(y) {
+            y.classList.toggle("change");
+          var x = document.getElementById("navigation");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
 </body>
 
 
