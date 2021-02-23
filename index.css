@@ -38,7 +38,7 @@
 
 
 .main-banner .main-banner-post img {
-    height: 100%;
+    min-height: auto;
     width: 100%;
     position: absolute;
     object-fit: cover;
@@ -144,6 +144,7 @@
 }
 
 .noticias .posts-fixture-container .posts .post-principal img {
+    min-height: auto !important;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -183,7 +184,7 @@
 }
 
 .noticias .posts-fixture-container .posts .post .image-container .post-image {
-    height: 100%;
+    min-height: auto;
     width: 100%;
 }
 
@@ -705,7 +706,7 @@
 
     .plantel .imagen-container img {
         width: 100%;
-        height: auto !important;
+        min-height: auto !important;
     }
 
     .socios-newsletter .newsletter .half-container {
@@ -727,7 +728,6 @@
         margin-bottom: 24px;
         flex-grow: 1;
         height: 200px;
-        
         width: 100%;
     }
     
@@ -776,11 +776,7 @@
         margin-bottom: 24px;
     }
 
-    .todos-productos-button svg, .todos-videos-button svg, .todas-noticias-button svg
-    {
-        margin-left: 12px;
-    }
-    
+
     .tienda-oficial .arrows {
         display: none;
     }
