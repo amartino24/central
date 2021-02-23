@@ -439,13 +439,19 @@ footer .copyright {
 
     header .banner-container {
         justify-content: center;
+        height: 120px;
+    padding: 12px 0px;
     }
 
+    header .banner-container .container
+    {
+        justify-content: center;
+    }
     header .banner-container .titulo-principal {
         margin-bottom: 12px;
     }
 
-    header .banner-container .escudo {
+    header .banner-container .main-escudo {
         display: none;
     }
 
