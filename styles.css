@@ -819,7 +819,7 @@ footer .copyright {
 
     .noticias .posts-fixture-container .posts .post-principal .info {
         max-width: 100%;
-        padding-left: 12px;
+        padding: 0px 12px
     }
 
     .noticias .posts-fixture-container .posts .post .info .ver-mas {
