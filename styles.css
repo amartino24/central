@@ -685,6 +685,11 @@ footer .copyright {
     }
 
     
+    .todos-productos-button , .todos-videos-button , .todas-noticias-button 
+    {
+        width: 100%;
+    }
+
     .todos-productos-button svg, .todos-videos-button svg, .todas-noticias-button svg
     {
         margin-left: 12px;
@@ -840,8 +845,7 @@ footer .copyright {
     }
 
     .carc-videos .container {
-        flex-direction: column;
-        align-items: flex-start;
+        display: block;
     }
 
     .carc-videos .button-gt-lg {
