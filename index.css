@@ -41,6 +41,7 @@
     min-height: auto;
     width: 100%;
     position: absolute;
+    height: 100%;
     object-fit: cover;
     z-index: 1;
 }
@@ -653,7 +654,7 @@
         padding-top: 70px;
     }
 
- 
+
     .noticias .search-bar .mobile-navigation {
         margin-left: 12px;
     }
@@ -730,10 +731,10 @@
         height: 200px;
         width: 100%;
     }
-    
 
- 
-  
+
+
+
 
     .main-banner .main-banner-post .main-banner-post-info {
         max-width: 100%;
@@ -747,18 +748,18 @@
         margin-top: 24px;
     }
 
-    .noticias .posts-fixture-container .posts .post-principal
-    {    margin-bottom: 24px;
+    .noticias .posts-fixture-container .posts .post-principal {
+        margin-bottom: 24px;
 
+        height: 500px;
     }
 
     .noticias .search-bar .search-input {
         max-width: 80%;
     }
 
-       
-    .todas-noticias-button
-    {
+
+    .todas-noticias-button {
         margin-bottom: 48px;
     }
 
@@ -771,6 +772,7 @@
     .noticias .posts-fixture-container .posts .post .info .ver-mas {
         margin-top: 0px;
     }
+
     .noticias .posts-fixture-container .posts .post:not(.principal) {
         max-width: 100%;
         margin-bottom: 24px;
@@ -781,11 +783,11 @@
         display: none;
     }
 
-    .tienda-oficial .container
-    {
+    .tienda-oficial .container {
         flex-direction: column;
         align-items: flex-start;
     }
+
     .tienda-oficial .productos-list .producto {
         max-width: 100%;
         margin-bottom: 24px;
