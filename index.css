@@ -762,6 +762,7 @@
         margin-bottom: 48px;
     }
 
+
     .noticias .posts-fixture-container .posts .post-principal .info {
         max-width: 100%;
         padding-left: 0px;
@@ -774,6 +775,12 @@
         max-width: 100%;
         margin-bottom: 24px;
     }
+
+    .todos-productos-button svg, .todos-videos-button svg, .todas-noticias-button svg
+    {
+        margin-left: 12px;
+    }
+    
     .tienda-oficial .arrows {
         display: none;
     }
