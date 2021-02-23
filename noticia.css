@@ -245,6 +245,9 @@ width: 100%;
     {    margin-bottom: 24px;
 
     }
+    .noticias .posts-fixture-container .fixture {
+        margin-top: 48px;
+    }
 
     .noticias .arrows
     {
@@ -253,7 +256,7 @@ width: 100%;
 
     .carc-videos
     {
-        padding-top: 24px;
+        padding-top: 0px !important;
     }
     
     .carc-videos .container {

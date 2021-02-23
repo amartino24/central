@@ -390,6 +390,157 @@ header .main-navigation ul li:last-child {
     color: #173B6A;
 }
 
+.noticias .titulo {
+    font-weight: normal;
+    font-size: 3.375rem;
+    margin-bottom: 56px;
+}
+
+.noticias .posts-fixture-container {
+    margin-top: 76px;
+}
+
+
+
+.noticias .posts-fixture-container .posts {
+    /* flex-grow: 1; */
+    flex: 1 1 70%;
+    flex-wrap: wrap;
+}
+
+.noticias .posts-fixture-container .posts .post:not(.principal) {
+    width: 100%;
+    max-width: 32%;
+    background-color: white;
+    position: relative;
+}
+
+
+
+
+
+
+.noticias .posts-fixture-container .posts .post-principal {
+    width: 100%;
+    margin-bottom: 48px;
+    position: relative;
+}
+
+
+
+.noticias .posts-fixture-container .posts .post-principal .gradient {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    background: linear-gradient(90deg, rgba(23, 59, 106) 1%, rgb(23 59 106 / 38%) 60%);
+}
+
+.noticias .posts-fixture-container .posts .post-principal img {
+    min-height: auto !important;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: 1;
+}
+
+
+
+.noticias .posts-fixture-container .posts .post-principal .info {
+    height: 100%;
+    max-width: 50%;
+    opacity: 0.88;
+    z-index: 3;
+    padding: 120px 10%;
+    position: relative;
+}
+
+
+.noticias .posts-fixture-container .posts .post-principal .post-title {
+    margin: 46px 0px;
+    font-size: 2.8125rem;
+    color: white;
+}
+
+.noticias .posts-fixture-container .posts .post-principal .post-subtitle {
+    font-size: 1rem;
+    color: white;
+    max-width: 580px;
+}
+
+
+
+
+.noticias .posts-fixture-container .posts .post .image-container {
+    width: 100%;
+    position: relative;
+}
+
+.noticias .posts-fixture-container .posts .post .image-container .post-image {
+    min-height: auto;
+    width: 100%;
+}
+
+.noticias .posts-fixture-container .posts .post .image-container .gradient {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    background: linear-gradient(to top, rgba(23, 59, 106) 1%, rgb(23 59 106 / 38%) 50%);
+    border-radius: 20px 20px 0px 0px;
+}
+
+
+
+.noticias .posts-fixture-container .posts .post .info {
+    padding: 28px 46px;
+}
+
+
+.noticias .posts-fixture-container .posts .post .info .post-title {
+    margin-top: 24px;
+    font-size: 1.375rem;
+}
+
+.noticias .posts-fixture-container .posts .post .info .separator {
+    margin: 16px 0px 26px;
+    width: 48px;
+    height: 1px;
+    background-color: #173B6A;
+}
+
+.noticias .posts-fixture-container .posts .post .info .post-subtitle {
+    font-size: 1rem;
+    color: #B4B4B4;
+    height: 120px;
+}
+
+
+.noticias .posts-fixture-container .posts .post .info .ver-mas {
+    margin-top: 48px;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.noticias .posts-fixture-container .posts .post .info .ver-mas svg {
+    margin-left: 12px;
+}
+
+
+
+.noticias .posts-fixture-container .fixture {
+    flex-grow: 1;
+    flex: 1 1 30%;
+    background-color: grey;
+    border-radius: 32px;
+    margin-left: 32px;
+    min-width: 300px;
+    max-width: 400px;
+}
+
 
 .carc-videos {
     padding: 70px 0px;
@@ -686,7 +837,7 @@ footer .copyright {
     
     .todos-productos-button , .todos-videos-button , .todas-noticias-button 
     {
-        width: 100%;
+        max-width: 240px;
     }
 
     .todos-productos-button svg, .todos-videos-button svg, .todas-noticias-button svg
@@ -816,14 +967,13 @@ footer .copyright {
 
     .noticias .posts-fixture-container .posts .post-principal {
         margin-bottom: 24px;
-        min-height: 500px;
     }
 
 
 
     .noticias .posts-fixture-container .posts .post-principal .info {
         max-width: 100%;
-        padding: 0px 12px
+        padding: 70px 18px
     }
 
     .noticias .posts-fixture-container .posts .post .info .ver-mas {
@@ -833,6 +983,10 @@ footer .copyright {
     .noticias .posts-fixture-container .posts .post:not(.principal) {
         max-width: 100%;
         margin-bottom: 24px;
+    }
+    .noticias .posts-fixture-container .fixture {
+        margin-left: 0px;
+        height: 500px;
     }
 
 
