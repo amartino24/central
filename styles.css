@@ -451,7 +451,7 @@ header .main-navigation ul li:last-child {
     height: 100%;
     max-width: 50%;
     opacity: 0.88;
-    z-index: 3;
+    z-index: 10000;
     padding: 120px 10%;
     position: relative;
 }
