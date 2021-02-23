@@ -673,12 +673,11 @@ footer .copyright {
     }
 
     header .banner-container .container {
-        justify-content: center;
+        justify-content: space-between;
+        flex-direction: column;
     }
 
-    header .banner-container .titulo-principal {
-        margin-bottom: 12px;
-    }
+   
 
     header .banner-container .main-escudo {
         display: none;
