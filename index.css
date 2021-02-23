@@ -811,10 +811,7 @@ section h2 {
         padding-top: 70px;
     }
 
-    .noticias .search-bar .search-input {
-        max-width: 270px;
-    }
-
+ 
     .noticias .search-bar .mobile-navigation {
         margin-left: 12px;
     }
@@ -931,6 +928,9 @@ section h2 {
         padding-left: 0px;
     }
 
+    .noticias .posts-fixture-container .posts .post .info .ver-mas {
+        margin-top: 24px;
+    }
     .noticias .posts-fixture-container .posts .post:not(.principal) {
         max-width: 100%;
         margin-bottom: 24px;
