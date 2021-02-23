@@ -740,44 +740,6 @@
         max-width: 100%;
     }
 
-    .noticias .search-bar {
-        justify-content: space-between;
-    }
-
-    .noticias .posts-fixture-container {
-        margin-top: 24px;
-    }
-
-    .noticias .posts-fixture-container .posts .post-principal {
-        margin-bottom: 24px;
-
-        height: 500px;
-    }
-
-    .noticias .search-bar .search-input {
-        max-width: 80%;
-    }
-
-
-    .todas-noticias-button {
-        margin-bottom: 48px;
-    }
-
-
-    .noticias .posts-fixture-container .posts .post-principal .info {
-        max-width: 100%;
-        padding-left: 0px;
-    }
-
-    .noticias .posts-fixture-container .posts .post .info .ver-mas {
-        margin-top: 0px;
-    }
-
-    .noticias .posts-fixture-container .posts .post:not(.principal) {
-        max-width: 100%;
-        margin-bottom: 24px;
-    }
-
 
     .tienda-oficial .arrows {
         display: none;
