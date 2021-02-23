@@ -9,8 +9,7 @@ body {
     ;
 }
 
-*
-{
+* {
     box-sizing: border-box;
 }
 
@@ -154,11 +153,15 @@ header {
 }
 
 header .banner-container {
-    height: 68px;
+    position: fixed;
+    top: 0;
+    height: 80px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    z-index: 1000;
 }
 
 header .banner-container .titulo-principal {
@@ -192,8 +195,25 @@ header .banner-container .enlaces-externos .enlace .text {
     margin-left: 12px;
 }
 
+
+header .banner-container .main-escudo {
+    height: 105px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(55px);
+    transition: all 1s ease;
+}
+
+header .banner-container .main-escudo.fixed
+{
+    height: 50px;
+    transform: translateX(-50%) translateY(0px);
+
+}
+
 header .navbar-container {
-    height: 150px;
+    padding: 70px 0px;
+    margin-top: 80px;
     color: white;
 }
 
@@ -202,12 +222,8 @@ header .navbar-container .data {
     position: relative;
 }
 
-header .navbar-container .data .escudo {
-    height: 105px;
-    width: 92px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%) translateY(-55px);
+header .navbar-container .xs-escudo {
+    display: none;
 }
 
 header .navbar-container .data .asociate-texto {
@@ -222,7 +238,7 @@ header .navbar-container .data .asociate-texto svg {
 
 
 
-header .main-navigationul li {
+header .main-navigation ul li {
     display: inline;
     padding: 0px 16px;
     font-size: 0.85rem;
@@ -272,7 +288,7 @@ footer .footer-navigation .enlaces-externos .enlace {
 }
 
 footer .footer-navigation .enlaces-externos .enlace svg {
-    margin-right: 26px;
+    margin-right: 12px;
 }
 
 footer .footer-navigation .social {
@@ -322,29 +338,33 @@ footer .copyright {
 }
 
 
-.mobile-navigation
-{
+.mobile-navigation {
     display: none;
 }
-.bar1, .bar2, .bar3 {
+
+.bar1,
+.bar2,
+.bar3 {
     width: 35px;
     height: 5px;
     background-color: white;
     margin: 6px 0;
     transition: 0.4s;
-  }
-  
-  .change .bar1 {
+}
+
+.change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
-  }
-  
-  .change .bar2 {opacity: 0;}
-  
-  .change .bar3 {
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
-  }
+}
 
 @media (max-width: 1560px) {
     .container {
@@ -361,111 +381,148 @@ footer .copyright {
 }
 
 
-@media (min-width: 480px)
-{
-    .gt-xs
-    {
+@media (min-width: 480px) {
+    .gt-xs {
         display: block;
     }
 
-    .xs
-    {
+    .xs {
         display: none;
     }
 }
 
-@media (max-width: 480px)
-{
-    
-    .main-navigation
-    {
-        display: none;
-    }
-    .mobile-navigation
-    {
-        display: block;
+@media (max-width: 480px) {
+    .main-navigation {
+        height: 100%;
+        max-height: 0px;
+        transition: max-height 1s ease;
+        overflow: hidden;
     }
 
-    .main-navigation
-    {
+    .main-navigation.show {
+        max-height: 300px;
+    }
+
+    .mobile-navigation {
+        display: block !important;
+    }
+
+    .main-navigation {
         order: 5;
-        height: 200px;
         z-index: 10;
+        margin-top: 15px;
         width: 100%;
         background-color: rgb(23, 59, 106);
     }
 
-    header .main-navigation ul
-    {
+    header .main-navigation ul {
         flex-direction: column;
     }
 
-    header .main-navigation ul li
-    {
-        border: none;
-        padding: 0px 8px;
+    header .main-navigation ul li {
+        border: none !important;
+        padding: 8px 0px;
         font-size: 1.25rem;
     }
 
-    .gt-xs
-    {
+    .gt-xs {
         display: none;
     }
-    .xs
-    {
+
+    .xs {
         display: block;
     }
-    html
-    {
+
+    html {
         font-size: 14px;
     }
+
     header .banner-container {
         justify-content: center;
     }
 
-    header .banner-container .enlaces-externos .enlace {
-        padding: 0px 14px;
-        max-width: 110px;
+    header .banner-container .titulo-principal {
+        margin-bottom: 12px;
     }
 
-    footer
-    {
+    header .banner-container .escudo {
+        display: none;
+    }
+
+    header .navbar-container {
+        padding: 30px 0px;
+        color: white;
+    }
+
+    header .navbar-container .xs-escudo {
+        transform: translateX(-50%);
+        height: 69px;
+        position: absolute;
+        left: 50%;
+        display: block;
+    }
+
+    header .navbar-container .data .asociate-texto {
+        display: none;
+    }
+
+    header .enlaces-externos {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+
+
+    header .banner-container .enlaces-externos .enlace {
+        padding: 0px !important;
+        flex-direction: column;
+        flex: 1 1 0;
+        text-align: center;
+    }
+
+    header .banner-container .enlaces-externos .enlace svg {
+        margin-bottom: 8px;
+    }
+
+    header .banner-container .enlaces-externos .enlace:not(:last-child)::after {
+        display: none;
+    }
+
+    footer {
         height: 440px;
     }
 
-  
-    footer .container
-    {
+
+    footer .container {
         justify-content: flex-start;
         padding-top: 24px;
     }
 
-    footer .escudo-nav
-     {
+    footer .escudo-nav {
+        width: 100%;
         justify-content: center;
-     }
+    }
 
-     footer .escudo-nav img
-     {
+    footer .escudo-nav img {
         height: 140px;
-     }
+    }
 
-     footer nav
-     {
-         display: none;
-     }
-    
-     footer .footer-navigation .social {
+    footer nav {
+        display: none;
+    }
+
+    footer .footer-navigation .social {
         max-width: 70%;
         margin: 0 auto;
     }
 
-     footer .enlaces-externos
-     {
-         justify-content: space-between;
-         margin: 48px 0px;
-     }
-     footer .footer-navigation .enlaces-externos .enlace {
-          margin-right: 0px;
-     }
+    footer .enlaces-externos {
+        width: 100%;
+        justify-content: space-between;
+        margin: 48px 0px;
+    }
+
+    footer .footer-navigation .enlaces-externos .enlace {
+        margin-right: 0px;
+    }
 }

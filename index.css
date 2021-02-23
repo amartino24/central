@@ -734,29 +734,33 @@ section h2 {
     margin-left: 12px;
 }
 
-.mobile-navigation
-{
+.mobile-navigation {
     display: none;
 }
-.bar1, .bar2, .bar3 {
+
+.bar1,
+.bar2,
+.bar3 {
     width: 35px;
     height: 5px;
     background-color: white;
     margin: 6px 0;
     transition: 0.4s;
-  }
-  
-  .change .bar1 {
+}
+
+.change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
-  }
-  
-  .change .bar2 {opacity: 0;}
-  
-  .change .bar3 {
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
-  }
+}
 
 
 @media (max-width: 480px) {
@@ -787,20 +791,83 @@ section h2 {
         justify-content: flex-start;
         align-items: end;
     }
-    .redes-sociales .iconos .icon
-    {
-        flex:  1 1 0;
+
+    .redes-sociales .iconos .icon {
+        flex: 1 1 0;
         text-align: center;
+
+        flex-direction: column;
     }
 
-    .redes-sociales .iconos .icon img
-    {
+    .redes-sociales .iconos .icon img {
         height: 40px;
         margin-right: 0px;
         margin-bottom: 12px;
     }
 
-   
+    .plantel .jugador-info {
+        padding-left: 0px;
+        margin: 0 auto;
+        padding-top: 70px;
+    }
+
+    .noticias .search-bar .search-input {
+        max-width: 270px;
+    }
+
+    .noticias .search-bar .mobile-navigation {
+        margin-left: 12px;
+    }
+
+    .noticias .categorias {
+        height: 100%;
+        max-height: 0px;
+        transition: max-height 1s ease;
+        overflow: hidden;
+        order: 3;
+
+
+    }
+
+
+    .noticias .posts-fixture-container .fixture {
+        margin-left: 0px;
+        height: 500px;
+    }
+
+
+
+    .plantel .jugador-info .botones {
+        margin-top: 40px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plantel .jugador-info .radius-button {
+        flex: 1 1 0;
+        margin-left: 0px !important;
+        margin-bottom: 24px;
+    }
+
+    .plantel .container {
+        align-items: flex-start;
+    }
+
+    .plantel .imagen-container {
+        margin-left: 0px;
+        padding-right: 0px;
+        max-width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: auto !important;
+    }
+
+    .plantel .imagen-container img {
+        width: 100%;
+        height: auto !important;
+    }
 
     .socios-newsletter .newsletter .half-container {
         align-items: flex-start;
@@ -809,7 +876,7 @@ section h2 {
 
     .socios-newsletter .newsletter .input-container {
         flex-grow: 1;
-         margin-left: 0px; 
+        margin-left: 0px;
         margin-top: 24px;
     }
 
@@ -819,10 +886,11 @@ section h2 {
 
     .sede-virtual .sede-virtual-funciones .funcion {
         margin-bottom: 24px;
-     flex-grow: 1;
-     height: 200px;
+        flex-grow: 1;
+        height: 200px;
 
     }
+
     .carc-videos .videos-carousel .arrows {
         display: none;
     }
@@ -841,7 +909,7 @@ section h2 {
     }
 
     .sponsors-section.main .sponsor-container {
-    
+
         width: 140px;
         height: 110px;
         align-items: center;
@@ -850,22 +918,33 @@ section h2 {
     .main-banner .main-banner-post .main-banner-post-info {
         max-width: 100%;
     }
-    .noticias .posts-fixture-container .posts .post-principal .info {
-         max-width: 100%;
+
+    .noticias .search-bar {
+        justify-content: space-between;
     }
+
+    .noticias .posts-fixture-container {
+        margin-top: 24px;
+    }
+
+    .noticias .posts-fixture-container .posts .post-principal .info {
+        max-width: 100%;
+    }
+
     .noticias .posts-fixture-container .posts .post:not(.principal) {
         max-width: 100%;
         margin-bottom: 24px;
     }
+
     .tienda-oficial .productos-list .producto {
         max-width: 100%;
         margin-bottom: 24px;
     }
 
-    .tienda-oficial .todos-productos-button
-    {
+    .tienda-oficial .todos-productos-button {
         margin-top: 24px;
     }
+
     .main-banner .widgets {
         display: none;
     }
