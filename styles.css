@@ -204,8 +204,7 @@ header .banner-container .main-escudo {
     transition: all 1s ease;
 }
 
-header .banner-container .main-escudo.fixed
-{
+header .banner-container .main-escudo.fixed {
     height: 50px;
     transform: translateX(-50%) translateY(0px);
 
@@ -440,13 +439,13 @@ footer .copyright {
     header .banner-container {
         justify-content: center;
         height: 120px;
-    padding: 12px 0px;
+        padding: 12px 0px;
     }
 
-    header .banner-container .container
-    {
+    header .banner-container .container {
         justify-content: center;
     }
+
     header .banner-container .titulo-principal {
         margin-bottom: 12px;
     }
@@ -526,7 +525,8 @@ footer .copyright {
     footer .enlaces-externos {
         width: 100%;
         justify-content: space-between;
-        margin: 48px 0px;
+        margin: 48px auto;
+        max-width: 80%;
     }
 
     footer .footer-navigation .enlaces-externos .enlace {
