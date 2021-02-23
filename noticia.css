@@ -89,6 +89,8 @@ section h2 {
 
 .noticias .posts-fixture-container {
  margin: 48px 0px;
+ background-color: white;
+ padding: 98px 0px;
 }
 
 
@@ -111,21 +113,17 @@ section h2 {
 
 
 
-.noticias .posts-fixture-container .posts .post-principal {
+.noticias .posts-fixture-container  .post-principal {
     width: 100%;
-    height: 700px;
     position: relative;
 }
 
-
-
-.noticias .posts-fixture-container .posts .post-principal .gradient {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 2;
-    background: linear-gradient(90deg, rgba(23, 59, 106) 1%, rgb(23 59 106 / 38%) 60%);
+.noticias .posts-fixture-container .post-principal .content
+{
+    margin-top: 60px;
 }
+
+
 
 .noticias .posts-fixture-container .posts .post-principal img {
     height: 100%;
@@ -137,7 +135,7 @@ section h2 {
 
 
 
-.noticias .posts-fixture-container .posts .post-principal .info {
+.noticias .posts-fixture-container  .post-principal .info {
     height: 100%;
     max-width: 50%;
     opacity: 0.88;
@@ -146,18 +144,29 @@ section h2 {
 }
 
 
-.noticias .posts-fixture-container .posts .post-principal .post-title {
+.noticias .posts-fixture-container  .post-principal .post-title {
     margin: 46px 0px;
-    font-size: 2.8125rem;
-    color: white;
+    font-size: 3.125rem;
 }
 
-.noticias .posts-fixture-container .posts .post-principal .post-subtitle {
-    font-size: 1rem;
-    color: white;
-    max-width: 580px;
+.noticias .posts-fixture-container  .post-principal .post-subtitle {
+    font-size: 1.375rem;
+    max-width: 80%;
+    margin-top: 0px;
+    margin-bottom: 28px;
 }
 
+.noticias .posts-fixture-container .post-principal .header-info .category
+{
+
+    margin-right: 12px;
+}
+
+.noticias .posts-fixture-container .post-principal .header-info .fecha
+{
+
+    margin-right: 12px;
+}
 
 
 

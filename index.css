@@ -768,6 +768,7 @@
         max-width: 100%;
         position: absolute;
         bottom: 0;
+        display: flex;
         left: 0;
         width: 100%;
         height: auto !important;
@@ -801,28 +802,6 @@
 
     }
     
-    .carc-videos .container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .carc-videos .button-gt-lg {
-        display: none;
-    }
-
-    .carc-videos .videos-carousel .arrows {
-        display: none;
-    }
-
-    .carc-videos .videos-carousel .videos-carousel-list .video {
-        max-width: 100% !important;
-        padding-right: 0px;
-    }
-
-    .carc-videos .videos-carousel .videos-carousel-list .video .info {
-        margin-top: 12px;
-        margin-bottom: 36px;
-    }
 
  
   
@@ -873,6 +852,7 @@
     .tienda-oficial .container
     {
         flex-direction: column;
+        align-items: flex-start;
     }
     .tienda-oficial .productos-list .producto {
         max-width: 100%;
