@@ -171,7 +171,7 @@ header .banner-container {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    z-index: 1000;
+    z-index: 10000000;
 }
 
 header .banner-container .titulo-principal {
