@@ -25,8 +25,8 @@
     position: absolute;
     top: 50%;
     display: flex;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    right: 210px;
+    transform: translateY(-50%);
     align-items: flex-end;
     justify-content: center;
 }
@@ -66,16 +66,16 @@
     max-width: 400px;
 }
 
-.owl-stage-outer, .owl-stage, .owl-item {
+.main-banner-carousel  .owl-stage-outer, .owl-stage, .owl-item {
     height: 100%;
 }
 
-.owl-nav
+.main-banner-carousel  .owl-nav
 {
     display: none;
 }
 
-.owl-dots
+.main-banner-carousel  .owl-dots
 {
     position: absolute;
     bottom: 48px;
@@ -83,60 +83,60 @@
     transform: translateX(-50%);
 }
 
-.owl-dots .owl-dot.active span
+.main-banner-carousel .owl-dots .owl-dot.active span
 {
     background: #F9DF34  !important;
 }
 
-.owl-carousel .owl-slide {
+.main-banner-carousel  .owl-slide {
     position: relative;
     height: 100%;
     background-color: lightgray;
 }
 
-.owl-carousel .owl-slide-animated {
+.main-banner-carousel  .owl-slide-animated {
     transform: translateX(20px);
     opacity: 0;
     visibility: hidden;
     transition: all 0.05s;
 }
 
-.owl-carousel .owl-slide-animated.is-transitioned {
+.main-banner-carousel  .owl-slide-animated.is-transitioned {
     transform: none;
     opacity: 1;
     visibility: visible;
     transition: all 0.5s;
 }
 
-.owl-carousel .owl-slide-title.is-transitioned {
+.main-banner-carousel  .owl-slide-title.is-transitioned {
     transition-delay: 0.2s;
 }
 
-.owl-carousel .owl-slide-subtitle.is-transitioned {
+.main-banner-carousel  .owl-slide-subtitle.is-transitioned {
     transition-delay: 0.35s;
 }
 
-.owl-carousel .owl-slide-cta.is-transitioned {
+.main-banner-carousel  .owl-slide-cta.is-transitioned {
     transition-delay: 0.5s;
 }
 
-.owl-carousel .owl-dots,
-.owl-carousel .owl-nav {
+.main-banner-carousel  .owl-dots,
+.main-banner-carousel  .owl-nav {
     position: absolute;
 }
 
-.owl-carousel .owl-dots .owl-dot span {
+.main-banner-carousel  .owl-dots .owl-dot span {
     background: transparent;
     border: 1px solid var(--main-black-color);
     transition: all 0.2s ease;
 }
 
-.owl-carousel .owl-dots .owl-dot:hover span,
-.owl-carousel .owl-dots .owl-dot.active span {
+.main-banner-carousel  .owl-dots .owl-dot:hover span,
+.main-banner-carousel  .owl-dots .owl-dot.active span {
     background: var(--main-black-color);
 }
 
-.owl-carousel .owl-nav {
+.main-banner-carousel  .owl-nav {
     left: 50%;
     top: 10%;
     transform: translateX(-50%);
@@ -644,4 +644,12 @@
     .main-banner .widgets {
         display: none;
     }
+}
+
+@media (max-width: 1560px) {
+    .main-banner .widgets {
+        right: 30px;
+    }
+    
+
 }
