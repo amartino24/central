@@ -16,7 +16,7 @@ section h2 {
 
 
 .noticias .posts-fixture-container {
-    margin-top: 24px;
+    margin-top: 24px !important;
     background-color: white;
     padding: 98px 0px;
 }

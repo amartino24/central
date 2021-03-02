@@ -22,7 +22,13 @@
 
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="styles.css" />
-
+    <link rel="stylesheet" type="text/css" href="js/video-modal/css/modal-video.min.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/video-modal/js/jquery-modal-video.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <link rel="stylesheet" href="js/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="js/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <script src="js/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
 </head>
 
 <body>
@@ -34,7 +40,7 @@
                 </div>
 
                 <a href="index.html" id='main-escudo' class="main-escudo">
-                    <img  src="imagenes/escudo.png">
+                    <img src="imagenes/escudo.png">
                 </a>
 
                 <div class="enlaces-externos flex a-center">
@@ -55,7 +61,7 @@
                                 transform="translate(-20.5 -17.87)" fill="#173b6a" />
                         </svg>
 
-                        <span class="text"><b>TIENDA</b>ONLINE</span>
+                        <span class="text"><b>TIENDA</b><span class="secondary">ONLINE</span></span>
                     </div>
                     <div class="enlace over-yellow flex a-center"> <svg xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" width="21.055" height="25"
@@ -76,7 +82,7 @@
                             </g>
                         </svg>
 
-                        <span class="text">SEDE<b>VIRTUAL</b></span>
+                        <a class="text azul-fg" href="https://rosariocentral.miclub.info/login.php" target="_blank">SEDE<b class="secondary">VIRTUAL</b></a>
                     </div>
                 </div>
             </div>
@@ -119,37 +125,128 @@
     </header>
     <section class="main-banner">
         <div class="main-banner-post h-100-p">
-            <div class="main-banner-gradient">
+        
+            <div class="owl-carousel owl-theme h-100-p">
+                <div class="owl-slide">
+                    <div class="main-banner-gradient">
+
+                    </div> 
+                    <img src="imagenes/imagen-banner-principal.png">
+                    <div class="container flex j-between a-center h-100-p">
+                        <div class="main-banner-post-info flex-column j-center">
+                            <a class="pointer amarillo-fg  owl-slide-animated owl-slide-category bold post-category">PLANTEL
+                                PROFESIONAL</a>
+                            <a class="pointer post-title  owl-slide-animated owl-slide-title">Rosario está de
+                                <b>fiesta</b></a>
+                            <p class="pointer post-subtitle owl-slide-animated owl-slide-subtitle">El conjunto Canalla
+                                se impuso 2 a 1 frente a Godoy Cruz en la
+                                primera
+                                fecha de la Copa de la Liga Profesional.</p>
+                            <a href="noticia.html"
+                                class="radius-button owl-slide-animated owl-slide-cta   ver-mas-button azul-claro-fg bg-blue">VER
+                                MÁS
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.711"
+                                    viewBox="0 0 20.559 13.711">
+                                    <path id="Icon_ionic-ios-arrow-round-forward"
+                                        data-name="Icon ionic-ios-arrow-round-forward"
+                                        d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
+                                        transform="translate(-7.875 -11.252)" fill="#2680eb" />
+                                </svg>
+
+
+                            </a>
+                        </div>
+                        <div class="widgets flex-column">
+                            <div class="widget">
+        
+                            </div>
+                            <div class="widget">
+        
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="owl-slide">
+                    <div class="main-banner-gradient">
+
+                    </div> 
+                    <img src="imagenes/imagen-banner-principal.png">
+                    <div class="container flex j-between a-center h-100-p">
+                        <div class="main-banner-post-info flex-column j-center">
+                            <a class="pointer amarillo-fg  owl-slide-animated owl-slide-category bold post-category">PLANTEL
+                                PROFESIONAL</a>
+                            <a class="pointer post-title  owl-slide-animated owl-slide-title">Rosario está de
+                                <b>fiesta</b></a>
+                            <p class="pointer post-subtitle owl-slide-animated owl-slide-subtitle">El conjunto Canalla
+                                se impuso 2 a 1 frente a Godoy Cruz en la
+                                primera
+                                fecha de la Copa de la Liga Profesional.</p>
+                            <a href="noticia.html"
+                                class="radius-button owl-slide-animated owl-slide-cta   ver-mas-button azul-claro-fg bg-blue">VER
+                                MÁS
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.711"
+                                    viewBox="0 0 20.559 13.711">
+                                    <path id="Icon_ionic-ios-arrow-round-forward"
+                                        data-name="Icon ionic-ios-arrow-round-forward"
+                                        d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
+                                        transform="translate(-7.875 -11.252)" fill="#2680eb" />
+                                </svg>
+
+
+                            </a>
+                        </div>
+                        <!-- <div class="widgets flex-column">
+                            <div class="widget">
+        
+                            </div>
+                            <div class="widget">
+        
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="owl-slide">
+                    <div class="main-banner-gradient">
+
+                    </div> 
+                    <img src="imagenes/imagen-banner-principal.png">
+                    <div class="container flex j-between a-center h-100-p">
+                        <div class="main-banner-post-info flex-column j-center">
+                            <a class="pointer amarillo-fg  owl-slide-animated owl-slide-category bold post-category">PLANTEL
+                                PROFESIONAL</a>
+                            <a class="pointer post-title  owl-slide-animated owl-slide-title">Rosario está de
+                                <b>fiesta</b></a>
+                            <p class="pointer post-subtitle owl-slide-animated owl-slide-subtitle">El conjunto Canalla
+                                se impuso 2 a 1 frente a Godoy Cruz en la
+                                primera
+                                fecha de la Copa de la Liga Profesional.</p>
+                            <a href="noticia.html"
+                                class="radius-button owl-slide-animated owl-slide-cta   ver-mas-button azul-claro-fg bg-blue">VER
+                                MÁS
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.711"
+                                    viewBox="0 0 20.559 13.711">
+                                    <path id="Icon_ionic-ios-arrow-round-forward"
+                                        data-name="Icon ionic-ios-arrow-round-forward"
+                                        d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
+                                        transform="translate(-7.875 -11.252)" fill="#2680eb" />
+                                </svg>
+
+
+                            </a>
+                        </div>
+                        <!-- <div class="widgets flex-column">
+                            <div class="widget">
+        
+                            </div>
+                            <div class="widget">
+        
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
 
             </div>
-            <img src="imagenes/imagen-banner-principal.png">
-            <div class="container flex j-between a-center h-100-p">
-                <div class="main-banner-post-info flex-column j-center">
-                    <a class="pointer amarillo-fg bold post-category">PLANTEL PROFESIONAL</a>
-                    <a class="pointer post-title ">Rosario está de <b>fiesta</b></a>
-                    <p class="pointer post-subtitle">El conjunto Canalla se impuso 2 a 1 frente a Godoy Cruz en la
-                        primera
-                        fecha de la Copa de la Liga Profesional.</p>
-                    <a href="noticia.html" class="radius-button   ver-mas-button azul-claro-fg bg-blue">VER MÁS
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.711"
-                            viewBox="0 0 20.559 13.711">
-                            <path id="Icon_ionic-ios-arrow-round-forward" data-name="Icon ionic-ios-arrow-round-forward"
-                                d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
-                                transform="translate(-7.875 -11.252)" fill="#2680eb" />
-                        </svg>
 
-
-                    </a>
-                </div>
-                <div class="widgets flex-column">
-                    <div class="widget">
-
-                    </div>
-                    <div class="widget">
-
-                    </div>
-                </div>
-            </div>
         </div>
 
 
@@ -177,27 +274,27 @@
                 #SiguiendoAlGuerrero
             </div>
             <div class="iconos flex j-between">
-                <div class="icon flex a-center">
+                <a class="icon flex a-center" href="https://facebook.com/CARCoficial/" target="_blank">
                     <img src="imagenes/social/facebook.png">
                     <span> 445 k</span>
-                </div>
-                <div class="icon flex a-center">
+                </a>
+                <a class="icon flex a-center" href="https://twitter.com/CARCoficial" target="_blank">
                     <img src="imagenes/social/twitter.png">
 
                     <span>290 k</span>
-                </div>
-                <div class="icon flex a-center">
+                </a>
+                <a class="icon flex a-center"  href="https://www.instagram.com/carcoficial" target="_blank">
                     <img src="imagenes/social/instagram.png">
                     <span>198 k</span>
-                </div>
-                <div class="icon flex a-center">
+                </a>
+                <a class="icon flex a-center" href="https://www.youtube.com/user/CARCoficial2013" target="_blank">
                     <img src="imagenes/social/youtube.png">
                     <span>16.900</span>
-                </div>
-                <div class="icon flex a-center">
+                </a>
+                <a class="icon flex a-center">
                     <img src="imagenes/social/socios.png">
                     <span>60.000 Socios</span>
-                </div>
+                </a>
             </div>
             <div class="seguinos">
                 <span class="azul-claro-fg">Seguinos en redes</span> y enterate el minuto a minuto de lo que está
@@ -284,7 +381,7 @@
                             </a>
 
                         </div>
-                 
+
 
 
                     </div>
@@ -390,13 +487,13 @@
             <div class="sede-virtual-titulo    flex-column j-center ">
                 <a class="pointer azul-claro-fg bold exclusivo">EXLUSIVO PARA SOCIOS</a>
                 <h2><b>SEDE</b><br>VIRTUAL</h2>
-                <button class="radius-button iniciar-sesion-button">INICIAR SESIÓN <svg
+                <a class="radius-button iniciar-sesion-button" href="https://rosariocentral.miclub.info/login.php" target="_blank">INICIAR SESIÓN <svg
                         xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.711" viewBox="0 0 20.559 13.711">
                         <path id="Icon_ionic-ios-arrow-round-forward" data-name="Icon ionic-ios-arrow-round-forward"
                             d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
                             transform="translate(-7.875 -11.252)" fill="#fff" />
                     </svg>
-                </button>
+                </a>
             </div>
             <div class="sede-virtual-funciones flex j-between a-center">
                 <div class="funcion br-20 flex-column j-between">
@@ -558,43 +655,9 @@
 
                     </div>
                 </div>
-                <div class="videos-carousel-list flex a-center">
-                    <div class="video pointer over-scale">
-                        <img src="imagenes/videos/kily.png">
-                        <div class="info flex-column  azul-fg">
-                            <span class="fecha bold">20 / 11</span>
-                            <p class="descripcion">
-                                Conferencia en vivo de “Kily” González tras el partido ante Banfield
-                            </p>
-                        </div>
-                    </div>
-                    <div class="video pointer over-scale">
-                        <img src="imagenes/videos/kily.png">
-                        <div class="info flex-column azul-fg">
-                            <span class="fecha bold">20 / 11</span>
-                            <p class="descripcion">
-                                Conferencia en vivo de “Kily” González tras el partido ante Banfield
-                            </p>
-                        </div>
-                    </div>
-                    <div class="video pointer  over-scale">
-                        <img src="imagenes/videos/kily.png">
-                        <div class="info flex-column azul-fg">
-                            <span class="fecha bold">20 / 11</span>
-                            <p class="descripcion">
-                                Conferencia en vivo de “Kily” González tras el partido ante Banfield
-                            </p>
-                        </div>
-                    </div>
-                    <div class="video  pointer over-scale">
-                        <img src="imagenes/videos/kily.png">
-                        <div class="info flex-column azul-fg">
-                            <span class="fecha bold">20 / 11</span>
-                            <p class="descripcion">
-                                Conferencia en vivo de “Kily” González tras el partido ante Banfield
-                            </p>
-                        </div>
-                    </div>
+                <div class="videos-carousel-list flex j-between" id="videos-carousel-list">
+
+
                 </div>
             </div>
             <button class="radius-button xs  todos-videos-button azul-claro-fg bg-blue">Ver todos los videos
@@ -660,18 +723,15 @@
             </div>
             <div class="botones xs ">
                 <button class="radius-button ver-ficha azul-claro-fg">Ver ficha
-                    <svg xmlns="http://www.w3.org/2000/svg" width="21.559" height="14.792"
-                        viewBox="0 0 21.559 14.792">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21.559" height="14.792" viewBox="0 0 21.559 14.792">
                         <path id="Icon_ionic-ios-arrow-round-forward" data-name="Icon ionic-ios-arrow-round-forward"
                             d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
-                            transform="translate(-7.375 -10.752)" fill="#2680eb" stroke="#2680eb"
-                            stroke-width="1" />
+                            transform="translate(-7.375 -10.752)" fill="#2680eb" stroke="#2680eb" stroke-width="1" />
                     </svg>
                 </button>
 
                 <button class="radius-button ver-plantel amarillo-fg">Ver plantel
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.711"
-                        viewBox="0 0 20.559 13.711">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.711" viewBox="0 0 20.559 13.711">
                         <path id="Icon_ionic-ios-arrow-round-forward" data-name="Icon ionic-ios-arrow-round-forward"
                             d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
                             transform="translate(-7.875 -11.252)" fill="#f9df34" />
@@ -1018,7 +1078,7 @@
                             </svg>
 
 
-                            <span class="text"><b>TIENDA</b>ONLINE</span>
+                            <span class="text"><b>TIENDA</b><span class="secondary">ONLINE</span></span>
                         </div>
                         <div class="enlace over-yellow flex a-center"> <svg xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="21.055" height="25"
@@ -1039,16 +1099,16 @@
                                 </g>
                             </svg>
 
-                            <span class="text">SEDE<b>VIRTUAL</b></span>
+                            <a class="text azul-claro-fg" href="https://rosariocentral.miclub.info/login.php" target="_blank">SEDE<b class="secondary">VIRTUAL</b></a>
                         </div>
                     </div>
                     <div class="social flex a-center j-between grow">
 
-                        <div class="tiktok" title="Seguinos en Tiktok"></div>
-                        <div class="facebook" title="Seguinos en Facebook"></div>
-                        <div class="twitter" title="Seguinos en Twiiter"></div>
-                        <div class="instagram" title="Seguinos en Instagram"></div>
-                        <div class="youtube" title="Seguinos en Youtube"></div>
+                        <a class="tiktok" title="Seguinos en Tiktok" href="https://www.tiktok.com/@carcoficial" target="_blank" ></a>
+                        <a class="facebook" title="Seguinos en Facebook"  href="https://facebook.com/CARCoficial/" target="_blank"></a>
+                        <a class="twitter" title="Seguinos en Twiiter" href="https://twitter.com/CARCoficial" target="_blank"></a>
+                        <a class="instagram" title="Seguinos en Instagram" href="https://www.instagram.com/carcoficial" target="_blank"></a>
+                        <a class="youtube" title="Seguinos en Youtube" href="https://www.youtube.com/user/CARCoficial2013" target="_blank"></a>
 
                     </div>
 
@@ -1077,6 +1137,54 @@
                 x.classList.remove('fixed');
             }
         });
+        $(document).ready(function () {
+            let content = `
+            <div class="video pointer over-scale" href="[url]" data-video-id="[videoId]">
+                <img src="[image]">
+                <div class="info flex-column  azul-fg">
+                    <span class="fecha bold">[fecha]</span>
+                    <p class="descripcion">
+                        [descripcion]
+                    </p>
+                </div>
+            </div>`
+            $.get("https://www.googleapis.com/youtube/v3/search?order=date&part=snippet&channelId=UCRIiYwaYzI_8cvzkjdScK_Q&key=AIzaSyBUuuosLykZGgPtKYZY78MjDMmu2QcRwdc",
+                function (data) {
+                    $.each(data.items, (index, video) => {
+                        let contentReplaced = content.replace('[descripcion]', video.snippet.title);
+                        contentReplaced = contentReplaced.replace('[fecha]', moment(video.snippet
+                            .publishedAt).format('DD-MM-YYYY'));
+                        contentReplaced = contentReplaced.replace('[image]', video.snippet
+                            .thumbnails.high.url);
+                        contentReplaced = contentReplaced.replace('[videoId]', video.id.videoId);
+                        $("#videos-carousel-list").append(contentReplaced);
+                    });
+                    $(".video").modalVideo();
+                })
+            $(".owl-carousel").on("initialized.owl.carousel", () => {
+                setTimeout(() => {
+                    $(".owl-item.active .owl-slide-animated").addClass("is-transitioned");
+                }, 200);
+            });
+
+            const $owlCarousel = $(".owl-carousel").owlCarousel({
+                items: 1,
+                loop: true,
+                nav: true,
+                autoplay:true,
+                autoplayTimeout:10000,
+                navText: [
+                    '<svg width="50" height="50" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg>',
+                    '<svg width="50" height="50" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>'
+                ]
+            });
+
+            $($owlCarousel).on("changed.owl.carousel", e => {
+                $(".owl-slide-animated").removeClass("is-transitioned");
+                const $currentOwlItem = $(".owl-item").eq(e.item.index);
+                $currentOwlItem.find(".owl-slide-animated").addClass("is-transitioned");
+            });
+        })
     </script>
 </body>
 

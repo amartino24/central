@@ -59,7 +59,82 @@
     max-width: 400px;
 }
 
+.owl-stage-outer, .owl-stage, .owl-item {
+    height: 100%;
+}
 
+.owl-nav
+{
+    display: none;
+}
+
+.owl-dots
+{
+    position: absolute;
+    bottom: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.owl-dots .owl-dot.active span
+{
+    background: #F9DF34  !important;
+}
+
+.owl-carousel .owl-slide {
+    position: relative;
+    height: 100%;
+    background-color: lightgray;
+}
+
+.owl-carousel .owl-slide-animated {
+    transform: translateX(20px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.05s;
+}
+
+.owl-carousel .owl-slide-animated.is-transitioned {
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s;
+}
+
+.owl-carousel .owl-slide-title.is-transitioned {
+    transition-delay: 0.2s;
+}
+
+.owl-carousel .owl-slide-subtitle.is-transitioned {
+    transition-delay: 0.35s;
+}
+
+.owl-carousel .owl-slide-cta.is-transitioned {
+    transition-delay: 0.5s;
+}
+
+.owl-carousel .owl-dots,
+.owl-carousel .owl-nav {
+    position: absolute;
+}
+
+.owl-carousel .owl-dots .owl-dot span {
+    background: transparent;
+    border: 1px solid var(--main-black-color);
+    transition: all 0.2s ease;
+}
+
+.owl-carousel .owl-dots .owl-dot:hover span,
+.owl-carousel .owl-dots .owl-dot.active span {
+    background: var(--main-black-color);
+}
+
+.owl-carousel .owl-nav {
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    margin: 0;
+}
 
 .redes-sociales {
     height: 320px;
@@ -78,6 +153,12 @@
     flex: 0 1 640px;
     min-width: 590px;
     margin: 0px 36px;
+}
+
+
+.redes-sociales .icon {
+    font-weight: bold;
+    color: white;
 }
 
 
@@ -257,64 +338,8 @@
 }
 
 
-.carc-videos {
-    padding: 70px 0px;
-}
 
-.carc-videos .carc-videos-titulo {
-    margin-right: 76px;
-    flex: 1 1 0;
-    max-width: 300px;
-    min-width: 240px;
-}
 
-.carc-videos .carc-videos-titulo h2 {
-    margin-bottom: 32px;
-}
-
-.carc-videos .carc-videos-titulo .todos-videos-button {
-    width: 100%;
-    font-size: 1.125rem;
-}
-
-.carc-videos .carc-videos-titulo .todos-videos-button svg {
-    margin-left: 20px;
-}
-
-.carc-videos .videos-carousel {
-    flex: 1 1 0;
-}
-
-.carc-videos .videos-carousel .videos-carousel-title {
-    margin-bottom: 36px;
-}
-
-.carc-videos .videos-carousel .videos-carousel-title .ultimos-videos {
-    font-size: 2rem;
-}
-
-.carc-videos .videos-carousel .videos-carousel-title .arrows svg {
-    margin: 0px 16px;
-}
-
-.carc-videos .videos-carousel .videos-carousel-list .video {
-    width: 100%;
-    max-width: 25%;
-    padding-right: 30px;
-}
-
-.carc-videos .videos-carousel .videos-carousel-list .video:last-child {
-    padding-right: 0px;
-}
-
-.carc-videos .videos-carousel .videos-carousel-list .video img {
-    width: 100%;
-    border-radius: 20px;
-}
-
-.carc-videos .videos-carousel .videos-carousel-list .video .info {
-    margin-top: 36px;
-}
 
 .plantel {
     height: 700px;
@@ -354,28 +379,28 @@
     font-size: 2.4375rem;
 }
 
-.plantel  .botones {
+.plantel .botones {
     margin-top: 140px;
 }
 
-.plantel  .botones {
+.plantel .botones {
     margin-top: 140px;
     display: flex;
 }
 
-.plantel  .botones .ver-ficha {
+.plantel .botones .ver-ficha {
     font-size: 1.125rem;
     width: 200px;
     border: 1px solid #2680EB;
     font-weight: bold;
 }
 
-.plantel  .botones .ver-ficha svg {
+.plantel .botones .ver-ficha svg {
     margin-left: 36px;
 }
 
 
-.plantel  .botones .ver-plantel {
+.plantel .botones .ver-plantel {
     font-size: 1.125rem;
     width: 200px;
     border: 1px solid #F9DF34;
@@ -383,7 +408,7 @@
     margin-left: 20px;
 }
 
-.plantel  .botones .ver-plantel svg {
+.plantel .botones .ver-plantel svg {
     margin-left: 16px;
 }
 
@@ -511,29 +536,18 @@
         margin-left: 12px;
     }
 
-    .noticias .categorias {
-        height: 100%;
-        max-height: 0px;
-        position: absolute;
-        transition: max-height 1s ease;
-        overflow: hidden;
-        order: 3;
 
 
-    }
 
 
-  
-
-
-    .plantel  .botones {
+    .plantel .botones {
         width: 100%;
         margin-top: 40px;
         flex-wrap: nowrap;
         justify-content: center;
     }
 
-    .plantel  .radius-button {
+    .plantel .radius-button {
         margin-left: 0px !important;
         margin-bottom: 24px;
         font-size: 1rem;
@@ -541,13 +555,13 @@
         padding: 12px 0px;
     }
 
-    .plantel  .botones .ver-ficha {
+    .plantel .botones .ver-ficha {
         margin-right: 12px;
     }
 
 
     .plantel .botones .radius-button svg {
-        margin-left: 12px  !important;
+        margin-left: 12px !important;
     }
 
     .plantel {
@@ -563,10 +577,10 @@
         width: 100%
     }
 
-    .plantel .container
-    {
+    .plantel .container {
         display: block !important;
     }
+
     .plantel .imagen-container img {
         width: 100%;
         min-height: auto !important;
