@@ -32,11 +32,13 @@
 }
 
 .main-banner .widgets .widget {
-    background-color: grey;
-    border: 1px solid white;
+    
     width: 480px;
-    border-radius: 34px;
-    height: 300px;
+}
+
+.main-banner .widgets .widget iframe
+{
+    border: initial !important;
 }
 
 .main-banner .widgets .widget:last-child {
