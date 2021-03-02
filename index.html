@@ -1134,7 +1134,7 @@
                     </p>
                 </div>
             </div>`
-            $.get("https://www.googleapis.com/youtube/v3/search?order=date&part=snippet&channelId=UCRIiYwaYzI_8cvzkjdScK_Q&key=AIzaSyBUuuosLykZGgPtKYZY78MjDMmu2QcRwdc",
+            $.get("https://www.googleapis.com/youtube/v3/search?order=date&part=snippet&channelId=UCRIiYwaYzI_8cvzkjdScK_Q&key=AIzaSyA3ygTCCJpShhCpXJETsYv9_QYLwWnKSiA",
                 function (data) {
                     $.each(data.items, (index, video) => {
                         let contentReplaced = content.replace('[descripcion]', video.snippet.title);
