@@ -1134,7 +1134,7 @@
                     </p>
                 </div>
             </div>`
-            $.get("https://www.googleapis.com/youtube/v3/search?order=date&part=snippet&channelId=UCRIiYwaYzI_8cvzkjdScK_Q&key=AIzaSyA3ygTCCJpShhCpXJETsYv9_QYLwWnKSiA",
+            $.get("https://www.googleapis.com/youtube/v3/playlistItems?part=snippet%2CcontentDetails&maxResults=6&playlistId=UURIiYwaYzI_8cvzkjdScK_Q&key=AIzaSyB-A69ZY2EPopbIiZMUqvDmQUXXafExMZE",
                 function (data) {
                     $.each(data.items, (index, video) => {
                         let contentReplaced = content.replace('[descripcion]', video.snippet.title);
@@ -1146,9 +1146,6 @@
                         $("#videos-carousel-list").append(contentReplaced);
                     });
                     $(".video").modalVideo();
-                    $("#videos-carousel-list").owlCarousel({
-                        loop:true,
-                    })
                 })
             $(".main-banner-carousel").on("initialized.owl.carousel", () => {
                 setTimeout(() => {
@@ -1174,10 +1171,6 @@
                 $currentOwlItem.find(".owl-slide-animated").addClass("is-transitioned");
             });
 
-            $('.productos-carousel').owlCarousel({
-                loop:true,
-                nav:false
-            })
         })
     </script>
 </body>
