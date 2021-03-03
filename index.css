@@ -33,12 +33,26 @@
 
 .main-banner .widgets .widget {
     
-    width: 480px;
+    width: 570px;
 }
 
-.main-banner .widgets .widget iframe
+.main-banner .widgets .widget .titulo 
+{
+    background-color: #001F4B;
+    color: white;
+    padding: 12px 8px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+ iframe
 {
     border: initial !important;
+}
+
+.main-banner .widgets .widget iframe .mc-tournamentName
+{
+    width: 100 !important;
 }
 
 .main-banner .widgets .widget:last-child {

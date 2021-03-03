@@ -407,7 +407,7 @@ header .main-navigation ul li:last-child {
     color: #173B6A;
 }
 
-.noticias .titulo {
+.noticias .container > .titulo {
     font-weight: normal;
     font-size: 3.375rem;
     margin-bottom: 56px;
@@ -551,11 +551,20 @@ header .main-navigation ul li:last-child {
 .noticias .posts-fixture-container .fixture {
     flex-grow: 1;
     flex: 1 1 30%;
-    background-color: grey;
-    border-radius: 32px;
+    background-color: white;
+    border-radius: 20px;
     margin-left: 32px;
     min-width: 300px;
     max-width: 400px;
+}
+
+.noticias .posts-fixture-container .fixture .titulo
+{
+    padding:24px 12px ;
+    font-size: 1.5rem;
+
+    text-align: center;
+    color: #F9DF34;
 }
 
 
