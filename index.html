@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="js/OwlCarousel2-2.3.4/owl.carousel.min.css">
     <link rel="stylesheet" href="js/OwlCarousel2-2.3.4/owl.theme.default.min.css">
     <script src="js/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
+    <script src="carousels.js"></script>
 </head>
 
 <body>
@@ -468,15 +469,20 @@
                         </svg>
                     </a>
                 </div>
-                <div class="fixture flex-column">
-                    <div class="titulo">
-                       TABLA DE POSICIONES
+                <div class="fixture">
+                    <div class="widget">
+                        <div class="titulo">
+                            TABLA DE POSICIONES
+                         </div>
+                         <iframe src="https://www.rosariocentral.com/files/incoming/df/html/v3/minapp/page/page.html?channel=deportes.futbol.copalpf&lang=es_LA&page=posiciones" width="100%" height="100%" scrolling="auto" style="width: 1px; min-width: 100%; *width: 100%;" class=""></iframe>
                     </div>
-                    <iframe src="https://www.rosariocentral.com/files/incoming/df/html/v3/minapp/page/page.html?channel=deportes.futbol.copalpf&lang=es_LA&page=posiciones" width="100%" height="100%" scrolling="auto" style="width: 1px; min-width: 100%; *width: 100%;" class=""></iframe>
-                    <div class="titulo">
-                        GOLEADORES
+                 
+                    <div class="widget">
+                        <div class="titulo">
+                            GOLEADORES
+                        </div>
+                        <iframe src="https://www.rosariocentral.com/files/incoming/df/html/v3/minapp/page/page.html?channel=deportes.futbol.copalpf&lang=es_LA&page=goleadores" width="100%" height="100%" scrolling="auto" style="width: 1px; min-width: 100%; *width: 100%;" class=""></iframe>
                     </div>
-                    <iframe src="https://www.rosariocentral.com/files/incoming/df/html/v3/minapp/page/page.html?channel=deportes.futbol.copalpf&lang=es_LA&page=goleadores" width="100%" height="700" scrolling="auto" style="width: 1px; min-width: 100%; *width: 100%;" class=""></iframe>
                 </div>
             </div>
 
@@ -639,14 +645,14 @@
                 <div class="videos-carousel-title flex a-center j-between">
                     <div class="ultimos-videos azul-fg">Últimos videos</div>
                     <div class="arrows">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="pointer" width="8.399" height="14.69"
+                        <svg xmlns="http://www.w3.org/2000/svg" class="pointer" id="prevVideoBtn" width="8.399" height="14.69" 
                             viewBox="0 0 8.399 14.69">
                             <path id="Icon_ionic-ios-arrow-forward" data-name="Icon ionic-ios-arrow-forward"
                                 d="M5.867,7.342.308,1.788a1.045,1.045,0,0,1,0-1.483A1.059,1.059,0,0,1,1.8.305L8.094,6.6a1.048,1.048,0,0,1,.031,1.448L1.8,14.384A1.05,1.05,0,0,1,.313,12.9Z"
                                 transform="translate(8.399 14.69) rotate(180)" fill="#2680eb" />
                         </svg>
 
-                        <svg xmlns="http://www.w3.org/2000/svg" class="pointer" width="8.399" height="14.692"
+                        <svg xmlns="http://www.w3.org/2000/svg" class="pointer" id="nextVideoBtn" width="8.399" height="14.692"  
                             viewBox="0 0 8.399 14.692">
                             <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back"
                                 d="M2.532,7.344,8.091,1.789A1.05,1.05,0,0,0,6.6.307L.306,6.6A1.048,1.048,0,0,0,.275,8.048L6.6,14.386A1.05,1.05,0,0,0,8.087,12.9Z"
@@ -655,8 +661,8 @@
 
                     </div>
                 </div>
-                <div class="videos-carousel-list  flex j-between" id="videos-carousel-list">
-
+                <div class="videos-carousel-list  owl-carousel  flex j-between" id="videos-carousel-list">
+              
 
                 </div>
             </div>
@@ -743,33 +749,36 @@
 
     <section class="tienda-oficial bg-grey">
         <div class="container flex a-center">
-            <div class="flex-column section-title azul-fg">
-                <h3 class="gris-fg">TIENDAS OFICIALES</h3>
-                <h2><b>PUNTO</b><br>CENTRAL</h2>
-                <button class="radius-button gt-xs  todos-productos-button azul-claro-fg bg-blue">Ver todos los
-                    productos
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.711" viewBox="0 0 20.559 13.711">
-                        <path id="Icon_ionic-ios-arrow-round-forward" data-name="Icon ionic-ios-arrow-round-forward"
-                            d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
-                            transform="translate(-7.875 -11.252)" fill="#2680eb" />
+            <div class="flex title-arrow-container a-center">
+                <div class="flex-column section-title azul-fg">
+                    <h3 class="gris-fg">TIENDAS OFICIALES</h3>
+                    <h2><b>PUNTO</b><br>CENTRAL</h2>
+                    <button class="radius-button gt-xs  todos-productos-button azul-claro-fg bg-blue">Ver todos los
+                        productos
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.711" viewBox="0 0 20.559 13.711">
+                            <path id="Icon_ionic-ios-arrow-round-forward" data-name="Icon ionic-ios-arrow-round-forward"
+                                d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
+                                transform="translate(-7.875 -11.252)" fill="#2680eb" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="arrows">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="pointer" width="8.399"  id="prevProductoBtn" height="14.69" viewBox="0 0 8.399 14.69">
+                        <path id="Icon_ionic-ios-arrow-forward" data-name="Icon ionic-ios-arrow-forward"
+                            d="M5.867,7.342.308,1.788a1.045,1.045,0,0,1,0-1.483A1.059,1.059,0,0,1,1.8.305L8.094,6.6a1.048,1.048,0,0,1,.031,1.448L1.8,14.384A1.05,1.05,0,0,1,.313,12.9Z"
+                            transform="translate(8.399 14.69) rotate(180)" fill="#2680eb" />
                     </svg>
-                </button>
+    
+                    <svg xmlns="http://www.w3.org/2000/svg" class="pointer" width="8.399"   id="nextProductoBtn" height="14.692" viewBox="0 0 8.399 14.692">
+                        <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back"
+                            d="M2.532,7.344,8.091,1.789A1.05,1.05,0,0,0,6.6.307L.306,6.6A1.048,1.048,0,0,0,.275,8.048L6.6,14.386A1.05,1.05,0,0,0,8.087,12.9Z"
+                            transform="translate(8.399 14.692) rotate(180)" fill="#2680eb" />
+                    </svg>
+    
+                </div>
             </div>
-            <div class="arrows">
-                <svg xmlns="http://www.w3.org/2000/svg" width="8.399" height="14.69" viewBox="0 0 8.399 14.69">
-                    <path id="Icon_ionic-ios-arrow-forward" data-name="Icon ionic-ios-arrow-forward"
-                        d="M5.867,7.342.308,1.788a1.045,1.045,0,0,1,0-1.483A1.059,1.059,0,0,1,1.8.305L8.094,6.6a1.048,1.048,0,0,1,.031,1.448L1.8,14.384A1.05,1.05,0,0,1,.313,12.9Z"
-                        transform="translate(8.399 14.69) rotate(180)" fill="#2680eb" />
-                </svg>
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="8.399" height="14.692" viewBox="0 0 8.399 14.692">
-                    <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back"
-                        d="M2.532,7.344,8.091,1.789A1.05,1.05,0,0,0,6.6.307L.306,6.6A1.048,1.048,0,0,0,.275,8.048L6.6,14.386A1.05,1.05,0,0,0,8.087,12.9Z"
-                        transform="translate(8.399 14.692) rotate(180)" fill="#2680eb" />
-                </svg>
-
-            </div>
-            <div class="productos-list  flex a-center j-between">
+         
+            <div class="productos-list owl-carousel  flex a-center j-between" id="tienda-carousel">
                 <div class="producto pointer bg-white  over-scale">
                     <img src="imagenes/productos/camiseta.png">
                     <div class="info flex-column  azul-fg">
@@ -836,7 +845,72 @@
                         </a>
                     </div>
                 </div>
+                <div class="producto  pointer bg-white  over-scale">
+                    <img src="imagenes/productos/camiseta.png">
+                    <div class="info flex-column  azul-fg">
+                        <span class="categoria amarillo-fg bold">CAMISETAS</span>
+                        <h4 class="titulo azul-fg bold">
+                            Camiseta oficial Under Armour
+                        </h4>
+                        <p class="descripcion gris-fg">
+                            Todos los talles. Camiseta oficial de juego. S - M - L - XL
+                        </p>
+                        <a class="pointer ver-producto azul-fg flex a-center">
+                            VER MÁS <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.712"
+                                viewBox="0 0 20.559 13.712">
+                                <path id="Icon_ionic-ios-arrow-round-forward"
+                                    data-name="Icon ionic-ios-arrow-round-forward"
+                                    d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
+                                    transform="translate(-7.875 -11.251)" fill="#2680eb" />
+                            </svg>
 
+                        </a>
+                    </div>
+                </div>
+                <div class="producto  pointer bg-white  over-scale">
+                    <img src="imagenes/productos/camiseta.png">
+                    <div class="info flex-column  azul-fg">
+                        <span class="categoria amarillo-fg bold">CAMISETAS</span>
+                        <h4 class="titulo azul-fg bold">
+                            Camiseta oficial Under Armour
+                        </h4>
+                        <p class="descripcion gris-fg">
+                            Todos los talles. Camiseta oficial de juego. S - M - L - XL
+                        </p>
+                        <a class="pointer ver-producto azul-fg flex a-center">
+                            VER MÁS <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.712"
+                                viewBox="0 0 20.559 13.712">
+                                <path id="Icon_ionic-ios-arrow-round-forward"
+                                    data-name="Icon ionic-ios-arrow-round-forward"
+                                    d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
+                                    transform="translate(-7.875 -11.251)" fill="#2680eb" />
+                            </svg>
+
+                        </a>
+                    </div>
+                </div>
+                <div class="producto  pointer bg-white  over-scale">
+                    <img src="imagenes/productos/camiseta.png">
+                    <div class="info flex-column  azul-fg">
+                        <span class="categoria amarillo-fg bold">CAMISETAS</span>
+                        <h4 class="titulo azul-fg bold">
+                            Camiseta oficial Under Armour
+                        </h4>
+                        <p class="descripcion gris-fg">
+                            Todos los talles. Camiseta oficial de juego. S - M - L - XL
+                        </p>
+                        <a class="pointer ver-producto azul-fg flex a-center">
+                            VER MÁS <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.712"
+                                viewBox="0 0 20.559 13.712">
+                                <path id="Icon_ionic-ios-arrow-round-forward"
+                                    data-name="Icon ionic-ios-arrow-round-forward"
+                                    d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
+                                    transform="translate(-7.875 -11.251)" fill="#2680eb" />
+                            </svg>
+
+                        </a>
+                    </div>
+                </div>
             </div>
             <button class="radius-button xs  todos-productos-button azul-claro-fg bg-blue">Ver todos los productos
                 <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.711" viewBox="0 0 20.559 13.711">
@@ -1137,55 +1211,7 @@
                 x.classList.remove('fixed');
             }
         });
-        $(document).ready(function () {
-            let content = `
-            <div class="video pointer over-scale" href="[url]" data-video-id="[videoId]">
-                <img src="[image]">
-                <div class="info flex-column  azul-fg">
-                    <span class="fecha bold">[fecha]</span>
-                    <p class="descripcion">
-                        [descripcion]
-                    </p>
-                </div>
-            </div>`
-            $.get("https://www.googleapis.com/youtube/v3/playlistItems?part=snippet%2CcontentDetails&maxResults=6&playlistId=UURIiYwaYzI_8cvzkjdScK_Q&key=AIzaSyB-A69ZY2EPopbIiZMUqvDmQUXXafExMZE",
-                function (data) {
-                    $.each(data.items, (index, video) => {
-                        let contentReplaced = content.replace('[descripcion]', video.snippet.title);
-                        contentReplaced = contentReplaced.replace('[fecha]', moment(video.snippet
-                            .publishedAt).format('DD-MM-YYYY'));
-                        contentReplaced = contentReplaced.replace('[image]', video.snippet
-                            .thumbnails.high.url);
-                        contentReplaced = contentReplaced.replace('[videoId]', video.id.videoId);
-                        $("#videos-carousel-list").append(contentReplaced);
-                    });
-                    $(".video").modalVideo();
-                })
-            $(".main-banner-carousel").on("initialized.owl.carousel", () => {
-                setTimeout(() => {
-                    $(".owl-item.active .owl-slide-animated").addClass("is-transitioned");
-                }, 200);
-            });
-
-            const $mainCarousel = $(".main-banner-carousel").owlCarousel({
-                items: 1,
-                loop: true,
-                nav: true,
-                autoplay:true,
-                autoplayTimeout:10000,
-                navText: [
-                    '<svg width="50" height="50" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg>',
-                    '<svg width="50" height="50" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>'
-                ]
-            });
-
-            $($mainCarousel).on("changed.owl.carousel", e => {
-                $(".owl-slide-animated").removeClass("is-transitioned");
-                const $currentOwlItem = $(".owl-item").eq(e.item.index);
-                $currentOwlItem.find(".owl-slide-animated").addClass("is-transitioned");
-            });
-
-        })
+      
     </script>
 </body>
 

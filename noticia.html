@@ -21,7 +21,13 @@
 
     <link rel="stylesheet" href="noticia.css" />
     <link rel="stylesheet" href="styles.css" />
-   
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/video-modal/jquery-modal-video.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <link rel="stylesheet" href="js/OwlCarousel2-2.3.4/owl.carousel.min.css">
+    <link rel="stylesheet" href="js/OwlCarousel2-2.3.4/owl.theme.default.min.css">
+    <script src="js/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
+    <script src="carousels.js"></script>
 
 </head>
 
@@ -232,14 +238,14 @@
                 <div class="otros-posts-titulo w-100-p flex a-center">
                     <h2 class="ultimas-noticias azul-fg">Últimas <b>Noticias</b></h2>
                     <div class="arrows">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="pointer" width="8.399" height="14.69"
+                        <svg xmlns="http://www.w3.org/2000/svg" id="prevPostBtn" class="pointer" width="8.399" height="14.69"
                             viewBox="0 0 8.399 14.69">
                             <path id="Icon_ionic-ios-arrow-forward" data-name="Icon ionic-ios-arrow-forward"
                                 d="M5.867,7.342.308,1.788a1.045,1.045,0,0,1,0-1.483A1.059,1.059,0,0,1,1.8.305L8.094,6.6a1.048,1.048,0,0,1,.031,1.448L1.8,14.384A1.05,1.05,0,0,1,.313,12.9Z"
                                 transform="translate(8.399 14.69) rotate(180)" fill="#2680eb" />
                         </svg>
 
-                        <svg xmlns="http://www.w3.org/2000/svg" class="pointer" width="8.399" height="14.692"
+                        <svg xmlns="http://www.w3.org/2000/svg"  id="nextPostBtn" class="pointer" width="8.399" height="14.692"
                             viewBox="0 0 8.399 14.692">
                             <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back"
                                 d="M2.532,7.344,8.091,1.789A1.05,1.05,0,0,0,6.6.307L.306,6.6A1.048,1.048,0,0,0,.275,8.048L6.6,14.386A1.05,1.05,0,0,0,8.087,12.9Z"
@@ -248,109 +254,164 @@
 
                     </div>
                 </div>
-                <div class="post  br-20">
-                    <div class="image-container">
-                        <img class="post-image" src="imagenes/posts/arquero.png">
-                        <div class="gradient">
-
+                <div class="posts-carousel owl-carousel" id="otros-posts-carousel">
+                    <div class="post  br-20">
+                        <div class="image-container">
+                            <img class="post-image" src="imagenes/posts/arquero.png">
+                            <div class="gradient">
+    
+                            </div>
+                        </div>
+    
+                        <div class="info flex-column j-center">
+                            <a class="pointer amarillo-fg bold post-category">PLANTEL PROFESIONAL</a>
+                            <a class="pointer post-title  bold azul-fg ">Parte médico sobre Josué Ayala</a>
+                            <div class="separator"></div>
+                            <p class="pointer post-subtitle">En el día de la fecha fue intervenido quirúrgicamente Josué
+                                Ayala de una lesión aguda completa del ligamento cruzado anterior de su rodilla
+                                izquierda. Se estima una baja deportiva de 8 meses.</p>
+                            <a class="ver-mas azul-claro-fg">VER MÁS <svg xmlns="http://www.w3.org/2000/svg" width="20.559"
+                                    height="13.711" viewBox="0 0 20.559 13.711">
+                                    <path id="Icon_ionic-ios-arrow-round-forward"
+                                        data-name="Icon ionic-ios-arrow-round-forward"
+                                        d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
+                                        transform="translate(-7.875 -11.252)" fill="#2680eb" />
+                                </svg>
+                            </a>
                         </div>
                     </div>
-
-                    <div class="info flex-column j-center">
-                        <a class="pointer amarillo-fg bold post-category">PLANTEL PROFESIONAL</a>
-                        <a class="pointer post-title  bold azul-fg ">Parte médico sobre Josué Ayala</a>
-                        <div class="separator"></div>
-                        <p class="pointer post-subtitle">En el día de la fecha fue intervenido quirúrgicamente Josué
-                            Ayala de una lesión aguda completa del ligamento cruzado anterior de su rodilla
-                            izquierda. Se estima una baja deportiva de 8 meses.</p>
-                        <a class="ver-mas azul-claro-fg">VER MÁS <svg xmlns="http://www.w3.org/2000/svg" width="20.559"
-                                height="13.711" viewBox="0 0 20.559 13.711">
-                                <path id="Icon_ionic-ios-arrow-round-forward"
-                                    data-name="Icon ionic-ios-arrow-round-forward"
-                                    d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
-                                    transform="translate(-7.875 -11.252)" fill="#2680eb" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="post over-scale  br-20">
-                    <div class="image-container">
-                        <img class="post-image" src="imagenes/posts/playa.png">
-                        <div class="gradient">
-
+                    <div class="post over-scale  br-20">
+                        <div class="image-container">
+                            <img class="post-image" src="imagenes/posts/playa.png">
+                            <div class="gradient">
+    
+                            </div>
+                        </div>
+    
+                        <div class="info flex-column j-center">
+                            <a class="pointer amarillo-fg bold post-category">COMUNICADO</a>
+                            <a class="pointer post-title bold azul-fg ">Se reprograma la apertura de los predios</a>
+                            <div class="separator"></div>
+                            <p class="pointer post-subtitle">Por nuevas disposiciones Municipales y Provinciales, cambio
+                                de
+                                fecha en la apertura de los predios. Comenzarán a funcionar a partir del sábado 5 de
+                                diciembre.</p>
+                            <a class="ver-mas azul-claro-fg">VER MÁS <svg xmlns="http://www.w3.org/2000/svg" width="20.559"
+                                    height="13.711" viewBox="0 0 20.559 13.711">
+                                    <path id="Icon_ionic-ios-arrow-round-forward"
+                                        data-name="Icon ionic-ios-arrow-round-forward"
+                                        d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
+                                        transform="translate(-7.875 -11.252)" fill="#2680eb" />
+                                </svg>
+                            </a>
                         </div>
                     </div>
-
-                    <div class="info flex-column j-center">
-                        <a class="pointer amarillo-fg bold post-category">COMUNICADO</a>
-                        <a class="pointer post-title bold azul-fg ">Se reprograma la apertura de los predios</a>
-                        <div class="separator"></div>
-                        <p class="pointer post-subtitle">Por nuevas disposiciones Municipales y Provinciales, cambio
-                            de
-                            fecha en la apertura de los predios. Comenzarán a funcionar a partir del sábado 5 de
-                            diciembre.</p>
-                        <a class="ver-mas azul-claro-fg">VER MÁS <svg xmlns="http://www.w3.org/2000/svg" width="20.559"
-                                height="13.711" viewBox="0 0 20.559 13.711">
-                                <path id="Icon_ionic-ios-arrow-round-forward"
-                                    data-name="Icon ionic-ios-arrow-round-forward"
-                                    d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
-                                    transform="translate(-7.875 -11.252)" fill="#2680eb" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="post over-scale  br-20">
-                    <div class="image-container">
-                        <img class="post-image" src="imagenes/posts/femenino.png">
-                        <div class="gradient">
-
+                    <div class="post over-scale  br-20">
+                        <div class="image-container">
+                            <img class="post-image" src="imagenes/posts/femenino.png">
+                            <div class="gradient">
+    
+                            </div>
+                        </div>
+    
+                        <div class="info flex-column j-center">
+                            <a class="pointer amarillo-fg bold post-category">FÚTBOL FEMENINO</a>
+                            <a class="pointer post-title bold azul-fg ">Excelente debut de las guerreras </a>
+                            <div class="separator"></div>
+                            <p class="pointer post-subtitle">Este domingo por la tarde en el predio de Ciudad Deportiva,
+                                el
+                                equipo de Fútbol Femenino de Rosario Central venció 5 a 1 a Defensores de Belgrano por
+                                la 1era fecha del torneo.</p>
+                            <a class="ver-mas azul-claro-fg">VER MÁS <svg xmlns="http://www.w3.org/2000/svg" width="20.559"
+                                    height="13.711" viewBox="0 0 20.559 13.711">
+                                    <path id="Icon_ionic-ios-arrow-round-forward"
+                                        data-name="Icon ionic-ios-arrow-round-forward"
+                                        d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
+                                        transform="translate(-7.875 -11.252)" fill="#2680eb" />
+                                </svg>
+                            </a>
                         </div>
                     </div>
-
-                    <div class="info flex-column j-center">
-                        <a class="pointer amarillo-fg bold post-category">FÚTBOL FEMENINO</a>
-                        <a class="pointer post-title bold azul-fg ">Excelente debut de las guerreras </a>
-                        <div class="separator"></div>
-                        <p class="pointer post-subtitle">Este domingo por la tarde en el predio de Ciudad Deportiva,
-                            el
-                            equipo de Fútbol Femenino de Rosario Central venció 5 a 1 a Defensores de Belgrano por
-                            la 1era fecha del torneo.</p>
-                        <a class="ver-mas azul-claro-fg">VER MÁS <svg xmlns="http://www.w3.org/2000/svg" width="20.559"
-                                height="13.711" viewBox="0 0 20.559 13.711">
-                                <path id="Icon_ionic-ios-arrow-round-forward"
-                                    data-name="Icon ionic-ios-arrow-round-forward"
-                                    d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
-                                    transform="translate(-7.875 -11.252)" fill="#2680eb" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="post  over-scale br-20">
-                    <div class="image-container">
-                        <img class="post-image" src="imagenes/posts/playa.png">
-                        <div class="gradient">
-
+                    <div class="post  over-scale br-20">
+                        <div class="image-container">
+                            <img class="post-image" src="imagenes/posts/playa.png">
+                            <div class="gradient">
+    
+                            </div>
+                        </div>
+    
+                        <div class="info flex-column j-center">
+                            <a class="pointer amarillo-fg bold post-category">COMUNICADO</a>
+                            <a class="pointer post-title bold azul-fg ">Se reprograma la apertura de los predios</a>
+                            <div class="separator"></div>
+                            <p class="pointer post-subtitle">Por nuevas disposiciones Municipales y Provinciales, cambio
+                                de
+                                fecha en la apertura de los predios. Comenzarán a funcionar a partir del sábado 5 de
+                                diciembre.</p>
+                            <a class="ver-mas azul-claro-fg">VER MÁS <svg xmlns="http://www.w3.org/2000/svg" width="20.559"
+                                    height="13.711" viewBox="0 0 20.559 13.711">
+                                    <path id="Icon_ionic-ios-arrow-round-forward"
+                                        data-name="Icon ionic-ios-arrow-round-forward"
+                                        d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
+                                        transform="translate(-7.875 -11.252)" fill="#2680eb" />
+                                </svg>
+                            </a>
                         </div>
                     </div>
-
-                    <div class="info flex-column j-center">
-                        <a class="pointer amarillo-fg bold post-category">COMUNICADO</a>
-                        <a class="pointer post-title bold azul-fg ">Se reprograma la apertura de los predios</a>
-                        <div class="separator"></div>
-                        <p class="pointer post-subtitle">Por nuevas disposiciones Municipales y Provinciales, cambio
-                            de
-                            fecha en la apertura de los predios. Comenzarán a funcionar a partir del sábado 5 de
-                            diciembre.</p>
-                        <a class="ver-mas azul-claro-fg">VER MÁS <svg xmlns="http://www.w3.org/2000/svg" width="20.559"
-                                height="13.711" viewBox="0 0 20.559 13.711">
-                                <path id="Icon_ionic-ios-arrow-round-forward"
-                                    data-name="Icon ionic-ios-arrow-round-forward"
-                                    d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
-                                    transform="translate(-7.875 -11.252)" fill="#2680eb" />
-                            </svg>
-                        </a>
+                    <div class="post  over-scale br-20">
+                        <div class="image-container">
+                            <img class="post-image" src="imagenes/posts/playa.png">
+                            <div class="gradient">
+    
+                            </div>
+                        </div>
+    
+                        <div class="info flex-column j-center">
+                            <a class="pointer amarillo-fg bold post-category">COMUNICADO</a>
+                            <a class="pointer post-title bold azul-fg ">Se reprograma la apertura de los predios</a>
+                            <div class="separator"></div>
+                            <p class="pointer post-subtitle">Por nuevas disposiciones Municipales y Provinciales, cambio
+                                de
+                                fecha en la apertura de los predios. Comenzarán a funcionar a partir del sábado 5 de
+                                diciembre.</p>
+                            <a class="ver-mas azul-claro-fg">VER MÁS <svg xmlns="http://www.w3.org/2000/svg" width="20.559"
+                                    height="13.711" viewBox="0 0 20.559 13.711">
+                                    <path id="Icon_ionic-ios-arrow-round-forward"
+                                        data-name="Icon ionic-ios-arrow-round-forward"
+                                        d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
+                                        transform="translate(-7.875 -11.252)" fill="#2680eb" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="post  over-scale br-20">
+                        <div class="image-container">
+                            <img class="post-image" src="imagenes/posts/playa.png">
+                            <div class="gradient">
+    
+                            </div>
+                        </div>
+    
+                        <div class="info flex-column j-center">
+                            <a class="pointer amarillo-fg bold post-category">COMUNICADO</a>
+                            <a class="pointer post-title bold azul-fg ">Se reprograma la apertura de los predios</a>
+                            <div class="separator"></div>
+                            <p class="pointer post-subtitle">Por nuevas disposiciones Municipales y Provinciales, cambio
+                                de
+                                fecha en la apertura de los predios. Comenzarán a funcionar a partir del sábado 5 de
+                                diciembre.</p>
+                            <a class="ver-mas azul-claro-fg">VER MÁS <svg xmlns="http://www.w3.org/2000/svg" width="20.559"
+                                    height="13.711" viewBox="0 0 20.559 13.711">
+                                    <path id="Icon_ionic-ios-arrow-round-forward"
+                                        data-name="Icon ionic-ios-arrow-round-forward"
+                                        d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
+                                        transform="translate(-7.875 -11.252)" fill="#2680eb" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
+        
                 <button class="radius-button xs  todas-noticias-button azul-claro-fg bg-blue">Ver todos las noticias
                     <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.711" viewBox="0 0 20.559 13.711">
                         <path id="Icon_ionic-ios-arrow-round-forward" data-name="Icon ionic-ios-arrow-round-forward"
@@ -381,14 +442,14 @@
                 <div class="videos-carousel-title flex a-center j-between">
                     <div class="ultimos-videos azul-fg">Últimos videos</div>
                     <div class="arrows">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="pointer" width="8.399" height="14.69"
+                        <svg xmlns="http://www.w3.org/2000/svg" id="prevVideoBtn" class="pointer" width="8.399" height="14.69"
                             viewBox="0 0 8.399 14.69">
                             <path id="Icon_ionic-ios-arrow-forward" data-name="Icon ionic-ios-arrow-forward"
                                 d="M5.867,7.342.308,1.788a1.045,1.045,0,0,1,0-1.483A1.059,1.059,0,0,1,1.8.305L8.094,6.6a1.048,1.048,0,0,1,.031,1.448L1.8,14.384A1.05,1.05,0,0,1,.313,12.9Z"
                                 transform="translate(8.399 14.69) rotate(180)" fill="#2680eb" />
                         </svg>
 
-                        <svg xmlns="http://www.w3.org/2000/svg" class="pointer" width="8.399" height="14.692"
+                        <svg xmlns="http://www.w3.org/2000/svg" id="nextVideoBtn" class="pointer" width="8.399" height="14.692"
                             viewBox="0 0 8.399 14.692">
                             <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back"
                                 d="M2.532,7.344,8.091,1.789A1.05,1.05,0,0,0,6.6.307L.306,6.6A1.048,1.048,0,0,0,.275,8.048L6.6,14.386A1.05,1.05,0,0,0,8.087,12.9Z"
@@ -397,43 +458,9 @@
 
                     </div>
                 </div>
-                <div class="videos-carousel-list flex a-center j-between">
-                    <div class="video pointer over-scale">
-                        <img src="imagenes/videos/kily.png">
-                        <div class="info flex-column  azul-fg">
-                            <span class="fecha bold">20 / 11</span>
-                            <p class="descripcion">
-                                Conferencia en vivo de “Kily” González tras el partido ante Banfield
-                            </p>
-                        </div>
-                    </div>
-                    <div class="video pointer over-scale">
-                        <img src="imagenes/videos/kily.png">
-                        <div class="info flex-column azul-fg">
-                            <span class="fecha bold">20 / 11</span>
-                            <p class="descripcion">
-                                Conferencia en vivo de “Kily” González tras el partido ante Banfield
-                            </p>
-                        </div>
-                    </div>
-                    <div class="video pointer  over-scale">
-                        <img src="imagenes/videos/kily.png">
-                        <div class="info flex-column azul-fg">
-                            <span class="fecha bold">20 / 11</span>
-                            <p class="descripcion">
-                                Conferencia en vivo de “Kily” González tras el partido ante Banfield
-                            </p>
-                        </div>
-                    </div>
-                    <div class="video  pointer over-scale">
-                        <img src="imagenes/videos/kily.png">
-                        <div class="info flex-column azul-fg">
-                            <span class="fecha bold">20 / 11</span>
-                            <p class="descripcion">
-                                Conferencia en vivo de “Kily” González tras el partido ante Banfield
-                            </p>
-                        </div>
-                    </div>
+                <div class="videos-carousel-list  owl-carousel  flex j-between" id="videos-carousel-list">
+              
+
                 </div>
             </div>
             <button class="radius-button xs  todos-videos-button azul-claro-fg bg-blue">Ver todos los videos

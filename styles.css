@@ -407,7 +407,7 @@ header .main-navigation ul li:last-child {
     color: #173B6A;
 }
 
-.noticias .container > .titulo {
+.noticias .container>.titulo {
     font-weight: normal;
     font-size: 3.375rem;
     margin-bottom: 56px;
@@ -466,7 +466,7 @@ header .main-navigation ul li:last-child {
 
 .noticias .posts-fixture-container .posts .post-principal .info {
     height: 100%;
-    max-width: 50%;
+    max-width: 65%;
     opacity: 0.88;
     z-index: 10000;
     padding: 120px 10%;
@@ -518,6 +518,7 @@ header .main-navigation ul li:last-child {
 .noticias .posts-fixture-container .posts .post .info .post-title {
     margin-top: 24px;
     font-size: 1.375rem;
+    min-height: 75px;
 }
 
 .noticias .posts-fixture-container .posts .post .info .separator {
@@ -550,17 +551,30 @@ header .main-navigation ul li:last-child {
 
 .noticias .posts-fixture-container .fixture {
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
     flex: 1 1 30%;
-    background-color: white;
     border-radius: 20px;
     margin-left: 32px;
     min-width: 300px;
     max-width: 400px;
 }
 
-.noticias .posts-fixture-container .fixture .titulo
-{
-    padding:24px 12px ;
+.noticias .posts-fixture-container .fixture .widget {
+    overflow: hidden;
+    height: 50%;
+    background-color: white;
+
+}
+
+.noticias .posts-fixture-container .fixture .widget:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+
+
+.noticias .posts-fixture-container .fixture .titulo {
+    padding: 24px 12px;
     font-size: 1.5rem;
 
     text-align: center;
@@ -593,8 +607,11 @@ header .main-navigation ul li:last-child {
 }
 
 .carc-videos .videos-carousel {
-    flex: 1 1 0;
+    flex-grow: 1;
+    width: 300px;
 }
+
+
 
 .carc-videos .videos-carousel .videos-carousel-title {
     margin-bottom: 36px;
@@ -782,7 +799,18 @@ footer .copyright {
         font-size: 14px;
     }
 
+    .noticias .posts-fixture-container .posts .post .info .post-title {
+        min-height: 0px;
+    }
+
+    .noticias .posts-fixture-container .posts .post .info {
+        padding: 28px;
+    }
+
 }
+
+
+
 
 @media (min-width: 769px) {
     .gt-xs {
@@ -792,6 +820,12 @@ footer .copyright {
     .xs {
         display: none !important;
     }
+
+    .noticias .posts-fixture-container .posts .post .info .post-title {
+        min-height: 0px;
+    }
+
+
 }
 
 
@@ -801,12 +835,38 @@ footer .copyright {
     .container {
         padding: 0px 48px;
     }
+
+    .noticias .posts-fixture-container .fixture {
+        margin-left: 0px;
+        height: 500px;
+        max-width: 100%;
+        flex-direction: row;
+        margin-top: 12px;
+    }
+
+    .noticias .posts-fixture-container .fixture .widget {
+        height: 100%;
+    }
+
 }
 
 @media (max-width: 480px) {
     .container {
         padding: 0px 15px;
     }
+
+    .noticias .posts-fixture-container .fixture {
+        margin-left: 0px;
+    }
+
+    .noticias .posts-fixture-container .fixture .widget {
+        max-width: 100%;
+        height: 400px;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+
 }
 
 
@@ -1046,11 +1106,17 @@ footer .copyright {
         margin-bottom: 24px;
     }
 
-    .noticias .posts-fixture-container .fixture {
-        margin-left: 0px;
-        height: 500px;
+
+
+
+    .noticias .posts-fixture-container .fixture .widget:not(:last-child) {
+        margin-right: 24px;
     }
 
+
+    .noticias .posts-fixture-container .fixture>div {
+        flex: 1 1 50%;
+    }
 
     .sponsors-section.main .sponsor-container {
 
@@ -1067,9 +1133,14 @@ footer .copyright {
         display: none;
     }
 
-    .carc-videos .videos-carousel .arrows {
-        display: none;
+    .carc-videos .videos-carousel {
+        width: 100%;
     }
+
+    .owl-carousel {
+        width: 100% !important;
+    }
+
 
     .carc-videos .videos-carousel .videos-carousel-list .video {
         max-width: 100% !important;
@@ -1078,7 +1149,7 @@ footer .copyright {
 
     .carc-videos .videos-carousel .videos-carousel-list .video .info {
         margin-top: 12px;
-        margin-bottom: 36px;
+        margin-bottom: 12px;
     }
 
 }

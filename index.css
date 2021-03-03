@@ -84,7 +84,7 @@
     max-width: 400px;
 }
 
-.main-banner-carousel  .owl-stage-outer,.main-banner-carousel .owl-stage, .owl-item {
+.main-banner-carousel  .owl-stage-outer, .main-banner-carousel .owl-stage, .main-banner-carousel .owl-item {
     height: 100%;
 }
 
@@ -448,8 +448,6 @@
 
 .tienda-oficial .section-title {
     flex: 1 1 0;
-    max-width: 300px;
-    min-width: 240px;
 }
 
 .tienda-oficial .section-title .todos-productos-button {
@@ -471,12 +469,11 @@
 
 .tienda-oficial .productos-list {
     flex: 1 1 0;
+    width: 300px;
 }
 
 .tienda-oficial .productos-list .producto {
-    max-width: 32%;
     border-radius: 20px;
-
 }
 
 .tienda-oficial .productos-list .producto img {
@@ -512,7 +509,14 @@
     margin-left: 12px;
 }
 
-
+@media (max-width: 480px) {
+    .tienda-oficial .container {
+        display: block;
+    }
+    .tienda-oficial .arrows {
+        margin: 0px;
+    }
+}
 
 @media (max-width: 768px) {
 
@@ -633,30 +637,26 @@
         width: 100%;
     }
 
+    .tienda-oficial .title-arrow-container
+    {
+        justify-content: space-between;
+        width: 100%;
+    }
 
 
 
+    .tienda-oficial .container {
+        display: block;
+    }
 
     .main-banner .main-banner-post .main-banner-post-info {
         max-width: 100%;
     }
 
 
-    .tienda-oficial .arrows {
-        display: none;
-    }
-
-    .tienda-oficial .container {
-        display: block;
-    }
-
     .tienda-oficial .productos-list .producto {
         max-width: 100%;
         margin-bottom: 24px;
-    }
-
-    .tienda-oficial .todos-productos-button {
-        margin-top: 24px;
     }
 
     .main-banner .widgets {
