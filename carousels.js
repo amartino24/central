@@ -17,7 +17,7 @@ $(document).ready(function () {
                     .publishedAt).format('DD-MM-YYYY'));
                 contentReplaced = contentReplaced.replace('[image]', video.snippet
                     .thumbnails.high.url);
-                contentReplaced = contentReplaced.replace('[videoId]', video.id.videoId);
+                contentReplaced = contentReplaced.replace('[videoId]', video.contentDetails.videoId);
                 $("#videos-carousel-list").append(contentReplaced);
             });
             $(".video").modalVideo();
@@ -112,5 +112,21 @@ $(document).ready(function () {
     $('#prevPostBtn').click(function() {
         $otrosPostsCarousel.trigger('prev.owl.carousel');
     })
+
+
+    const $jugadoresCarousel = $("#plantel-carousel").owlCarousel({
+        items: 1,
+        loop: true,
+        nav: false,
+    });
+
+    $('#nextJugadorBtn').click(function() {
+        $jugadoresCarousel.trigger('next.owl.carousel');
+    })
+    // Go to the previous item
+    $('#prevJugadorBtn').click(function() {
+        $jugadoresCarousel.trigger('prev.owl.carousel');
+    })
+ 
 
 })
