@@ -398,12 +398,17 @@
 
 .plantel .jugador-info .posicion {
     font-size: 1.3125rem;
+    text-transform: uppercase;
 }
 
 .plantel .jugador-info .nombre {
     margin-top: 16px;
     font-size: 2.4375rem;
 }
+.plantel .jugador-info .apellido {
+    text-transform: uppercase;
+}
+
 
 .plantel .botones {
     margin-top: 140px;
