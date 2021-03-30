@@ -12,21 +12,44 @@
  */
 
 ?>
+    <section class="sponsors-section main">
+        <div class="container flex j-center a-center">
+        <?php 
+            $args_sponsors = array(  
+                'post_type' => 'sponsors',
+                'post_status' => 'publish',
+                'posts_per_page' => 15, 
+            );
+        
+            $sponsors = new WP_Query( $args_sponsors ); 
+                
+            while ( $sponsors->have_posts() ) : $sponsors->the_post(); 
+            $atributos = get_fields( $post->ID);
+            if($atributos["pie"]) {            
+            ?>
+                <div class="sponsor-container">
+                    <img class="sponsor" src="<?php echo $atributos["imagen"]["url"]; ?>">
+                </div>
+            <?php 
+            }
+            endwhile;
+            wp_reset_postdata(); 
+            ?>
+        </div>
+
+    </section>
     <footer class="footer bg-blue ">
         <div class="container flex-column j-center">
             <div class="footer-navigation flex a-center j-between">
                 <div class="flex a-center escudo-nav">
                     <img src="<?php echo get_template_directory_uri(); ?>/imagenes/escudo.png">
                     <nav>
-                        <ul>
-                            <li class="over-blue">
-                                NOTICIAS
-                            </li>
-                            <li class="over-blue">FÚTBOL</li>
-                            <li class="over-blue">EL CLUB</li>
-                            <li class="over-blue">SOCIOS</li>
-                            <li class="over-blue">DEPORTES AMATEURS</li>
-                        </ul>
+                    <?php
+                    wp_nav_menu( array( 
+                        'theme_location' => 'footer',
+                        ) 
+                    ); 
+                    ?>
                     </nav>
                 </div>
                 <div class="flex a-center">

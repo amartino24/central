@@ -17,7 +17,12 @@ a {
     outline: none;
     text-decoration: none;
 }
-
+.uppercase {
+    text-transform: uppercase;
+}
+.capitalize {
+    text-transform: capitalize;
+}
 .amarillo-fg {
     color: #F9DF34;
 }
@@ -242,7 +247,7 @@ header .banner-container .main-escudo.fixed {
 header .navbar-container {
     padding: 70px 0px;
     margin-top: 80px;
-    color: white;
+    color: white !important;
 }
 
 header .navbar-container .data {
@@ -272,6 +277,13 @@ header .main-navigation ul li {
     font-size: 0.85rem;
     cursor: pointer;
     position: relative;
+}
+
+header .main-navigation ul li a{
+    color: white;
+}
+header .main-navigation ul li a:hover{
+    color: #2680EB;
 }
 
 header .main-navigation ul li:not(:last-child) {
@@ -391,7 +403,7 @@ header .main-navigation ul li:last-child {
     position: relative;
 }
 
-.noticias .search-bar .categorias ul li.todas {
+.noticias .search-bar .categorias ul li.todas a{
     min-width: 210px;
 }
 
@@ -399,11 +411,11 @@ header .main-navigation ul li:last-child {
     margin-left: 12px;
 }
 
-.noticias .search-bar .categorias ul li:not(.todas) {
+.noticias .search-bar .categorias ul li:not(.todas) a{
     color: #B4B4B4;
 }
 
-.noticias .search-bar .categorias ul li:hover {
+.noticias .search-bar .categorias ul li:hover a{
     color: #173B6A;
 }
 
@@ -673,6 +685,14 @@ footer .footer-navigation nav ul li {
     padding: 0px 16px;
     cursor: pointer;
     text-align: center;
+}
+
+footer .footer-navigation nav ul li a{
+    color: white;
+}
+
+footer .footer-navigation nav ul li a:hover{
+    color: #2680EB;
 }
 
 footer .footer-navigation nav ul li:not(:last-of-type) {
