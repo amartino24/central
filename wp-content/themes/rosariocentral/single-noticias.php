@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<section class="noticias bg-grey">
+<section class="noticias single-noticia bg-grey">
         <div class="container">
             <div class="titulo azul-fg">La actualidad <b>del club</b></div>
             <div class="search-bar flex a-center ">
