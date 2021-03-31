@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 <section class="noticias single-noticia bg-grey">
         <div class="container">
-            <div class="titulo azul-fg">La actualidad <b>del club</b></div>
             <div class="search-bar flex a-center ">
                 <div class="search-input flex a-center br-20">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18.872" height="18.877" viewBox="0 0 18.872 18.877">
@@ -64,7 +63,7 @@
                     <a class="pointer post-title bold"><?php echo get_the_title($post->ID); ?></a>
                     <p class="pointer post-subtitle"><?php echo get_the_excerpt($post->ID); ?></p>
                     <img src="<?php echo $atributos["image"]["url"] ?>" class="br-20">
-                    <p class="text azul-secundario-fg"><?php echo get_the_content($post->ID); ?></p>
+                    <div class="text azul-secundario-fg"><?php echo get_the_content($post->ID); ?></div>
                 </div>
             </div>
             <div class="fixture">

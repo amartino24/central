@@ -46,7 +46,7 @@
                 </a>
             </div>
             <div class="flex posts-fixture-container j-between">
-                <div class="posts flex j-between">
+                <div class="posts flex">
                     <?php 
                     $primera = false;
                     $args_noticias = array(  
@@ -118,7 +118,7 @@
                 </div>
                 <div class="fixture">
                     <div class="widget">
-                        <div class="titulo">
+                        <div class="widget-titulo">
                             TABLA DE POSICIONES
                         </div>
                         <iframe
@@ -128,7 +128,7 @@
                     </div>
 
                     <div class="widget">
-                        <div class="titulo">
+                        <div class="widget-titulo">
                             GOLEADORES
                         </div>
                         <iframe

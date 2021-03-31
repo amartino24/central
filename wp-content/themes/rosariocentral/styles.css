@@ -440,7 +440,7 @@ header .main-navigation ul li:last-child {
 .noticias .posts-fixture-container .posts .post:not(.principal) {
     width: 100%;
     max-width: 32%;
-    background-color: white;
+    padding-right: 24px;
     position: relative;
 }
 
@@ -586,7 +586,7 @@ header .main-navigation ul li:last-child {
 
 
 
-.noticias .posts-fixture-container .fixture .titulo {
+.noticias .posts-fixture-container .fixture .widget-titulo {
     padding: 24px 12px;
     font-size: 1.5rem;
 
