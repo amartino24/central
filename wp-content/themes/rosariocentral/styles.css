@@ -508,6 +508,7 @@ header .main-navigation ul li:last-child {
 
 .noticias .posts-fixture-container .posts .post .image-container .post-image {
     min-height: auto;
+    border-radius: 20px 20px 0px 0px;
     width: 100%;
 }
 
