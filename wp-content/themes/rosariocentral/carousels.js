@@ -115,6 +115,26 @@ $(document).ready(function () {
         margin: 24,
         loop: false,
         nav: false,
+        responsive:{
+            0:{
+                items:1,
+                nav:false,
+                loop: true,
+                autoplay:true,
+            },
+            480:{
+                items: 3,
+                margin: 24,
+                nav:false,
+                loop: false,
+            },
+            1080:{
+                items: 4,
+                margin: 24,
+                nav:false,
+                loop: false,
+            },
+        }
     });
     $('#nextPostBtn').click(function() {
         $otrosPostsCarousel.trigger('next.owl.carousel');

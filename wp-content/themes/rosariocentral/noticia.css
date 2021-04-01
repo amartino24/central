@@ -44,7 +44,7 @@ section h2 {
 
 
 .single-noticia .posts-fixture-container .post-principal {
-    width: 75%;
+    width: 70%;
     position: relative;
 }
 
@@ -108,6 +108,18 @@ section h2 {
     position: relative;
 }
 
+.single-noticia .otros-posts .otros-posts-titulo
+{
+    display: flex;
+    align-items: center;
+}
+
+.single-noticia .otros-posts .otros-posts-titulo .arrows
+{
+    display: flex;
+}
+
+
 .single-noticia .otros-posts .otros-posts-titulo h2 {
     margin-right: 50px;
 }
@@ -131,10 +143,6 @@ section h2 {
 }
 
 
-
-.single-noticia .otros-posts .post .info {
-    padding: 28px 46px;
-}
 
 
 .single-noticia .otros-posts .post .info .post-title {
@@ -248,10 +256,6 @@ section h2 {
 
     .single-noticia .posts-fixture-container .fixture {
         margin-top: 48px;
-    }
-
-    .single-noticia .arrows {
-        display: none;
     }
 
     .carc-videos {

@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="784a816e-42cd-4dd2-b05a-c0fd7d7a473b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/wp-config.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/rosariocentral/inc/fixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/inc/fixture.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/rosariocentral/carousels.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/carousels.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/rosariocentral/noticia.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/noticia.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/rosariocentral/single-noticias.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/single-noticias.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/rosariocentral/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/rosariocentral/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

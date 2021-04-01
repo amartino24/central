@@ -77,7 +77,7 @@
         <div class="otros-posts">
             <div class="container wrap flex j-between">
 
-                <div class="otros-posts-titulo w-100-p flex a-center">
+                <div class="otros-posts-titulo w-100-p  a-center">
                     <h2 class="ultimas-noticias azul-fg">Últimas <b>Noticias</b></h2>
                     <div class="arrows">
                         <svg xmlns="http://www.w3.org/2000/svg" id="prevPostBtn" class="pointer" width="8.399" height="14.69"
@@ -129,6 +129,7 @@
                                 </svg>
                             </a>
                         </div>
+                    </div>
                     <?php
                     endwhile;
                     endif;
