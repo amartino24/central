@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-<link rel="stylesheet" href="noticia.css" />
 <section class="noticias single-noticia bg-grey">
 
             <div class="search-bar  ">
@@ -71,14 +70,9 @@
                         <div class="text azul-secundario-fg"><?php echo get_the_content($post->ID); ?></div>
                     </div>
                 </div>
-                <div class="content flex-column">
-                    <a class="pointer post-title bold"><?php echo get_the_title($post->ID); ?></a>
-                    <p class="pointer post-subtitle"><?php echo get_the_excerpt($post->ID); ?></p>
-                    <img src="<?php echo $atributos["image"]["sizes"]["noticia-dentro"]; ?>" class="br-20">
-                    <p class="text azul-secundario-fg"><?php echo get_the_content($post->ID); ?></p>
-                </div>
+                <?php include "inc/fixture.php"; ?>
             </div>
-            <?php include "inc/fixture.php"; ?>
+
         </div>
         <div class="otros-posts">
             <div class="container wrap flex j-between">
@@ -152,6 +146,8 @@
         </div>
     </div>
     </div>
+        <?php include "inc/videos.php"; ?>
+    </div>
 </section>
-<?php include "inc/videos.php"; ?>
+
 <?php get_footer(); ?>

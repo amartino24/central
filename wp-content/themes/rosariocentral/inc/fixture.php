@@ -1,6 +1,6 @@
 <div class="fixture">
     <div class="widget">
-        <div class="titulo">
+        <div class="widget-titulo">
             TABLA DE POSICIONES
         </div>
         <iframe
@@ -10,7 +10,7 @@
     </div>
 
     <div class="widget">
-        <div class="titulo">
+        <div class="widget-titulo">
             GOLEADORES
         </div>
         <iframe

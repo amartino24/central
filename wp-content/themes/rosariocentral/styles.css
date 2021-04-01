@@ -596,8 +596,7 @@ header .main-navigation ul li:last-child {
 }
 
 
-
-.noticias .posts-fixture-container .fixture {
+ .fixture {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -608,20 +607,20 @@ header .main-navigation ul li:last-child {
     max-width: 400px;
 }
 
-.noticias .posts-fixture-container .fixture .widget {
+.fixture .widget {
     overflow: hidden;
     height: 50%;
     background-color: white;
 
 }
 
-.noticias .posts-fixture-container .fixture .widget:not(:last-child) {
+.fixture .widget:not(:last-child) {
     margin-bottom: 24px;
 }
 
 
 
-.noticias .posts-fixture-container .fixture .widget-titulo {
+ .fixture .widget-titulo {
     padding: 24px 12px;
     font-size: 1.5rem;
 
