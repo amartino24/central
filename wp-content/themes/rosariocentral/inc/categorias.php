@@ -46,7 +46,7 @@
                 </a>
             </div>
             <div class="flex posts-fixture-container j-between">
-                <div class="posts flex j-between">
+                <div class="posts flex">
                     <?php 
                     $primera = false;
                     $args_noticias = array(  

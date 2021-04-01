@@ -1,8 +1,10 @@
 <?php get_header(); ?>
-<section class="noticias bg-grey">
-        <div class="container">
-            <div class="titulo azul-fg">La actualidad <b>del club</b></div>
-            <div class="search-bar flex a-center ">
+
+<link rel="stylesheet" href="noticia.css" />
+<section class="noticias single-noticia bg-grey">
+
+            <div class="search-bar  ">
+                <div class="container flex a-center">
                 <div class="search-input flex a-center br-20">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18.872" height="18.877" viewBox="0 0 18.872 18.877">
                         <path id="Icon_ionic-ios-search" data-name="Icon ionic-ios-search"
@@ -15,7 +17,7 @@
                     <ul>
                 <?php $args = array(
                             'taxonomy' => 'category',
-                            'post_type' => 'noticias',
+                                 'post_type' => 'noticias',
                             'orderby' => 'name',
                             'order'   => 'ASC',
                             'hide_empty'      => false,
@@ -45,19 +47,28 @@
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                 </a>
+                </div>
             </div>
-<?php $atributos = get_fields( $post->ID); ?>  
-    <div class=" posts-fixture-container ">
-        <div class="container flex j-between">
-            <div class="post-principal azul-fg  br-20">
+<?php $atributos = get_fields( $post->ID); ?>
+    <div class="gradient-container">
+        <div class=" posts-fixture-container ">
+            <div class="container flex j-between">
+                <div class="post-principal azul-fg  br-20">
 
-                <div class="flex header-info">
-                    <a class="pointer amarillo-fg bold category uppercase"><?php echo get_the_category($post->ID)[0]->name; ?></a>
-                    <span class="gris-fg fecha"><?php the_time( 'j \d\e F \d\e Y - G\h' ); ?></span>
-                    <div class="social flex a-center j-between grow">
-                        <div class="instagram" title="Seguinos en Instagram"></div>
-                        <div class="facebook" title="Seguinos en Facebook"></div>
-                        <div class="twitter" title="Seguinos en Twiiter"></div>
+                    <div class="flex header-info">
+                        <a class="pointer amarillo-fg bold category uppercase"><?php echo get_the_category($post->ID)[0]->name; ?></a>
+                        <span class="gris-fg fecha"><?php the_time( 'j \d\e F \d\e Y - G\h' ); ?></span>
+                        <div class="social flex a-center j-between grow">
+                            <div class="instagram" title="Seguinos en Instagram"></div>
+                            <div class="facebook" title="Seguinos en Facebook"></div>
+                            <div class="twitter" title="Seguinos en Twiiter"></div>
+                        </div>
+                    </div>
+                    <div class="content flex-column">
+                        <a class="pointer post-title bold"><?php echo get_the_title($post->ID); ?></a>
+                        <p class="pointer post-subtitle"><?php echo get_the_excerpt($post->ID); ?></p>
+                        <img src="<?php echo $atributos["image"]["url"] ?>" class="br-20">
+                        <div class="text azul-secundario-fg"><?php echo get_the_content($post->ID); ?></div>
                     </div>
                 </div>
                 <div class="content flex-column">
@@ -69,42 +80,41 @@
             </div>
             <?php include "inc/fixture.php"; ?>
         </div>
-    </div>
-    <div class="otros-posts">
-        <div class="container wrap flex j-between">
+        <div class="otros-posts">
+            <div class="container wrap flex j-between">
 
-            <div class="otros-posts-titulo w-100-p flex a-center">
-                <h2 class="ultimas-noticias azul-fg">Últimas <b>Noticias</b></h2>
-                <div class="arrows">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="prevPostBtn" class="pointer" width="8.399" height="14.69"
-                         viewBox="0 0 8.399 14.69">
-                        <path id="Icon_ionic-ios-arrow-forward" data-name="Icon ionic-ios-arrow-forward"
-                              d="M5.867,7.342.308,1.788a1.045,1.045,0,0,1,0-1.483A1.059,1.059,0,0,1,1.8.305L8.094,6.6a1.048,1.048,0,0,1,.031,1.448L1.8,14.384A1.05,1.05,0,0,1,.313,12.9Z"
-                              transform="translate(8.399 14.69) rotate(180)" fill="#2680eb" />
-                    </svg>
+                <div class="otros-posts-titulo w-100-p flex a-center">
+                    <h2 class="ultimas-noticias azul-fg">Últimas <b>Noticias</b></h2>
+                    <div class="arrows">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="prevPostBtn" class="pointer" width="8.399" height="14.69"
+                             viewBox="0 0 8.399 14.69">
+                            <path id="Icon_ionic-ios-arrow-forward" data-name="Icon ionic-ios-arrow-forward"
+                                  d="M5.867,7.342.308,1.788a1.045,1.045,0,0,1,0-1.483A1.059,1.059,0,0,1,1.8.305L8.094,6.6a1.048,1.048,0,0,1,.031,1.448L1.8,14.384A1.05,1.05,0,0,1,.313,12.9Z"
+                                  transform="translate(8.399 14.69) rotate(180)" fill="#2680eb" />
+                        </svg>
 
-                    <svg xmlns="http://www.w3.org/2000/svg"  id="nextPostBtn" class="pointer" width="8.399" height="14.692"
-                         viewBox="0 0 8.399 14.692">
-                        <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back"
-                              d="M2.532,7.344,8.091,1.789A1.05,1.05,0,0,0,6.6.307L.306,6.6A1.048,1.048,0,0,0,.275,8.048L6.6,14.386A1.05,1.05,0,0,0,8.087,12.9Z"
-                              transform="translate(8.399 14.692) rotate(180)" fill="#2680eb" />
-                    </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg"  id="nextPostBtn" class="pointer" width="8.399" height="14.692"
+                             viewBox="0 0 8.399 14.692">
+                            <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back"
+                                  d="M2.532,7.344,8.091,1.789A1.05,1.05,0,0,0,6.6.307L.306,6.6A1.048,1.048,0,0,0,.275,8.048L6.6,14.386A1.05,1.05,0,0,0,8.087,12.9Z"
+                                  transform="translate(8.399 14.692) rotate(180)" fill="#2680eb" />
+                        </svg>
 
+                    </div>
                 </div>
-            </div>
-            <div class="posts-carousel owl-carousel" id="otros-posts-carousel">
-                    <?php         
-                    $args_noticias = array(  
+                <div class="posts-carousel owl-carousel" id="otros-posts-carousel">
+                    <?php
+                    $args_noticias = array(
                         'post_type' => 'noticias',
                         'post_status' => 'publish',
-                        'posts_per_page' => 150, 
+                        'posts_per_page' => 150,
                         'post__not_in' => array($post->ID),
                     );
-                
-                    $noticias = new WP_Query( $args_noticias ); 
+
+                    $noticias = new WP_Query( $args_noticias );
                     if ( $noticias->have_posts() ) : while ( $noticias->have_posts() ) : $noticias->the_post();
-                    $atributos = get_fields( $post->ID);
-                    ?>
+                        $atributos = get_fields( $post->ID);
+                        ?>
 
                     <div class="post over-scale br-20">
                         <div class="image-container">
@@ -125,9 +135,8 @@
                                 </svg>
                             </a>
                         </div>
-                    </div>
                     <?php
-                    endwhile; 
+                    endwhile;
                     endif;
                 ?>
             </div>
