@@ -42,14 +42,9 @@
         <div class="container flex-column j-center">
             <div class="footer-navigation flex a-center j-between">
                 <div class="flex a-center escudo-nav">
-                    <img src="<?php echo get_template_directory_uri(); ?>/imagenes/escudo.png">
+                    <img src="<?php echo ot_get_option( 'logo' ); ?>">
                     <nav>
-                    <?php
-                    wp_nav_menu( array( 
-                        'theme_location' => 'footer',
-                        ) 
-                    ); 
-                    ?>
+                    <?php wp_nav_menu( array( 'theme_location' => 'footer')); ?>
                     </nav>
                 </div>
                 <div class="flex a-center">
@@ -106,8 +101,7 @@
                 </div>
             </div>
             <p class="copyright gris-fg">
-                Club Atlético Rosario Central © 2020 Todos los derechos reservados, Sede Social Mitre 853, Ciudad de
-                Rosario, Santa Fe, Argentina · Teléfono 0810 - 122 - 1889 · socios@rosariocentral.com
+                <?php echo ot_get_option( 'texto_footer' ); ?>
             </p>
 
         </div>

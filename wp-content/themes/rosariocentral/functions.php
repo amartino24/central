@@ -18,3 +18,25 @@ register_nav_menus( array(
 	'header' => 'Header menu', 
 	'footer' => 'Footer menu' 
   ) );
+/**
+ * Required: set 'ot_theme_mode' filter to true.
+ */
+add_filter( 'ot_theme_mode', '__return_true' );
+
+/**
+ * Required: include OptionTree.
+ */
+require( trailingslashit( get_template_directory() ) . 'option-tree/ot-loader.php' );
+
+/**
+ * Theme Options
+ */
+require( trailingslashit( get_template_directory() ) . 'inc/theme-options.php' );
+
+add_filter( 'show_admin_bar', '__return_false' );
+add_theme_support( 'post-thumbnails' );
+
+
+add_image_size( 'noticia-chica', 405, 295, true );
+add_image_size( 'noticia-dentro', 1050, 680, true );
+add_image_size( 'noticia-grande', 1920, 790, true );

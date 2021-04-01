@@ -21,7 +21,7 @@
                         );
                 $categorias = get_categories($args);
                 foreach($categorias as $categoria) { ?>
-                    <li>
+                    <li class="uppercase">
                         <a href="<?php echo get_category_link( $categoria->term_id ) ?>">
                             <?php echo $categoria->name; ?>
                         </a>
@@ -68,7 +68,7 @@
                         <div class="gradient  br-20">
 
                         </div>
-                        <img src="<?php echo $atributos["image"]["url"] ?>" class="br-20">
+                        <img src="<?php echo $atributos["image"]["sizes"]["noticia-dentro"]; ?>" class="br-20">
                         <div class="info flex-column j-center">
                             <a class="pointer amarillo-fg bold post-category uppercase"><?php echo get_the_category($post->ID)[0]->name; ?></a>
                             <a class="pointer post-title bold"><?php echo get_the_title($post->ID); ?></a>
@@ -86,9 +86,9 @@
                         </div>
                     </div>
                     <?php } else { ?>
-                        <div class="post over-scale br-20">
+                    <div class="post over-scale br-20">
                         <div class="image-container">
-                            <img class="post-image" src="<?php echo $atributos["image"]["url"] ?>">
+                            <img class="post-image" src="<?php echo $atributos["image"]["sizes"]["noticia-chica"]; ?>">
                             <div class="gradient">
 
                             </div>
@@ -116,27 +116,7 @@
                     endif;
                     ?>
                 </div>
-                <div class="fixture">
-                    <div class="widget">
-                        <div class="titulo">
-                            TABLA DE POSICIONES
-                        </div>
-                        <iframe
-                            src="https://www.rosariocentral.com/files/incoming/df/html/v3/minapp/page/page.html?channel=deportes.futbol.copalpf&lang=es_LA&page=posiciones"
-                            width="100%" height="100%" scrolling="auto"
-                            style="width: 1px; min-width: 100%; *width: 100%;" class=""></iframe>
-                    </div>
-
-                    <div class="widget">
-                        <div class="titulo">
-                            GOLEADORES
-                        </div>
-                        <iframe
-                            src="https://www.rosariocentral.com/files/incoming/df/html/v3/minapp/page/page.html?channel=deportes.futbol.copalpf&lang=es_LA&page=goleadores"
-                            width="100%" height="100%" scrolling="auto"
-                            style="width: 1px; min-width: 100%; *width: 100%;" class=""></iframe>
-                    </div>
-                </div>
+                <?php include "fixture.php"; ?>
             </div>
 
         </div>

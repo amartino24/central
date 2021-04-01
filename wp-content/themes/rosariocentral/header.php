@@ -57,7 +57,7 @@
                 </div>
 
                 <a href="<?php echo get_home_url(); ?>" id='main-escudo' class="main-escudo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/imagenes/escudo.png">
+                    <img src="<?php echo ot_get_option( 'logo' ); ?>">
                 </a>
 
                 <div class="enlaces-externos flex a-center">
@@ -122,7 +122,7 @@
                 ?>
                 </nav>
                 <a href="index.html">
-                    <img class="xs-escudo" src="<?php echo get_template_directory_uri(); ?>/imagenes/escudo.png">
+                    <img class="xs-escudo" src="<?php echo ot_get_option( 'logo' ); ?>">
                 </a>
                 <div class="asociate-texto gt-xs pointer bold">QUIERO ASOCIARME
                     <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.711" viewBox="0 0 20.559 13.711">
