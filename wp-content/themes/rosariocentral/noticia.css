@@ -1,5 +1,5 @@
 .single-noticia {
-    padding: 24px 0px;
+    padding: 24px 0px !important;
 }
 
 .single-noticia .titulo {
@@ -14,10 +14,12 @@ section h2 {
     line-height: 3rem;
 }
 
-
-.single-noticia  .noticias .posts-fixture-container {
+.gradient-container
+{
+    background-image: linear-gradient(white, #F5F5F5);
+}
+.single-noticia  .posts-fixture-container {
     margin-top: 24px !important;
-    background-color: white;
     padding: 98px 0px;
 }
 
@@ -161,6 +163,7 @@ section h2 {
     align-items: center;
     cursor: pointer;
 }
+
 
 .single-noticia .otros-posts .post .info .ver-mas svg {
     margin-left: 12px;
