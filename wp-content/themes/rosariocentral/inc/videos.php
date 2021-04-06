@@ -1,4 +1,4 @@
-<section class="carc-videos bg-grey">
+<section class="carc-videos">
     <div class="container flex a-center">
         <div class="flex-column carc-videos-titulo azul-fg">
             <h2><b>CARC</b><br>TV</h2>

@@ -1,4 +1,7 @@
 <?php get_header(); ?>
+<div class="home">
+
+
 <section class="main-banner">
         <div class="main-banner-post h-100-p">
             <div class="owl-carousel main-banner-carousel owl-theme h-100-p">
@@ -130,7 +133,7 @@
             </div>
         </div>
     </section>
-    <?php include 'inc/categorias.php'; ?>
+    <?php include 'inc/noticias-home.php'; ?>
     <section class="sede-virtual ">
         <div class="container flex a-center">
             <div class="sede-virtual-titulo    flex-column j-center ">
@@ -542,4 +545,5 @@
         </div>
 
     </section>
+</div>
 <?php get_footer(); ?>

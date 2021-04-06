@@ -94,7 +94,7 @@
                             </div>
                         </div>
 
-                        <div class="info flex-column j-center">
+                        <div class="info flex-column">
                             <a class="pointer amarillo-fg bold post-category uppercase"><?php echo get_the_category($post->ID)[0]->name; ?></a>
                             <a class="pointer post-title  bold azul-fg "><?php echo get_the_title($post->ID); ?></a>
                             <div class="separator"></div>

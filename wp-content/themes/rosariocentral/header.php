@@ -37,6 +37,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/noticia.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/index.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/post-carousel.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/js/video-modal/modal-video.min.css">
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-3.5.1.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/video-modal/jquery-modal-video.min.js"></script>
@@ -124,11 +125,11 @@
                 <a href="index.html">
                     <img class="xs-escudo" src="<?php echo ot_get_option( 'logo' ); ?>">
                 </a>
-                <div class="asociate-texto gt-xs pointer bold">QUIERO ASOCIARME
+                <div class="asociate-texto radius-button gt-xs pointer bold">QUIERO ASOCIARME
                     <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.711" viewBox="0 0 20.559 13.711">
                         <path id="Icon_ionic-ios-arrow-round-forward" data-name="Icon ionic-ios-arrow-round-forward"
                             d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
-                            transform="translate(-7.875 -11.252)" fill="#2680eb" />
+                            transform="translate(-7.875 -11.252)" fill="#173B6A" />
                     </svg>
                 </div>
             </div>
