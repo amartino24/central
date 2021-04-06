@@ -1092,12 +1092,12 @@ footer .copyright {
 
     footer .enlaces-externos {
         width: 100%;
-        justify-content: space-between;
+        justify-content: center;
         margin: 48px auto;
     }
 
     footer .footer-navigation .enlaces-externos .enlace {
-        margin-right: 0px;
+        margin: 0px 12px;
     }
 
 

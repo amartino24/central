@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="784a816e-42cd-4dd2-b05a-c0fd7d7a473b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/inc/posts-carousel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/post-carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/category-deportes-amateur.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/rosariocentral/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/rosariocentral/front-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/front-page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/rosariocentral/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/rosariocentral/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/rosariocentral/inc/categorias.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/inc/noticias-home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/rosariocentral/inc/videos.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/inc/videos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/rosariocentral/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/rosariocentral/noticia.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/noticia.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/rosariocentral/noticia.html" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/noticia.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/rosariocentral/single-noticias.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/single-noticias.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/rosariocentral/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +34,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/wp-content/themes/rosariocentral/inc" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/wp-content/themes/rosariocentral" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -54,8 +43,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\webserver\central\wp-content\themes\rosariocentral\inc" />
       <recent name="D:\webserver\central\wp-content\themes\rosariocentral" />
+      <recent name="D:\webserver\central\wp-content\themes\rosariocentral\inc" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -68,7 +57,7 @@
       <updated>1617238432228</updated>
       <workItem from="1617238433332" duration="613000" />
       <workItem from="1617239053772" duration="678000" />
-      <workItem from="1617664037906" duration="8716000" />
+      <workItem from="1617664037906" duration="11344000" />
     </task>
     <servers />
   </component>
