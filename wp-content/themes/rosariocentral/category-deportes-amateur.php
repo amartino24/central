@@ -25,10 +25,10 @@ if ( $deportes->have_posts() ) : while ( $deportes->have_posts() ) : $deportes->
             </div>
             <div class="content">
                 <div class="imagen-container">
-                    <img  src="imagenes/amateur/voley.jpg">
+                    <img  src="<?php echo $atributos["imagen"]["url"] ?>">
                 </div>
                 <div class="data">
-                    <div class="redes-sociales">
+                    <div class="redes-sociales-deporte">
 
                     </div>
                     <div class="info">
@@ -36,21 +36,21 @@ if ( $deportes->have_posts() ) : while ( $deportes->have_posts() ) : $deportes->
                             LUGAR DE PRÁCTICA
                         </div>
                         <div class="info-valor azul-secundario-fg">
-                            Gigante de Arryotio -  Cordiviola 1100, Rosario
+                            <?php echo $atributos["lugar_practica"] ?>
                         </div>
 
                         <div class="info-titulo azul-fg bold">
                             DÍAS DE PRÁCTICA
                         </div>
                         <div class="info-valor azul-secundario-fg">
-                            Lun, Mier y Vier | 20h
+                            <?php echo $atributos["dias_de_practica"] ?>
                         </div>
 
                         <div class="info-titulo azul-fg bold">
                             DESCRIPCIÓN
                         </div>
                         <div class="info-valor azul-secundario-fg">
-                            El estadio Gigante de Arroyito es un recinto de fútbol que se encuentra en la ciudad de Rosario, Argentina. Su propietario es el Club Atlético Rosario Central.
+                            <?php echo $atributos["descripcion"] ?>
                         </div>
                     </div>
                 </div>
@@ -72,5 +72,21 @@ endif;
         </div>
     </section>
 
+    <script>
+        function expand(y) {
+            var deporte = y.parentElement.parentElement;
+            deporte.classList.toggle("expanded");
+        }
+        window.addEventListener('scroll', function (e) {
+            last_known_scroll_position = window.scrollY;
+            var x = document.getElementById("main-escudo");
+            if (last_known_scroll_position >= 80) {
 
+                x.classList.add('fixed');
+            }
+            else {
+                x.classList.remove('fixed');
+            }
+        });
+    </script>
 <?php get_footer(); ?>

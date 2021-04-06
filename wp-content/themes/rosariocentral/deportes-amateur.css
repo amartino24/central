@@ -67,20 +67,23 @@
 .deportes .deporte .content {
     overflow: hidden;
     max-height: 0px;
-    transition: max-height 1s ease;
+    transition: max-height 0.5s ease;
     display: flex;
+    flex-wrap: wrap;
 }
 
-.deportes .deporte .content .imagen-container, .deportes .deporte .content .info
+.deportes .deporte .content .imagen-container, .deportes .deporte .content .data
 {
     flex:  1 1 50%;
-    margin-right: 24px;
     padding: 80px 12px;
 }
 
 .deportes .deporte .content .imagen-container
 {
-    margin-right: 24px;
+    max-height: 410px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 
@@ -102,11 +105,22 @@
 
 .deportes .deporte.expanded  .content
 {
-    max-height: 700px;
+    max-height: 2000px;
     overflow: hidden;
 }
 .page-title {
     padding-top: 70px;
     margin-bottom: 25px;
     font-size: 3rem;
+}
+
+
+
+@media (max-width: 768px)
+{
+
+    .deportes .deporte .content .imagen-container, .deportes .deporte .content .data
+    {
+        padding: 24px 0px;
+    }
 }
