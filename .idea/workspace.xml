@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="784a816e-42cd-4dd2-b05a-c0fd7d7a473b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/category-deportes-amateur.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/deportes-amateur.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/rosariocentral/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/rosariocentral/category-deportes-amateur.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/category-deportes-amateur.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/rosariocentral/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +58,7 @@
       <updated>1617238432228</updated>
       <workItem from="1617238433332" duration="613000" />
       <workItem from="1617239053772" duration="678000" />
-      <workItem from="1617664037906" duration="11344000" />
+      <workItem from="1617664037906" duration="11713000" />
     </task>
     <servers />
   </component>

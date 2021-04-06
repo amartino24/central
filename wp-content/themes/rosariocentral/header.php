@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/index.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/post-carousel.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/deportes-amateur.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/js/video-modal/modal-video.min.css">
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-3.5.1.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/video-modal/jquery-modal-video.min.js"></script>
