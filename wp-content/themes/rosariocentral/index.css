@@ -393,7 +393,22 @@
 .plantel .jugador-info {
     padding-left: 140px;
 }
+.plantel .jugador
+{
+    height: 600px;
+}
 
+.plantel .jugador img
+{
+    width: auto  !important;
+}
+
+.plantel  .owl-item
+{
+    display: flex;
+    height: 700px;
+    align-items: flex-end;
+}
 .plantel .jugador-info .posicion {
     font-size: 1.3125rem;
     text-transform: uppercase;
