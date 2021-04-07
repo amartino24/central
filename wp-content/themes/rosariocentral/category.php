@@ -15,7 +15,7 @@
                     <ul>
                         <?php $args = array(
                             'taxonomy' => 'category',
-                            'post_type' => 'noticias',
+                            'post_type' => 'noticia',
                             'orderby' => 'name',
                             'order'   => 'ASC',
                             'hide_empty'      => false,
@@ -53,9 +53,9 @@
                     <?php
                     $primera = false;
                     $args_noticias = array(
-                        'post_type' => 'noticias',
+                        'post_type' => 'noticia',
                         'post_status' => 'publish',
-                        'posts_per_page' => 150,
+                        'posts_per_page' => 4,
                     );
                     if (!empty(get_queried_object()->term_id)) {
                         $args_noticias['category__in'] = get_queried_object()->term_id;

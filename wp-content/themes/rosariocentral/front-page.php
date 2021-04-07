@@ -7,7 +7,7 @@
             <div class="owl-carousel main-banner-carousel owl-theme h-100-p">
                 <?php 
                     $args_noticias = array(  
-                        'post_type' => 'noticias',
+                        'post_type' => 'noticia',
                         'post_status' => 'publish',
                         'posts_per_page' => 150, 
                     );

@@ -16,7 +16,7 @@
                     <ul>
                 <?php $args = array(
                             'taxonomy' => 'category',
-                                 'post_type' => 'noticias',
+                                 'post_type' => 'noticia',
                             'orderby' => 'name',
                             'order'   => 'ASC',
                             'hide_empty'      => false,
