@@ -1,3 +1,3 @@
 <?php get_header(); ?>
-<?php include 'inc/noticias-home.php'; ?>
+<?php include 'inc/noticias-general.php'; ?>
 <?php get_footer(); ?>
