@@ -123,7 +123,7 @@
                 ); 
                 ?>
                 </nav>
-                <a href="index.html">
+                <a href="<?php echo get_home_url(); ?>">
                     <img class="xs-escudo" src="<?php echo ot_get_option( 'logo' ); ?>">
                 </a>
                 <div class="asociate-texto radius-button gt-xs pointer bold">QUIERO ASOCIARME
