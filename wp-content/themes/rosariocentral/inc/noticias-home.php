@@ -1,4 +1,4 @@
-<section class="noticias bg-grey">
+<section class="noticias noticias-principal bg-grey">
         <div class="container">
             <div class="titulo azul-fg">La actualidad <b>del club</b></div>
             <div class="search-bar flex a-center ">
@@ -52,7 +52,7 @@
                     $args_noticias = array(  
                         'post_type' => 'noticia',
                         'post_status' => 'publish',
-                        'posts_per_page' => 4, 
+                        'posts_per_page' => 5, 
                     );
                     if (!empty(get_queried_object()->term_id)) {
                         $args_noticias['category__in'] = get_queried_object()->term_id;
@@ -85,7 +85,23 @@
                             </a>
                         </div>
                     </div>
-                    <?php } else { ?>
+                    <?php } ?>
+                    <?php
+                    endwhile; 
+                    endif;
+                    ?>
+                       <div class="fixture-container">
+
+<?php include "fixture.php"; ?>
+</div>
+<?php
+                $primera = true;
+                     if ( $noticias->have_posts() ) : while ( $noticias->have_posts() ) : $noticias->the_post();
+                     $atributos = get_fields( $post->ID);
+                     if ($primera) {
+                         $primera = false;
+                     } else {
+                     ?>
                     <div class="post over-scale br-20">
                         <div class="image-container">
                             <img class="post-image" src="<?php echo $atributos["image"]["sizes"]["noticia-chica"]; ?>">
@@ -98,7 +114,7 @@
                             <a class="pointer amarillo-fg bold post-category uppercase"><?php echo get_the_category($post->ID)[0]->name; ?></a>
                             <a class="pointer post-title  bold azul-fg "><?php echo get_the_title($post->ID); ?></a>
                             <div class="separator"></div>
-                            <p class="pointer post-subtitle"><?php echo get_the_excerpt($post->ID); ?></p>
+                            <p class="pointer post-subtitle gris-fg"><?php echo get_the_excerpt($post->ID); ?></p>
                             <a href="<?php echo get_permalink($post->ID); ?>" class="ver-mas azul-claro-fg">VER MÁS <svg
                                     xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.711"
                                     viewBox="0 0 20.559 13.711">
@@ -110,13 +126,13 @@
                             </a>
                         </div>
                     </div>
-                    <?php } ?>
-                    <?php
+                    <?php } 
                     endwhile; 
-                    endif;
-                    ?>
+                    endif;?>
                 </div>
-                <?php include "fixture.php"; ?>
+             
+
+              
             </div>
 
         </div>

@@ -48,6 +48,7 @@
                     endif;
                 ?>
             </div>
+            <!--
             <div class="widgets  flex-column">
                 <div class="widget">
                     <div class="titulo">
@@ -68,7 +69,7 @@
                         width="100%" height="125" scrolling="no" style="width: 1px; min-width: 100%; *width: 100%;"
                         class=""></iframe>
                 </div>
-            </div>
+            </div> -->
         </div>
 
 

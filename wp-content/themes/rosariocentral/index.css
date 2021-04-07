@@ -393,22 +393,7 @@
 .plantel .jugador-info {
     padding-left: 140px;
 }
-.plantel .jugador
-{
-    height: 600px;
-}
 
-.plantel .jugador img
-{
-    width: auto  !important;
-}
-
-.plantel  .owl-item
-{
-    display: flex;
-    height: 700px;
-    align-items: flex-end;
-}
 .plantel .jugador-info .posicion {
     font-size: 1.3125rem;
     text-transform: uppercase;
@@ -528,12 +513,34 @@
     margin-left: 12px;
 }
 
+.noticias-principal .post-principal
+{
+    flex: 1 1 70%;
+}
+
 @media (max-width: 480px) {
     .tienda-oficial .container {
         display: block;
     }
     .tienda-oficial .arrows {
         margin: 0px;
+    }
+
+    .sede-virtual .sede-virtual-funciones .funcion {
+        margin-bottom: 24px;
+        flex-grow: 1;
+        height: 200px;
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 1023px) and (min-width: 768px) {
+    .sede-virtual .sede-virtual-funciones .funcion {
+        margin-bottom: 24px;
+        flex-grow: 1;
+        height: 200px;
+        width: 100%;
     }
 }
 
@@ -650,12 +657,7 @@
         margin-bottom: 36px;
     }
 
-    .sede-virtual .sede-virtual-funciones .funcion {
-        margin-bottom: 24px;
-        flex-grow: 1;
-        height: 200px;
-        width: 100%;
-    }
+  
 
     .tienda-oficial .title-arrow-container
     {
@@ -690,4 +692,20 @@
     }
     
 
+}
+
+@media (min-width: 1240px) {
+    .plantel .jugador {
+        height: 600px;
+    }
+
+    .plantel .jugador img {
+        width: auto !important;
+    }
+
+    .plantel .owl-item {
+        display: flex;
+        height: 700px;
+        align-items: flex-end;
+    }
 }
