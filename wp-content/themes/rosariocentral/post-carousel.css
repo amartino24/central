@@ -69,7 +69,7 @@
 
 
 .otros-posts .post .info .ver-mas {
-    margin-top: 48px;
+    margin-top: 12px;
     font-size: 0.875rem;
     display: flex;
     align-items: center;
@@ -78,7 +78,7 @@
 
 .otros-posts .owl-stage-outer
 {
-    padding-bottom: 24px;
+    padding-bottom: 48px;
     padding-left: 12px;
 }
 
