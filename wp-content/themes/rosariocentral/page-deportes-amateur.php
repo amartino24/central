@@ -19,9 +19,9 @@ if ( $deportes->have_posts() ) : while ( $deportes->have_posts() ) : $deportes->
     $atributos = get_fields( $post->ID);
     {  ?>
         <article class="deporte">
-            <div class="title">
+            <div class="title" onclick="expand(this)">
                 <div class="text"><?php echo get_the_title($post->ID); ?></div>
-                <div class="icon" title="Mas Información" onclick="expand(this)"></div>
+                <div class="icon" title="Mas Información"></div>
             </div>
             <div class="content">
                 <div class="imagen-container">
@@ -74,7 +74,7 @@ endif;
 
     <script>
         function expand(y) {
-            var deporte = y.parentElement.parentElement;
+            var deporte = y.parentElement;
             deporte.classList.toggle("expanded");
         }
         window.addEventListener('scroll', function (e) {

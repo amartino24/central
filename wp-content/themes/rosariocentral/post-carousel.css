@@ -27,7 +27,9 @@
 }
 
 .otros-posts .otros-posts-titulo .arrows svg {
-    margin: 0px 12px;
+    margin: 0px 8px;
+    width: 25px;
+    height: 25px;
 }
 
 .otros-posts .post .image-container .post-image {
@@ -64,7 +66,8 @@
 .otros-posts .post .info .post-subtitle {
     font-size: 1rem;
     color: #B4B4B4;
-    height: 120px;
+    height: 115px;
+    overflow: hidden;
 }
 
 
@@ -104,5 +107,14 @@
         box-shadow: none;
     }
 
+    .otros-posts .posts-carousel
+    {
+        margin-bottom: 36px;
+    }
 
+
+    
+.otros-posts .post .info .separator {
+    margin: 12px 0px;
+}
 }

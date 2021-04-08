@@ -469,6 +469,8 @@
 
 .tienda-oficial .arrows svg {
     margin: 0px 12px;
+    width: 30px;
+    height: 30px;
 }
 
 .tienda-oficial .productos-list {
@@ -537,10 +539,8 @@
 
 @media (max-width: 1023px) and (min-width: 768px) {
     .sede-virtual .sede-virtual-funciones .funcion {
-        margin-bottom: 24px;
-        flex-grow: 1;
+      
         height: 200px;
-        width: 100%;
     }
 }
 

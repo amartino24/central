@@ -51,7 +51,7 @@
 <?php $atributos = get_fields( $post->ID); ?>
     <div class="gradient-container">
         <div class=" posts-fixture-container ">
-            <div class="container flex j-between">
+            <div class="container flex wrap j-between">
                 <div class="post-principal azul-fg  br-20">
 
                     <div class="flex header-info">
@@ -70,15 +70,16 @@
                         <div class="text azul-secundario-fg"><?php echo get_the_content($post->ID); ?></div>
                     </div>
                 </div>
-                <?php include "inc/fixture.php"; ?>
+                <?php include "inc/banner-newsletter.php"; ?>
+                
+                <?php include "inc/posts-carousel.php"; ?>
             </div>
 
         </div>
 
-        <?php include "inc/posts-carousel.php"; ?>
     </div>
         <?php include "inc/videos.php"; ?>
-    </div>
+   
 </section>
 
 <?php get_footer(); ?>

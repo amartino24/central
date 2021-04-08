@@ -47,7 +47,7 @@
             </div>
         </div>
             <div class=" posts-fixture-container bg-white ">
-                <div class="container flex j-between">
+                <div class="container flex  wrap j-between">
                 <div class="posts flex">
                     <?php
                     $primera = false;
@@ -93,10 +93,11 @@
                     endif;
                     ?>
                 </div>
-                <?php include "fixture.php"; ?>
+                <?php include "banner-newsletter.php"; ?>
+                <?php include "posts-carousel.php"; ?>
                 </div>
             </div>
 
         </div>
-        <?php include "posts-carousel.php"; ?>
+
     </section>

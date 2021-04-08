@@ -37,6 +37,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/noticia.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/index.css" />
     
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/inc/banner-newsletter.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/inc/noticias-home.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/post-carousel.css" />

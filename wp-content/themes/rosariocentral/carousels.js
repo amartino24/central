@@ -98,7 +98,19 @@ $(document).ready(function () {
                 margin: 24,
                 nav:false,
                 loop: false,
-            },
+            },  
+            768:{
+                items: 2,
+                margin: 24,
+                nav:false,
+                loop: false,
+            }, 
+            1024:{
+                items: 3,
+                margin: 24,
+                nav:false,
+                loop: false,
+            }, 
         }
     });
     $('#nextProductoBtn').click(function() {
