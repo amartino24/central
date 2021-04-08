@@ -95,6 +95,7 @@
 
 .main-banner-carousel  .owl-dots
 {
+    display: block !important;
     position: absolute;
     bottom: 48px;
     left: 50%;
