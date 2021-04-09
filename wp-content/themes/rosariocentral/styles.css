@@ -464,6 +464,7 @@ header .main-navigation ul li:last-child {
 .home .carc-videos
 {
     background-color: #F5F5F5;
+    padding: 120px 0px;
 }
 
 .carc-videos {
@@ -479,6 +480,7 @@ header .main-navigation ul li:last-child {
 
 .carc-videos .carc-videos-titulo h2 {
     margin-bottom: 32px;
+    margin-top: 0px;
 }
 
 .carc-videos .carc-videos-titulo .todos-videos-button {

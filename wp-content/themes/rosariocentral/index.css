@@ -522,6 +522,11 @@
 }
 
 @media (max-width: 480px) {
+
+    .main-banner
+    {
+        height: 600px;
+    }
     .tienda-oficial .container {
         display: block;
     }
@@ -582,7 +587,6 @@
     .plantel .jugador-info {
         padding-left: 0px;
         margin: 0 auto;
-        padding-top: 70px;
         align-items: center;
         text-align: center;
     }
@@ -622,6 +626,7 @@
 
     .plantel {
         height: 100%;
+        padding: 120px 0px;
     }
 
     .plantel .container {
