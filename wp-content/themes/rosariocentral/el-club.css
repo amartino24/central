@@ -1,0 +1,55 @@
+.el-club .texto-principal {
+    max-width: 80%;
+}
+
+
+.el-club .texto-principal {
+    height: 100%;
+    max-height: 210px;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+.el-club .show-more
+{
+    margin-top: 35px;
+}
+
+.el-club .show-more svg
+{
+    margin-left: 12px;
+    transition: all 1s ease;
+}
+
+.el-club .show-more.expanded svg
+{
+   transform: rotate(
+    180deg
+    );
+}
+
+.el-club .texto-principal.expanded {
+    max-height: 2000px;
+}
+
+.el-club .comision-directiva
+{
+    color: white;
+}
+.el-club section .titulo
+{
+    margin-bottom: 60px;
+    font-size: 1.25rem;
+}
+
+.el-club section
+{
+    padding: 70px 0px;
+}
+@media (max-width: 480px) {
+
+    .el-club .texto-principal {
+        max-width: 100%;
+        margin-top: 30px;
+    }
+}
