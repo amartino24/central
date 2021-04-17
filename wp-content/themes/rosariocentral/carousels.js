@@ -157,6 +157,35 @@ $(document).ready(function () {
     })
 
 
+    const $prediosCarousel = $("#predios-carousel").owlCarousel({
+        items: 4,
+        margin: 24,
+        loop: false,
+        nav: false,
+        responsive:{
+            0:{
+                items:1,
+                nav:false,
+                loop: true,
+                autoplay:true,
+            },
+            480:{
+                items: 3,
+                margin: 24,
+                nav:false,
+                loop: false,
+            }
+        }
+    });
+    $('#nextPredioBtn').click(function() {
+        $prediosCarousel.trigger('next.owl.carousel');
+    })
+    // Go to the previous item
+    $('#prevPredioBtn').click(function() {
+        $prediosCarousel.trigger('prev.owl.carousel');
+    })
+
+
     const $jugadoresCarousel = $("#plantel-carousel").owlCarousel({
         items: 1,
         loop: true,

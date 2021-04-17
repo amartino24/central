@@ -82,7 +82,8 @@
 .otros-posts .owl-stage-outer
 {
     padding-bottom: 48px;
-    padding-left: 12px;
+    margin: -12px;
+    padding: 12px;
 }
 
 .otros-posts .owl-item
@@ -97,15 +98,8 @@
 
         height: auto;
     }
-    .otros-posts .owl-stage-outer
-    {
-        padding: 0px;
-    }
 
-    .otros-posts .owl-item
-    {
-        box-shadow: none;
-    }
+
 
     .otros-posts .posts-carousel
     {
