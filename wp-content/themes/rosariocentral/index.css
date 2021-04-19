@@ -1,5 +1,6 @@
 .main-banner {
     height: 790px;
+    padding: 0px;
     width: 100%;
     position: relative;
 }
@@ -661,6 +662,7 @@
 
     .sede-virtual .sede-virtual-titulo {
         margin-bottom: 36px;
+        margin-right: 36px;
     }
 
   
