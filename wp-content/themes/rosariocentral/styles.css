@@ -499,6 +499,7 @@ header .main-navigation ul li:last-child {
 
 .posts-fixture-container {
     margin-top: 36px;
+    padding-bottom: 36px;
     padding-top: 36px;
 }
 .posts-fixture-container .posts {
