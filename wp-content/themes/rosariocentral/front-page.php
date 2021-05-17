@@ -340,7 +340,7 @@
                         d="M4.366,5.463.229,1.33a.778.778,0,0,1,0-1.1.788.788,0,0,1,1.106,0L6.022,4.91a.78.78,0,0,1,.023,1.077L1.339,10.7A.781.781,0,1,1,.233,9.6Z"
                         transform="translate(6.25 10.93) rotate(180)" fill="#f9df34" />
                 </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="pointer over-scale" width="20" height="20"  id="nextJugadorBtn" onclick="nextCarousel($jugadoresCarousel)"
+                <svg xmlns="http://www.w3.org/2000/svg" class="pointer over-scale" width="20" height="20"  id="nextJugadorBtn"
                     viewBox="0 0 6.25 10.932">
                     <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back"
                         d="M1.884,5.464,6.02,1.331A.781.781,0,0,0,4.914.228L.228,4.911A.78.78,0,0,0,.2,5.988L4.91,10.7A.781.781,0,0,0,6.017,9.6Z"

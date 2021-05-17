@@ -1,0 +1,25 @@
+.predios-carousel .ver-mas
+{
+    margin-top: 40px !important;
+}
+
+.predios-carousel .post-image
+{
+    height: 300px  !important;
+}
+
+.predios-carousel .post-title
+{
+    height: auto  !important;
+    margin-bottom: 4px;
+}
+
+.predios-carousel .ubicacion
+{
+    height: 40px;
+}
+
+.predios-carousel .owl-item
+{
+    background-color: white;
+}
