@@ -221,7 +221,7 @@
             <div class="half-container flex j-between a-center">
                 <div class="flex-column">
                     <h2><b>Hacete</b><br>socio <span class="azul-claro-fg">online</span></h2>
-                    <a class="asociarse azul-claro-fg pointer flex a-center"  href="https://rosariocentral.miclub.info/nuevosocio/index.php?tipodesocio=n" target="_blank">QUIERO ASOCIARME <svg
+                    <a class="asociarse azul-claro-fg pointer flex a-center" href="https://rosariocentral.miclub.info/nuevosocio/index.php?tipodesocio=n" target="_blank">QUIERO ASOCIARME <svg
                             xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.711"
                             viewBox="0 0 20.559 13.711">
                             <path id="Icon_ionic-ios-arrow-round-forward" data-name="Icon ionic-ios-arrow-round-forward"
