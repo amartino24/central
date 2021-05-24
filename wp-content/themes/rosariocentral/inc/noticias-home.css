@@ -162,9 +162,10 @@
 
     
     .noticias-principal .posts-fixture-container .posts .post:not(.principal) {
-        max-width: 50%;
-        flex: 1 1 50%;
+        max-width: 100%;
+        flex: 1 1 100%;
         margin-bottom: 24px;
+        margin-right: 0px;
     }
 }
 

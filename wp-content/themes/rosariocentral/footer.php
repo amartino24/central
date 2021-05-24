@@ -12,6 +12,7 @@
  */
 
 ?>
+
     <section class="sponsors-section main">
         <div class="container flex j-center a-center">
         <?php 
@@ -58,7 +59,7 @@
                             </svg>
 
 
-                            <span class="text"><b>TIENDA</b><span class="secondary">ONLINE</span></span>
+                            <a class="text" href="https://rosariocentraltienda.com/" target="_blank"><b>TIENDA</b><span class="secondary">ONLINE</span></span>
                         </div>
                         <div class="enlace over-yellow flex a-center"> <svg xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="21.055" height="25"
@@ -79,22 +80,31 @@
                                 </g>
                             </svg>
 
-                            <a class="text azul-claro-fg" href="https://rosariocentral.miclub.info/login.php"
+                            <a class="text" href="https://rosariocentral.miclub.info/login.php"
                                 target="_blank">SEDE<b class="secondary">VIRTUAL</b></a>
                         </div>
                     </div>
                     <div class="social flex a-center j-between grow">
 
                         <a class="tiktok" title="Seguinos en Tiktok" href="https://www.tiktok.com/@carcoficial"
-                            target="_blank"></a>
+                            target="_blank">
+                            <img src='<?php echo get_template_directory_uri(); ?>/imagenes/social/tiktok.png'>
+                            </a>
                         <a class="facebook" title="Seguinos en Facebook" href="https://facebook.com/CARCoficial/"
-                            target="_blank"></a>
+                            target="_blank">
+                            <img src='<?php echo get_template_directory_uri(); ?>/imagenes/social/facebook.png'>
+                            </a>
                         <a class="twitter" title="Seguinos en Twiiter" href="https://twitter.com/CARCoficial"
-                            target="_blank"></a>
+                            target="_blank">
+
+                            <img src='<?php echo get_template_directory_uri(); ?>/imagenes/social/twitter.png'></a>
                         <a class="instagram" title="Seguinos en Instagram" href="https://www.instagram.com/carcoficial"
-                            target="_blank"></a>
+                            target="_blank">
+                            <img src='<?php echo get_template_directory_uri(); ?>/imagenes/social/instagram.png'>
+                            </a>
                         <a class="youtube" title="Seguinos en Youtube"
-                            href="https://www.youtube.com/user/CARCoficial2013" target="_blank"></a>
+                            href="https://www.youtube.com/user/CARCoficial2013" target="_blank">
+                            <img src='<?php echo get_template_directory_uri(); ?>/imagenes/social/youtube.png'></a>
 
                     </div>
 

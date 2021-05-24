@@ -35,8 +35,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/favicon-32x32.png">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/noticia.css" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/index.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/el-club.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/index.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/lista-expandible.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/inc/banner-newsletter.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/inc/noticias-home.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles.css" />
@@ -55,6 +56,11 @@
 
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
+    <a class='floating-whatsapp'  href='https://wa.me/+5493413628024' title="Contactate con nosotros" target="_blank">
+
+    <img src='<?php echo get_template_directory_uri(); ?>/imagenes/social/whatsapp.png'>
+
+</a>
     <header>
         <div class=" banner-container  bg-white azul-fg">
             <div class="container flex a-center j-between">
@@ -74,7 +80,7 @@
                                 d="M136.407,130.8a.881.881,0,1,0,.881.881A.881.881,0,0,0,136.407,130.8Zm21.359-6.17a2.643,2.643,0,0,0-1.969-4.407h-5.132a17.09,17.09,0,0,0,.725-4.466v-.881a3.53,3.53,0,0,0-3.525-3.525h-.881a.881.881,0,0,0-.855.667l-.48,1.921c-.673,2.69-2.809,5.658-5.019,6.2a2.648,2.648,0,0,0-2.46-1.676h-5.288a.882.882,0,0,0-.881.881V135.2a.882.882,0,0,0,.881.881h5.288a2.647,2.647,0,0,0,2.387-1.507l3.028,1.009a9.673,9.673,0,0,0,3.066.5h7.384a2.645,2.645,0,0,0,2.458-3.618,2.643,2.643,0,0,0,1.273-4.314,2.639,2.639,0,0,0,0-3.525Zm-18.715,8.814a.882.882,0,0,1-.881.881h-4.407v-14.1h4.407a.882.882,0,0,1,.881.881Zm14.983-7.932H155.8a.881.881,0,0,1,0,1.763h-1.763a.881.881,0,0,0,0,1.763H155.8a.881.881,0,0,1,0,1.763h-1.763a.881.881,0,0,0,0,1.763.881.881,0,1,1,0,1.763h-7.384a7.915,7.915,0,0,1-2.509-.407l-3.328-1.109V121.9a7.1,7.1,0,0,0,3.957-2.571,12.86,12.86,0,0,0,2.587-4.964l.313-1.253h.193a1.765,1.765,0,0,1,1.763,1.763v.881a13.947,13.947,0,0,1-.844,4.466h-1.8a.881.881,0,1,0,0,1.763H155.8a.881.881,0,0,1,0,1.763h-1.763a.881.881,0,0,0,0,1.763Zm-.3-14.375,1.246-1.246a.881.881,0,0,0-1.246-1.246l-1.246,1.246a.881.881,0,0,0,1.246,1.246Zm-4.986-1.549a.881.881,0,0,0,.881-.881v-1.821a.881.881,0,1,0-1.763,0V108.7A.881.881,0,0,0,148.746,109.584Zm-4.986,1.549a.881.881,0,0,0,1.246-1.246l-1.246-1.246a.881.881,0,1,0-1.246,1.246Z"
                                 transform="translate(-132 -106)" fill="#173b6a" />
                         </svg>
-                        <span class="text">ROSARIO <b>ME GUSTA</b></span>
+                        <a href='<?php echo get_home_url(); ?>/rosario-me-gusta' class="text">ROSARIO <b>ME GUSTA</b></span>
                     </div>
                     <div class="enlace  over-yellow  flex a-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20.218" height="26.947"
@@ -84,7 +90,7 @@
                                 transform="translate(-20.5 -17.87)" fill="#173b6a" />
                         </svg>
 
-                        <span class="text"><b>TIENDA</b><span class="secondary">ONLINE</span></span>
+                        <a class="text" href="https://rosariocentraltienda.com/" target="_blank"><b>TIENDA</b><span class="secondary">ONLINE</span></span>
                     </div>
                     <div class="enlace over-yellow flex a-center"> <svg xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" width="21.055" height="25"
@@ -105,7 +111,7 @@
                             </g>
                         </svg>
 
-                        <a class="text azul-fg" href="https://rosariocentral.miclub.info/login.php"
+                        <a class="text" href="https://rosariocentral.miclub.info/login.php"
                             target="_blank">SEDE<b class="secondary">VIRTUAL</b></a>
                     </div>
                 </div>
@@ -130,13 +136,13 @@
                 <a href="<?php echo get_home_url(); ?>">
                     <img class="xs-escudo" src="<?php echo ot_get_option( 'logo' ); ?>">
                 </a>
-                <div class="asociate-texto radius-button gt-xs pointer bold">QUIERO ASOCIARME
+                <a class="asociate-texto radius-button gt-xs pointer bold"  href="https://rosariocentral.miclub.info/nuevosocio/index.php?tipodesocio=n" target="_blank">QUIERO ASOCIARME
                     <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.711" viewBox="0 0 20.559 13.711">
                         <path id="Icon_ionic-ios-arrow-round-forward" data-name="Icon ionic-ios-arrow-round-forward"
                             d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
                             transform="translate(-7.875 -11.252)" fill="#173B6A" />
                     </svg>
-                </div>
+                </a>
             </div>
 
 

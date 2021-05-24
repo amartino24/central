@@ -195,6 +195,12 @@
 
 
 
+.redes-sociales .iconos .icon img:not(.socios) {
+    filter: invert(39%) sepia(64%) saturate(1415%) hue-rotate(
+        190deg
+        ) brightness(95%) contrast(94%);
+}
+
 .redes-sociales .seguinos {
     max-width: 320px;
     color: white;
