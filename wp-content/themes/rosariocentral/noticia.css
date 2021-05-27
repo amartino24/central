@@ -21,7 +21,7 @@ section h2 {
 }
 .single-noticia  .posts-fixture-container {
     margin-top: 24px !important;
-    padding: 98px 0px 24px;
+    padding: 80px 0px 24px;
 }
 
 
@@ -85,6 +85,21 @@ section h2 {
 }
 
 
+.single-noticia .share
+{
+    margin-left: 32px;
+}
+.single-noticia .share img {
+
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    filter: invert(39%) sepia(64%) saturate(1415%) hue-rotate(190deg) brightness(95%) contrast(94%);
+    margin-right: 18px;
+    background-repeat: no-repeat;
+
+}
 .single-noticia .posts-fixture-container .post-principal .post-title {
     margin-bottom: 46px;
     font-size: 3.125rem;

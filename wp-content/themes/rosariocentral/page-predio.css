@@ -1,0 +1,94 @@
+.predio .contenido {
+    padding: 60px 0px;
+}
+
+.predio .container {
+    max-width: 1280px !important;
+}
+
+.predio .toolbar 
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.predio .toolbar .volver
+{
+    display: flex;
+    align-items: center;
+}
+
+.predio .toolbar .volver svg
+{
+    margin-left: 8px;
+}
+
+.predio .toolbar .breadcumb 
+{
+    font-weight: bold;
+}
+.predio .toolbar .categoria
+{
+    margin-right: 4px;
+}
+
+.predio .contenido .titulo {
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 3.125rem;
+    margin-top: 70px;
+
+
+}
+
+.predio .contenido .ubicacion
+{
+    font-weight: bold;
+    margin-bottom: 36px;
+}
+
+.predio .contenido .ubicacion .contacto
+{
+   margin-left: 8px;
+}
+.predio .carousel-container
+{
+    position: relative;
+}
+
+.predio .carousel-container .arrows
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 10000;
+
+
+}
+
+.predio .carousel-container .arrows .right
+{
+    position: absolute;
+    right: 0px;
+}
+.predio .owl-item img {
+    object-fit: cover;
+    display: block !important;
+    width: 50%  !important;
+    max-height: 500px  !important;
+    margin: 0 auto;
+}
+
+.predio .contenido .subtitulo {
+    margin-top: 36px;
+    font-size: 1.375rem;
+    margin-bottom: 80px;
+
+
+}
+
+.predio .contenido .texto {
+    margin-top: 70px;
+    font-size: 1.25rem;
+}

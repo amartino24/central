@@ -1,5 +1,3 @@
-
-
 .deportes .deporte .title {
     display: flex;
     min-width: 100%;
@@ -12,10 +10,14 @@
 
 
 .deportes .deporte .title .text {
-   
-font-size: 1.5rem;
+
+    font-size: 1.5rem;
 }
 
+
+.deportes .container {
+    max-width: 1280px !important;
+}
 
 .deportes .deporte .title .icon {
     box-sizing: border-box;
@@ -78,73 +80,67 @@ font-size: 1.5rem;
     flex-wrap: wrap;
 }
 
-.deportes .deporte .content .imagen-container, .deportes .deporte .content .data
-{
-    flex:  1 1 50%;
+.deportes .deporte .content .imagen-container,
+.deportes .deporte .content .data {
+    flex: 1 1 50%;
     padding: 40px 12px;
 }
 
-.deportes .deporte .content .imagen-container
-{
+.deportes .deporte .content .imagen-container {
     max-height: 410px;
     justify-content: center;
     align-items: center;
     display: flex;
 }
 
-.deportes .categoria-titulo
-{
+.deportes .categoria-titulo {
     font-size: 1.6rem;
     padding: 12px;
 }
 
-.deportes .contenido-pagina
-{
+.deportes .contenido-pagina {
     margin-bottom: 40px;
     font-size: 1.2rem;
     max-width: 70%;
 }
 
 
-.deportes  .redes-sociales-item a {
+.deportes .redes-sociales-item a {
 
     width: 30px;
     height: 30px;
     cursor: pointer;
 
-    margin-right:  6px;
+    margin-right: 6px;
     background-repeat: no-repeat;
 
 }
 
-.deportes  .redes-sociales-item a img {
+.deportes .redes-sociales-item a img {
     width: 30px;
     filter: invert(39%) sepia(64%) saturate(1415%) hue-rotate(190deg) brightness(95%) contrast(94%);
 }
 
-.deportes  .redes-sociales-item a img:hover {
+.deportes .redes-sociales-item a img:hover {
     filter: invert(78%) sepia(73%) saturate(469%) hue-rotate(354deg) brightness(105%) contrast(95%);
 }
 
-.deportes .deporte .content .info .info-valor
-{
+.deportes .deporte .content .info .info-valor {
     font-size: 1.25rem;
     margin-top: 16px;
     margin-bottom: 20px;
 }
 
 .deportes .lista {
-    padding: 80px 0px;
+    padding: 40px 0px;
 }
 
-.deportes .deporte.expanded  .title
-{
+.deportes .deporte.expanded .title {
     color: #2680EB;
     border-bottom: none;
 }
 
-.deportes .deporte.expanded  .content
-{
+.deportes .deporte.expanded .content {
     max-height: 2000px;
     overflow: hidden;
     border-bottom: 0.5px solid #2680EB;
@@ -152,11 +148,10 @@ font-size: 1.5rem;
 
 
 
-@media (max-width: 768px)
-{
+@media (max-width: 768px) {
 
-    .deportes .deporte .content .imagen-container, .deportes .deporte .content .data
-    {
+    .deportes .deporte .content .imagen-container,
+    .deportes .deporte .content .data {
         padding: 24px 0px;
     }
 }

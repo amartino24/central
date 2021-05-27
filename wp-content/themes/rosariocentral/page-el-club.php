@@ -93,7 +93,7 @@ get_header();
     </section>
 
     <section class="sede-virtual ">
-        <div class="container flex a-center">
+        <div class="container large flex a-center">
             <div class="sede-virtual-titulo    flex-column j-center ">
 
                 <a class="pointer azul-claro-fg bold exclusivo">ROSARIO CENTRAL</a>
