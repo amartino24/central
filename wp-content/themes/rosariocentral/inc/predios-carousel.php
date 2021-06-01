@@ -26,7 +26,7 @@
                     $atributos = get_fields($post->ID);
 
                     $atributos["image"]["sizes"]["noticia-chica"]; ?>
-            ?>
+    
                     <div class="post br-20">
                         <div class="image-container br-20">
                             <img class="post-image br-20" src="<?php echo 
