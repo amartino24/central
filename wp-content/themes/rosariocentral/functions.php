@@ -40,3 +40,18 @@ add_theme_support( 'post-thumbnails' );
 add_image_size( 'noticia-chica', 405, 295, true );
 add_image_size( 'noticia-dentro', 1050, 680, true );
 add_image_size( 'noticia-grande', 1920, 790, true );
+
+function register_custom_widget_area() {
+	register_sidebar(
+		array(
+		'id' => 'newsletter-widget-area',
+		'name' => esc_html__( 'Newsletter', 'theme-domain' ),
+		'description' => esc_html__( '', 'theme-domain' ),
+		'before_widget' => '',
+		'after_widget' => '</div>',
+		'before_title' => '',
+		'after_title' => ''
+		)
+	);
+}
+add_action( 'widgets_init', 'register_custom_widget_area' );
