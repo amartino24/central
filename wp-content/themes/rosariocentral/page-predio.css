@@ -32,6 +32,29 @@
     margin-right: 4px;
 }
 
+
+.predio  .redes-sociales img
+{
+    filter: invert(39%) sepia(64%) saturate(1415%) hue-rotate(
+        190deg
+        ) brightness(95%) contrast(94%);
+    width: 30px;
+    margin-right: 4px;
+
+}
+.predio  .redes-sociales img:hover
+{
+filter: invert(78%) sepia(73%) saturate(469%) hue-rotate(
+    354deg
+    ) brightness(105%) contrast(95%);
+}
+
+.predio  .redes-sociales
+{
+    margin-top: 12px;
+}
+
+
 .predio .contenido .titulo {
     margin-bottom: 12px;
     font-weight: bold;
@@ -45,12 +68,10 @@
 {
     font-weight: bold;
     margin-bottom: 36px;
+    margin-right: 8px;
 }
 
-.predio .contenido .ubicacion .contacto
-{
-   margin-left: 8px;
-}
+
 .predio .carousel-container
 {
     position: relative;

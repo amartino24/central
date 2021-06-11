@@ -62,15 +62,47 @@ get_header();
                 </div>
 
                 <div class="secretariados">
-                    <?php $secretariados = CFS()->get('secretariados');
+                <?php 
+            $args_sponsors = array(  
+                'post_type' => 'secretariados',
+                'post_status' => 'publish',
+                'posts_per_page' => 15, 
+            );
+        
+            $sponsors = new WP_Query( $args_sponsors ); 
+                
+            while ( $sponsors->have_posts() ) : $sponsors->the_post(); 
+            $atributos = get_fields( $post->ID);        
+            ?>
+                 <div class="secretariado">
+                            <div class="integrante-titulo secretariado-titulo bold amarillo-fg">
+                                <?php echo get_the_title($post->id) ?>
+                            </div>
+                            <div class="redes-sociales">
+                            <?php  $wp = $cfs->get('whatsapp'); if (isset($wp)) { ?>
+                                                <a class="whatsapp" target="_blank" title="Contactanos por whatsapp" href="https://wa.me/<?php echo $wp ?>" target="_blank">
+                                                    <img src='<?php echo get_template_directory_uri(); ?>/imagenes/social/whatsapp.png'>
+                                                </a>
 
-                    foreach ($secretariados as $sec) { ?>
-                        <div class="secretariado">
-                            <div class="integrante-titulo bold amarillo-fg">
-                                <?php echo $sec['nombre_secretariado'] ?>
+                                            <?php }   $fb= $cfs->get('facebook');
+                                            if (isset($fb)) { ?>
+                                                <a class="facebook" title="Seguinos en Facebook" href="<?php echo $fb ?>" target="_blank">
+                                                    <img src='<?php echo get_template_directory_uri(); ?>/imagenes/social/facebook.png'>
+                                                </a>
+                                            <?php }  $tw= $cfs->get('twitter');
+                                            if (isset($tw)) { ?>
+                                                <a class="twitter" title="Seguinos en Twiiter" href="<?php echo $tw ?>" target="_blank">
+
+                                                    <img src='<?php echo get_template_directory_uri(); ?>/imagenes/social/twitter.png'></a>
+                                            <?php }  $ig= $cfs->get('instagram');
+                                            if (isset($ig)) { ?>
+                                                <a class="instagram" title="Seguinos en Instagram" href="<?php echo $ig ?>" target="_blank">
+                                                    <img src='<?php echo get_template_directory_uri(); ?>/imagenes/social/instagram.png'>
+                                                </a>
+                                            <?php } ?>
                             </div>
                             <div class='enlace azul-claro-fg'>
-                                <a class='link pointer'>VER MAS <svg xmlns="http://www.w3.org/2000/svg" width="12.101" height="13.711" viewBox="0 0 12.101 13.711">
+                                <a class='link pointer' href="<?php echo get_permalink($post->ID); ?>">VER MAS <svg xmlns="http://www.w3.org/2000/svg" width="12.101" height="13.711" viewBox="0 0 12.101 13.711">
                                         <path id="Icon_ionic-ios-arrow-round-forward" data-name="Icon ionic-ios-arrow-round-forward" d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H17.254a.928.928,0,0,0,0,1.857h8.059l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z" transform="translate(-16.332 -11.252)" fill="#2680eb" />
                                     </svg>
                                 </a>
@@ -81,7 +113,11 @@ get_header();
 
 
                         </div>
-                    <?php } ?>
+            <?php 
+            endwhile;
+            wp_reset_postdata(); 
+            ?>
+                 
                 </div>
             </div>
 

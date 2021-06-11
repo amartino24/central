@@ -1,7 +1,7 @@
 <?php
 /*
- * Template Name: Predio
- * Template Post Type: predio
+ * Template Name: Pagina General
+ * Template Post Type: page
 
  * description:
   Page de contenido general
@@ -11,36 +11,17 @@ get_header();
 ?>
 <section class="predio page bg-grey">
 
-    <div class='container page-titulo'>
-        <h2 class='page-title azul-fg'>
-            Predios del Club
-        </h2>
-    </div>
+   
     <div class="contenido bg-white">
         <div class="container">
-            <div class="toolbar">
-                <div class="breadcumb">
-                    <span class="amarillo-fg categoria">PREDIOS DEL CLUB</span> <span class="azul-claro-fg"> <?php echo strtoupper(get_the_title()) ?> </span>
-                </div>
-                <a class="azul-fg volver pointer" href="<?php echo get_home_url(); ?>/el-club">
-                    VOLVER AL CLUB <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.712" viewBox="0 0 20.559 13.712">
-                        <path id="Icon_ionic-ios-arrow-round-forward" data-name="Icon ionic-ios-arrow-round-forward" d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z" transform="translate(-7.875 -11.252)" fill="#173b6a" />
-                    </svg>
 
-                </a>
-
-            </div>
             <div class='titulo azul-fg'>
                 <?php echo get_the_title() ?>
             </div>
             <div class="ubicacion amarillo-fg">
-                <?php echo CFS()->get('ubicacion', $post->ID); ?>
-                <span class="azul-claro-fg contacto">
-                    <?php echo CFS()->get('contacto', $post->ID); ?>
-                </span>
-            </div>
+        
             <div class='subtitulo azul-fg'>
-                <?php echo CFS()->get('resumen', $post->ID); ?>
+                <?php echo CFS()->get('subtitulo', $post->ID); ?>
             </div>
             <?php $imagenes = CFS()->get('imagenes');
             if (isset($imagenes)) { ?>

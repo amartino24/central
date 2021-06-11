@@ -48,32 +48,20 @@
                     endif;
                 ?>
             </div>
-            <!--
-            <div class="widgets  flex-column">
-                <div class="widget">
-                    <div class="titulo">
-                        último Partido
-                    </div>
+          
+            <div class="publicidad widgets  flex-column large">
+                <a href="<?php echo ot_get_option( 'banner_principal_enlace' ) ?>">
 
-                    <iframe id="#ultimos-iframe" onload="onMyFrameLoad(this)"
-                        src="https://www.rosariocentral.com/files/incoming/df/html/v3/minapp/scoreBoard/scoreBoard.html?channel=deportes.futbol.copalpf.578248&lang=es_LA"
-                        width="100%" height="125" scrolling="no" style="width: 1px; min-width: 100%; *width: 100%;"
-                        class=""></iframe>
-                </div>
-                <div class="widget">
-                    <div class="titulo">
-                        Próximo Partido
-                    </div>
-                    <iframe
-                        src="https://www.rosariocentral.com/files/incoming/df/html/v3/minapp/scoreBoard/scoreBoard.html?channel=deportes.futbol.copalpf.578259&lang=es_LA"
-                        width="100%" height="125" scrolling="no" style="width: 1px; min-width: 100%; *width: 100%;"
-                        class=""></iframe>
-                </div>
-            </div> -->
+                    <img class="banner" src="<?php echo ot_get_option( 'banner_principal' ); ?>">
+                </a>
+            </div> 
         </div>
 
 
     </section>
+    <div class="publicidad small">
+                    <img class="banner" src="<?php echo ot_get_option( 'banner_principal' ); ?>">
+    </div> 
     <section class="sponsors-section main bg-grey">
         <div class="container flex j-center a-center">
             <?php 
@@ -403,17 +391,26 @@
             </div>
 
             <div class="productos-list owl-carousel  flex a-center j-between" id="tienda-carousel">
+            <?php       $args = array(
+                'post_type' => 'productos-destacados',
+                'post_status' => 'publish',
+                'posts_per_page' => 150,
+            );
+            $productos = new WP_Query($args);
+            if ($productos->have_posts()) : while ($productos->have_posts()) : $productos->the_post();
+                    $atributos = get_fields($post->ID); ?> 
                 <div class="producto  bg-white  ">
-                    <img src="<?php echo get_template_directory_uri(); ?>/imagenes/productos/camiseta.png">
+                    <img src="<?php echo 
+                              wp_get_attachment_image_src(CFS()->get( 'imagen', $post->ID ), 'noticia-chica')[0]; ?>">
                     <div class="info flex-column  azul-fg">
-                        <span class="categoria amarillo-fg bold">CAMISETAS</span>
+                        <span class="categoria amarillo-fg bold"><?php echo CFS()->get( 'categoria', $post->ID ) ?></span>
                         <h4 class="titulo azul-fg bold">
-                            Camiseta oficial Under Armour
+                        <?php echo get_the_title($post->ID); ?>
                         </h4>
                         <p class="descripcion gris-fg">
-                            Todos los talles. Camiseta oficial de juego. S - M - L - XL
+                        <?php echo get_the_content($post->ID); ?>
                         </p>
-                        <a class="pointer ver-producto azul-fg flex a-center">
+                        <a class="pointer ver-producto azul-fg flex a-center" target="_blank" href="<?php echo CFS()->get( 'enlace', $post->ID ) ?>">
                             VER MÁS <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.712"
                                 viewBox="0 0 20.559 13.712">
                                 <path id="Icon_ionic-ios-arrow-round-forward"
@@ -425,116 +422,12 @@
                         </a>
                     </div>
                 </div>
-                <div class="producto  bg-white ">
-                    <img src="<?php echo get_template_directory_uri(); ?>/imagenes/productos/camiseta.png">
-                    <div class="info flex-column  azul-fg">
-                        <span class="categoria amarillo-fg bold">CAMISETAS</span>
-                        <h4 class="titulo azul-fg bold">
-                            Camiseta oficial Under Armour
-                        </h4>
-                        <p class="descripcion gris-fg">
-                            Todos los talles. Camiseta oficial de juego. S - M - L - XL
-                        </p>
-                        <a class="pointer ver-producto azul-fg flex a-center">
-                            VER MÁS <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.712"
-                                viewBox="0 0 20.559 13.712">
-                                <path id="Icon_ionic-ios-arrow-round-forward"
-                                    data-name="Icon ionic-ios-arrow-round-forward"
-                                    d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
-                                    transform="translate(-7.875 -11.251)" fill="#2680eb" />
-                            </svg>
+                <?php
+                endwhile;
+            endif;
+            ?>
+         
 
-                        </a>
-                    </div>
-                </div>
-                <div class="producto   bg-white ">
-                    <img src="<?php echo get_template_directory_uri(); ?>/imagenes/productos/camiseta.png">
-                    <div class="info flex-column  azul-fg">
-                        <span class="categoria amarillo-fg bold">CAMISETAS</span>
-                        <h4 class="titulo azul-fg bold">
-                            Camiseta oficial Under Armour
-                        </h4>
-                        <p class="descripcion gris-fg">
-                            Todos los talles. Camiseta oficial de juego. S - M - L - XL
-                        </p>
-                        <a class="pointer ver-producto azul-fg flex a-center">
-                            VER MÁS <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.712"
-                                viewBox="0 0 20.559 13.712">
-                                <path id="Icon_ionic-ios-arrow-round-forward"
-                                    data-name="Icon ionic-ios-arrow-round-forward"
-                                    d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
-                                    transform="translate(-7.875 -11.251)" fill="#2680eb" />
-                            </svg>
-
-                        </a>
-                    </div>
-                </div>
-                <div class="producto   bg-white">
-                    <img src="<?php echo get_template_directory_uri(); ?>/imagenes/productos/camiseta.png">
-                    <div class="info flex-column  azul-fg">
-                        <span class="categoria amarillo-fg bold">CAMISETAS</span>
-                        <h4 class="titulo azul-fg bold">
-                            Camiseta oficial Under Armour
-                        </h4>
-                        <p class="descripcion gris-fg">
-                            Todos los talles. Camiseta oficial de juego. S - M - L - XL
-                        </p>
-                        <a class="pointer ver-producto azul-fg flex a-center">
-                            VER MÁS <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.712"
-                                viewBox="0 0 20.559 13.712">
-                                <path id="Icon_ionic-ios-arrow-round-forward"
-                                    data-name="Icon ionic-ios-arrow-round-forward"
-                                    d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
-                                    transform="translate(-7.875 -11.251)" fill="#2680eb" />
-                            </svg>
-
-                        </a>
-                    </div>
-                </div>
-                <div class="producto   bg-white">
-                    <img src="<?php echo get_template_directory_uri(); ?>/imagenes/productos/camiseta.png">
-                    <div class="info flex-column  azul-fg">
-                        <span class="categoria amarillo-fg bold">CAMISETAS</span>
-                        <h4 class="titulo azul-fg bold">
-                            Camiseta oficial Under Armour
-                        </h4>
-                        <p class="descripcion gris-fg">
-                            Todos los talles. Camiseta oficial de juego. S - M - L - XL
-                        </p>
-                        <a class="pointer ver-producto azul-fg flex a-center">
-                            VER MÁS <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.712"
-                                viewBox="0 0 20.559 13.712">
-                                <path id="Icon_ionic-ios-arrow-round-forward"
-                                    data-name="Icon ionic-ios-arrow-round-forward"
-                                    d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
-                                    transform="translate(-7.875 -11.251)" fill="#2680eb" />
-                            </svg>
-
-                        </a>
-                    </div>
-                </div>
-                <div class="producto   bg-white  ">
-                    <img src="<?php echo get_template_directory_uri(); ?>/imagenes/productos/camiseta.png">
-                    <div class="info flex-column  azul-fg">
-                        <span class="categoria amarillo-fg bold">CAMISETAS</span>
-                        <h4 class="titulo azul-fg bold">
-                            Camiseta oficial Under Armour
-                        </h4>
-                        <p class="descripcion gris-fg">
-                            Todos los talles. Camiseta oficial de juego. S - M - L - XL
-                        </p>
-                        <a class="pointer ver-producto azul-fg flex a-center">
-                            VER MÁS <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.712"
-                                viewBox="0 0 20.559 13.712">
-                                <path id="Icon_ionic-ios-arrow-round-forward"
-                                    data-name="Icon ionic-ios-arrow-round-forward"
-                                    d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
-                                    transform="translate(-7.875 -11.251)" fill="#2680eb" />
-                            </svg>
-
-                        </a>
-                    </div>
-                </div>
             </div>
             <button class="radius-button xs  todos-productos-button azul-claro-fg bg-blue">Ver todos los productos
                 <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.711" viewBox="0 0 20.559 13.711">

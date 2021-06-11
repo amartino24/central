@@ -35,7 +35,7 @@
 }
 
 .el-club  section .titulo {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     font-size: 1.25rem;
 }
 
@@ -64,20 +64,49 @@
 }
 
 .secretariados {
-    max-height: 280px;
+    max-height: 350px;
     display: flex;
     align-content: flex-start;
     flex-wrap: wrap;
     flex-direction: column;
 }
 
+.el-club .secretariados .redes-sociales img
+{
+    filter: invert(39%) sepia(64%) saturate(1415%) hue-rotate(
+        190deg
+        ) brightness(95%) contrast(94%);
+    width: 25px;
+    margin-right: 4px;
+
+}
+.el-club .secretariados .redes-sociales img:hover
+{
+filter: invert(78%) sepia(73%) saturate(469%) hue-rotate(
+    354deg
+    ) brightness(105%) contrast(95%);
+}
+
+.el-club .secretariados .redes-sociales
+{
+    margin-top: 12px;
+}
+
+
+
 .secretariado {
     width:  25%;
 }
 
+.secretariado .secretariado-titulo{
+    text-transform: uppercase;
+}
+
+
 .secretariado .enlace {
     margin-top: 20px;
     margin-bottom: 40px;
+    color: #2680EB !important;
 }
 
 .secretariado .enlace svg {

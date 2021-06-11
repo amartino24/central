@@ -1,10 +1,10 @@
 <?php
 /*
- * Template Name: Predio
- * Template Post Type: predio
+ * Template Name: Secretariado
+ * Template Post Type: secretariados
 
  * description:
-  Page de contenido general
+  Page de secretariados
  */
 
 get_header();
@@ -13,14 +13,14 @@ get_header();
 
     <div class='container page-titulo'>
         <h2 class='page-title azul-fg'>
-            Predios del Club
+            Secretariados
         </h2>
     </div>
     <div class="contenido bg-white">
         <div class="container">
             <div class="toolbar">
                 <div class="breadcumb">
-                    <span class="amarillo-fg categoria">PREDIOS DEL CLUB</span> <span class="azul-claro-fg"> <?php echo strtoupper(get_the_title()) ?> </span>
+                    <span class="amarillo-fg categoria">SECRETARIADOS</span> <span class="azul-claro-fg"> <?php echo strtoupper(get_the_title()) ?> </span>
                 </div>
                 <a class="azul-fg volver pointer" href="<?php echo get_home_url(); ?>/el-club">
                     VOLVER AL CLUB <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.712" viewBox="0 0 20.559 13.712">
@@ -34,13 +34,37 @@ get_header();
                 <?php echo get_the_title() ?>
             </div>
             <div class="ubicacion amarillo-fg">
-                <?php echo CFS()->get('ubicacion', $post->ID); ?>
-                <span class="azul-claro-fg contacto">
+            <span class="azul-claro-fg contacto">
                     <?php echo CFS()->get('contacto', $post->ID); ?>
                 </span>
+                <div class="redes-sociales">
+                <?php  $wp = $cfs->get('whatsapp'); if (isset($wp)) { ?>
+                                                <a class="whatsapp" target="_blank" title="Contactanos por whatsapp" href="https://wa.me/<?php echo $wp ?>" target="_blank">
+                                                    <img src='<?php echo get_template_directory_uri(); ?>/imagenes/social/whatsapp.png'>
+                                                </a>
+
+                                            <?php }   $fb= $cfs->get('facebook');
+                                            if (isset($fb)) { ?>
+                                                <a class="facebook" title="Seguinos en Facebook" href="<?php echo $fb ?>" target="_blank">
+                                                    <img src='<?php echo get_template_directory_uri(); ?>/imagenes/social/facebook.png'>
+                                                </a>
+                                            <?php }  $tw= $cfs->get('twitter');
+                                            if (isset($tw)) { ?>
+                                                <a class="twitter" title="Seguinos en Twiiter" href="<?php echo $tw ?>" target="_blank">
+
+                                                    <img src='<?php echo get_template_directory_uri(); ?>/imagenes/social/twitter.png'></a>
+                                            <?php }  $ig= $cfs->get('instagram');
+                                            if (isset($ig)) { ?>
+                                                <a class="instagram" title="Seguinos en Instagram" href="<?php echo $ig ?>" target="_blank">
+                                                    <img src='<?php echo get_template_directory_uri(); ?>/imagenes/social/instagram.png'>
+                                                </a>
+                                            <?php } ?>
+                </div>
+         
+                                           
             </div>
             <div class='subtitulo azul-fg'>
-                <?php echo CFS()->get('resumen', $post->ID); ?>
+                <?php echo CFS()->get('subtitulo', $post->ID); ?>
             </div>
             <?php $imagenes = CFS()->get('imagenes');
             if (isset($imagenes)) { ?>
