@@ -203,7 +203,7 @@
             </div>
         </div>
     </section>
-    <section class="socios-newsletter flex a-center">
+    <section class="socios-newsletter flex a-center" id="newsletterSection">
 
         <div class="hacete-socio bg-blue">
             <div class="half-container flex j-between a-center">
@@ -235,11 +235,7 @@
                         <h3>Newsletter</h3>
                         <p>Déjanos tu mail y suscribirte a nuestro newsletter para recibir todas las novedades del club.</p>
                     </div>
-                    <div class="suscribirse">
-                        <div class="input-container flex a-center">
-                            <?php dynamic_sidebar( 'newsletter-widget-area' ); ?>
-                        </div>
-                    </div>
+                    <?php include 'inc/newsletter.php' ?>
             </div>
         <?php endif; ?>
         

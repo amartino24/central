@@ -1,0 +1,102 @@
+
+
+.sidebar-banner
+{
+    flex: 1 1 25%;
+    min-width: 300px;
+    max-width: 350px;
+}
+.sidebar-banner .banner
+{
+    height: 400px;
+    background-color: grey;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+
+.sidebar-banner .newsletter
+{
+    height: 350px;
+    border: 1px solid #173B6A;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 48px;
+    padding: 48px 30px;
+    
+    box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 0 8px 10px 1px rgb(0 0 0 / 14%), 0 3px 14px 2px rgb(0 0 0 / 12%);
+}
+
+
+
+.newsletter h3 {
+
+    margin: 0px;
+
+}
+
+
+.newsletter .input-container {
+
+
+    flex-grow: 1;
+
+
+}
+
+.newsletter .input-container svg {
+
+    margin-right: 24px;
+
+}
+
+.newsletter .input-container input {
+    background: none;
+    width: 100%;
+    border: 0px;
+    color: #2680EB;
+    border-bottom: 1px solid #2680EB;
+
+}
+
+.newsletter .input-container input:focus {
+    outline: none;
+}
+
+.newsletter .suscribirse {
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter  .success-text
+{
+    border-radius: 12px;
+    padding: 12px;
+    background: #F9DF34;
+    text-align: center;
+}
+
+.newsletter  .notification
+{
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+.newsletter .suscribirse .suscribirse-button {
+    margin-top: 12px;
+    border: 1px solid #2680EB;
+    border-color: #2680EB;
+    color: #2680EB;
+    height: 50px;
+    width: 160px;
+    margin-left: auto;
+}
+
+.newsletter .suscribirse .suscribirse-button svg {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+

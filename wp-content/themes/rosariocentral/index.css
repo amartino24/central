@@ -367,6 +367,14 @@ section.redes-sociales {
     flex-direction: column;
 }
 
+.socios-newsletter .success-text
+{
+    border-radius: 12px;
+    padding: 12px;
+    background: #F9DF34;
+    text-align: center;
+}
+
 .socios-newsletter .newsletter .suscribirse .suscribirse-button {
     margin-top: 36px;
     border: 1px solid #2680EB;
@@ -379,6 +387,7 @@ section.redes-sociales {
 
 .socios-newsletter .newsletter .suscribirse .suscribirse-button svg {
     margin-left: 12px;
+    margin-right: 12px;
 }
 
 

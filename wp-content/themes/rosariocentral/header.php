@@ -40,6 +40,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/index.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/page-lista-expandible.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/inc/banner-newsletter.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/inc/newsletter.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/inc/noticias-home.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/post-carousel.css" />
@@ -57,11 +58,14 @@
 
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
-    <a class='floating-whatsapp'  href='https://wa.me/+5493413628024' title="Contactate con nosotros" target="_blank">
+    <?php if (ot_get_option( 'mostrar_icono_whatsapp' ) == 'si')
+     {; ?>
+    <a class='floating-whatsapp'  href='https://wa.me/<?php echo ot_get_option( 'nro_whatsapp' ) ?>' title="Contactate con nosotros" target="_blank">
 
     <img src='<?php echo get_template_directory_uri(); ?>/imagenes/social/whatsapp.png'>
 
-</a>
+</a> 
+<?php } ?>
     <header>
         <div class=" banner-container  bg-white azul-fg">
             <div class="container flex a-center j-between">
