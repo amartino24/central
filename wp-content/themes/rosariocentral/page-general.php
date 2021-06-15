@@ -40,6 +40,8 @@ get_header();
 
                         <?php } ?>
                     </div>
+                    <?php if (count($imagenes) > 1)
+                    { ?>
                     <div class="arrows">
                         <svg xmlns="http://www.w3.org/2000/svg" id="prevImgBtn" class="pointer" width="8.399" height="14.69" viewBox="0 0 8.399 14.69">
                             <path id="Icon_ionic-ios-arrow-forward" data-name="Icon ionic-ios-arrow-forward" d="M5.867,7.342.308,1.788a1.045,1.045,0,0,1,0-1.483A1.059,1.059,0,0,1,1.8.305L8.094,6.6a1.048,1.048,0,0,1,.031,1.448L1.8,14.384A1.05,1.05,0,0,1,.313,12.9Z" transform="translate(8.399 14.69) rotate(180)" fill="#2680eb" />
@@ -50,6 +52,7 @@ get_header();
                         </svg>
 
                     </div>
+                    <?php } ?>
                 </div>
             <?php } ?>
 
