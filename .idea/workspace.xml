@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="784a816e-42cd-4dd2-b05a-c0fd7d7a473b" name="Default Changelist" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/rosariocentral/header.php" afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/rosariocentral/page-general.php" afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/page-general.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/rosariocentral/front-page.php" afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/front-page.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/rosariocentral/index.css" afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/rosariocentral/noticia.css" afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/noticia.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/rosariocentral/page-lista-expandible.css" afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/page-lista-expandible.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/rosariocentral/page-plantilla.css" afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/page-plantilla.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/rosariocentral/page-plantilla.php" afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/page-plantilla.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/rosariocentral/page-predio.css" afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/page-predio.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/rosariocentral/page-predio.php" afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/page-predio.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/rosariocentral/page-secretariado.php" afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/page-secretariado.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/rosariocentral/style.css" afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/rosariocentral/styles.css" afterPath="$PROJECT_DIR$/wp-content/themes/rosariocentral/styles.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,50 +24,94 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="page.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/page.php">
+      <file leaf-file-name="page-plantilla.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/page-plantilla.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="75" lean-forward="false" selection-start-line="4" selection-start-column="75" selection-end-line="4" selection-end-column="82" />
+            <state relative-caret-position="274">
+              <caret line="68" column="16" lean-forward="true" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page-el-club.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/page-el-club.php">
+      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="47" lean-forward="false" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+            <state relative-caret-position="328">
+              <caret line="816" column="29" lean-forward="true" selection-start-line="815" selection-start-column="1" selection-end-line="816" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page-lista-expandible.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/page-lista-expandible.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="91" column="25" lean-forward="false" selection-start-line="91" selection-start-column="25" selection-end-line="91" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="noticia.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/noticia.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="428">
+              <caret line="117" column="1" lean-forward="true" selection-start-line="117" selection-start-column="1" selection-end-line="117" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page-predio.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/page-predio.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="36" column="67" lean-forward="false" selection-start-line="36" selection-start-column="67" selection-end-line="36" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page-secretariado.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/page-secretariado.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="11" column="43" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="43" />
               <folding>
-                <element signature="e#6#86#0#PHP" expanded="true" />
-                <marker date="1623088539694" expanded="true" signature="2380:2672" ph="..." />
-                <marker date="1623088539694" expanded="true" signature="14224:14243" ph="..." />
-                <marker date="1623088539694" expanded="true" signature="14224:14258" ph="..." />
-                <marker date="1623088539694" expanded="true" signature="14224:14273" ph="..." />
+                <element signature="e#1588#1718#0#HTML" expanded="false" />
+                <element signature="e#1735#3656#0#HTML" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page-plantilla.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/page-plantilla.php">
+      <file leaf-file-name="page-predio.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/page-predio.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="217" column="40" lean-forward="false" selection-start-line="217" selection-start-column="24" selection-end-line="217" selection-end-column="40" />
-              <folding>
-                <element signature="e#612#14709#0#HTML" expanded="false" />
-                <element signature="e#4861#11152#0#HTML" expanded="false" />
-              </folding>
+            <state relative-caret-position="781">
+              <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page-plantilla.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/page-plantilla.css">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="838">
-              <caret line="79" column="16" lean-forward="false" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
+            <state relative-caret-position="488">
+              <caret line="139" column="0" lean-forward="true" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="284">
+              <caret line="535" column="0" lean-forward="true" selection-start-line="535" selection-start-column="0" selection-end-line="535" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -66,11 +120,9 @@
       <file leaf-file-name="front-page.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/front-page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="293" column="26" lean-forward="true" selection-start-line="290" selection-start-column="16" selection-end-line="293" selection-end-column="26" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-              </folding>
+            <state relative-caret-position="479">
+              <caret line="397" column="34" lean-forward="true" selection-start-line="396" selection-start-column="44" selection-end-line="397" selection-end-column="34" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -80,7 +132,22 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>dots</find>
+      <find>ha</find>
       <find>jugadores</find>
+      <find>plantilla-jugadores-carousel</find>
+      <find>PIERNA</find>
+      <find>trayec</find>
+      <find>endw</find>
+      <find>data-</find>
+      <find>1480px</find>
+      <find>descripcion</find>
+      <find>half-c</find>
+      <find>60px</find>
+      <find>flex</find>
+      <find>ubicacio</find>
+      <find>redes</find>
+      <find>740px</find>
+      <find>1.2</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -99,10 +166,18 @@
       <list>
         <option value="$PROJECT_DIR$/wp-config.php" />
         <option value="$PROJECT_DIR$/carousels.js" />
-        <option value="$PROJECT_DIR$/wp-content/themes/rosariocentral/index.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/rosariocentral/page-el-club.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/rosariocentral/page-plantilla.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/rosariocentral/page-plantilla.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/rosariocentral/style.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/rosariocentral/front-page.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/rosariocentral/index.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/rosariocentral/noticia.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/rosariocentral/page-secretariado.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/rosariocentral/page-predio.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/rosariocentral/page-predio.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/rosariocentral/styles.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/rosariocentral/page-lista-expandible.css" />
       </list>
     </option>
   </component>
@@ -113,11 +188,11 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="131" />
-    <option name="y" value="211" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1928" />
+    <option name="y" value="3" />
     <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="height" value="1093" />
   </component>
   <component name="ProjectId" id="1qXuolbSjFOebghr1WidGKqd0LA" />
   <component name="ProjectView">
@@ -230,21 +305,22 @@
       <workItem from="1617991846400" duration="9000" />
       <workItem from="1618419505116" duration="594000" />
       <workItem from="1618933444148" duration="603000" />
-      <workItem from="1623782731187" duration="297000" />
+      <workItem from="1623782731187" duration="5911000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3850000" />
+    <option name="totallyTimeSpent" value="9464000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-1928" y="3" width="1936" height="1093" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26066098" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -256,7 +332,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -285,7 +360,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -310,7 +387,7 @@
         <state relative-caret-position="306">
           <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
           <folding>
-            <element signature="e#6#86#0#PHP" expanded="true" />
+            <element signature="e#6#86#0#PHP" expanded="false" />
             <marker date="1623088539694" expanded="true" signature="2380:2672" ph="..." />
             <marker date="1623088539694" expanded="true" signature="14224:14243" ph="..." />
             <marker date="1623088539694" expanded="true" signature="14224:14258" ph="..." />
@@ -340,37 +417,7 @@
         <state relative-caret-position="102">
           <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
           <folding>
-            <element signature="e#6#86#0#PHP" expanded="true" />
-            <marker date="1623088539694" expanded="true" signature="2380:2672" ph="..." />
-            <marker date="1623088539694" expanded="true" signature="14224:14243" ph="..." />
-            <marker date="1623088539694" expanded="true" signature="14224:14258" ph="..." />
-            <marker date="1623088539694" expanded="true" signature="14224:14273" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="75" lean-forward="false" selection-start-line="4" selection-start-column="75" selection-end-line="4" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/page-deportes-amateur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/page-el-club.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-          <folding>
-            <element signature="e#6#86#0#PHP" expanded="true" />
+            <element signature="e#6#86#0#PHP" expanded="false" />
             <marker date="1623088539694" expanded="true" signature="2380:2672" ph="..." />
             <marker date="1623088539694" expanded="true" signature="14224:14243" ph="..." />
             <marker date="1623088539694" expanded="true" signature="14224:14258" ph="..." />
@@ -400,7 +447,37 @@
         <state relative-caret-position="102">
           <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
           <folding>
-            <element signature="e#6#86#0#PHP" expanded="true" />
+            <element signature="e#6#86#0#PHP" expanded="false" />
+            <marker date="1623088539694" expanded="true" signature="2380:2672" ph="..." />
+            <marker date="1623088539694" expanded="true" signature="14224:14243" ph="..." />
+            <marker date="1623088539694" expanded="true" signature="14224:14258" ph="..." />
+            <marker date="1623088539694" expanded="true" signature="14224:14273" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="75" lean-forward="false" selection-start-line="4" selection-start-column="75" selection-end-line="4" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/page-deportes-amateur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/page-el-club.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+          <folding>
+            <element signature="e#6#86#0#PHP" expanded="false" />
             <marker date="1623088539694" expanded="true" signature="2380:2672" ph="..." />
             <marker date="1623088539694" expanded="true" signature="14224:14243" ph="..." />
             <marker date="1623088539694" expanded="true" signature="14224:14258" ph="..." />
@@ -449,7 +526,7 @@
         <state relative-caret-position="357">
           <caret line="21" column="46" lean-forward="true" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
           <folding>
-            <element signature="e#6#86#0#PHP" expanded="true" />
+            <element signature="e#6#86#0#PHP" expanded="false" />
             <marker date="1623088539694" expanded="true" signature="2380:2672" ph="..." />
             <marker date="1623088539694" expanded="true" signature="14224:14243" ph="..." />
             <marker date="1623088539694" expanded="true" signature="14224:14258" ph="..." />
@@ -514,7 +591,7 @@
         <state relative-caret-position="170">
           <caret line="10" column="58" lean-forward="false" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
           <folding>
-            <element signature="e#6#86#0#PHP" expanded="true" />
+            <element signature="e#6#86#0#PHP" expanded="false" />
             <marker date="1623088539694" expanded="true" signature="2380:2672" ph="..." />
             <marker date="1623088539694" expanded="true" signature="14224:14243" ph="..." />
             <marker date="1623088539694" expanded="true" signature="14224:14258" ph="..." />
@@ -537,20 +614,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="111" column="17" lean-forward="true" selection-start-line="111" selection-start-column="17" selection-end-line="111" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -563,7 +626,7 @@
         <state relative-caret-position="289">
           <caret line="17" column="47" lean-forward="false" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
           <folding>
-            <element signature="e#6#86#0#PHP" expanded="true" />
+            <element signature="e#6#86#0#PHP" expanded="false" />
             <marker date="1623088539694" expanded="true" signature="2380:2672" ph="..." />
             <marker date="1623088539694" expanded="true" signature="14224:14243" ph="..." />
             <marker date="1623088539694" expanded="true" signature="14224:14258" ph="..." />
@@ -572,31 +635,129 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/front-page.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/carousels.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="293" column="26" lean-forward="true" selection-start-line="290" selection-start-column="16" selection-end-line="293" selection-end-column="26" />
+        <state relative-caret-position="748">
+          <caret line="156" column="6" lean-forward="true" selection-start-line="124" selection-start-column="3" selection-end-line="156" selection-end-column="6" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <marker date="1618846591235" expanded="true" signature="137:374" ph="..." />
+            <marker date="1618846591235" expanded="true" signature="213:363" ph="..." />
+            <marker date="1618846591235" expanded="true" signature="301:348" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/single-noticia.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/inc/predios-carousel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/page-plantilla.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="217" column="40" lean-forward="false" selection-start-line="217" selection-start-column="24" selection-end-line="217" selection-end-column="40" />
-          <folding>
-            <element signature="e#612#14709#0#HTML" expanded="false" />
-            <element signature="e#4861#11152#0#HTML" expanded="false" />
-          </folding>
+        <state relative-caret-position="359">
+          <caret line="246" column="32" lean-forward="true" selection-start-line="246" selection-start-column="32" selection-end-line="246" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/common.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="124" column="18" lean-forward="false" selection-start-line="124" selection-start-column="18" selection-end-line="124" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/page-plantilla.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="838">
-          <caret line="79" column="16" lean-forward="false" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
+        <state relative-caret-position="274">
+          <caret line="68" column="16" lean-forward="true" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/front-page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="397" column="34" lean-forward="true" selection-start-line="396" selection-start-column="44" selection-end-line="397" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="535" column="0" lean-forward="true" selection-start-line="535" selection-start-column="0" selection-end-line="535" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="139" column="0" lean-forward="true" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/noticia.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="117" column="1" lean-forward="true" selection-start-line="117" selection-start-column="1" selection-end-line="117" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/page-secretariado.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="11" column="43" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="43" />
+          <folding>
+            <element signature="e#1588#1718#0#HTML" expanded="false" />
+            <element signature="e#1735#3656#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/page-predio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="36" column="67" lean-forward="false" selection-start-line="36" selection-start-column="67" selection-end-line="36" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/page-predio.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="781">
+          <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="816" column="29" lean-forward="true" selection-start-line="815" selection-start-column="1" selection-end-line="816" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/rosariocentral/page-lista-expandible.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="91" column="25" lean-forward="false" selection-start-line="91" selection-start-column="25" selection-end-line="91" selection-end-column="25" />
           <folding />
         </state>
       </provider>

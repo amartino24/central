@@ -86,11 +86,10 @@
     padding: 40px 12px;
 }
 
-.deportes .deporte .content .imagen-container {
-    max-height: 410px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+.deportes .deporte .content .imagen-container img {
+    max-height: 600px;
+    width: 100%;
+    padding-right: 120px;
 }
 
 .deportes .categoria-titulo {
@@ -104,7 +103,10 @@
     max-width: 70%;
 }
 
-
+.deportes .redes-sociales-item
+{
+    margin-bottom: 24px;
+}
 .deportes .redes-sociales-item a {
 
     width: 30px;
@@ -126,7 +128,7 @@
 }
 
 .deportes .deporte .content .info .info-valor {
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin-top: 16px;
     margin-bottom: 20px;
 }

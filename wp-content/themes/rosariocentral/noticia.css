@@ -51,7 +51,7 @@ section h2 {
 }
 
 .single-noticia .posts-fixture-container .post-principal .content {
-    margin-top: 60px;
+    margin-top: 40px;
     align-items: flex-start;
 }
 
@@ -106,7 +106,7 @@ section h2 {
 }
 
 .single-noticia .posts-fixture-container .post-principal .post-subtitle {
-    font-size: 1.375rem;
+    font-size: 1.2rem;
     max-width: 80%;
     margin-top: 0px;
     margin-bottom: 28px;
@@ -124,7 +124,7 @@ section h2 {
 
 .single-noticia .posts-fixture-container .post-principal .text {
 
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 

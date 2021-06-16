@@ -494,12 +494,12 @@ section.redes-sociales {
 }
 
 .tienda-oficial .arrows {
-    margin: 0px 46px;
+    margin: 0px 15px;
 }
 
 .tienda-oficial .arrows svg {
     margin: 0px 12px;
-    width: 30px;
+    width: 15px;
     height: 30px;
 }
 
@@ -529,13 +529,16 @@ flex-grow: 1;
 
 
 .tienda-oficial .productos-list .producto .titulo {
-    font-size: 1.375rem;
+    font-size: 1.2rem;
     margin: 22px 0px;
 }
 
 
 .tienda-oficial .productos-list .producto .descripcion {
     margin: 0px;
+    font-weight: normal;
+    font-size: 0.85rem;
+    margin-bottom: 36px;
 }
 
 .tienda-oficial .productos-list .producto .ver-producto {

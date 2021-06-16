@@ -385,9 +385,9 @@
                         <h4 class="titulo azul-fg bold">
                         <?php echo get_the_title($post->ID); ?>
                         </h4>
-                        <p class="descripcion gris-fg">
+                        <div class="descripcion gris-fg">
                         <?php echo get_the_content($post->ID); ?>
-                        </p>
+                        </div>
                         <a class="pointer ver-producto azul-fg flex a-center" target="_blank" href="<?php echo CFS()->get( 'enlace', $post->ID ) ?>">
                             VER MÁS <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.712"
                                 viewBox="0 0 20.559 13.712">
@@ -418,4 +418,5 @@
 
     </section>
 </div>
+
 <?php get_footer(); ?>

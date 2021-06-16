@@ -33,8 +33,8 @@ get_header();
             <div class='titulo azul-fg'>
                 <?php echo get_the_title() ?>
             </div>
-            <div class="ubicacion amarillo-fg">
-                <?php echo CFS()->get('ubicacion', $post->ID); ?>
+            <div class="ubicacion azul-claro-fg">
+                <?php echo CFS()->get('ubicacion', $post->ID); ?> -
                 <span class="azul-claro-fg contacto">
                     <?php echo CFS()->get('contacto', $post->ID); ?>
                 </span>

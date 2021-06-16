@@ -9,7 +9,7 @@
 
 get_header();
 ?>
-<section class="predio page bg-grey">
+<section class="predio pagina-secretariado page bg-grey">
 
     <div class='container page-titulo'>
         <h2 class='page-title azul-fg'>
@@ -33,7 +33,7 @@ get_header();
             <div class='titulo azul-fg'>
                 <?php echo get_the_title() ?>
             </div>
-            <div class="ubicacion amarillo-fg">
+            <div class="ubicacion amarillo-fg flex a-center">
             <span class="azul-claro-fg contacto">
                     <?php echo CFS()->get('contacto', $post->ID); ?>
                 </span>
