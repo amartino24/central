@@ -29,15 +29,39 @@ get_header();
             'post_type' => $atributos["post_type"],
             'post_status' => 'publish',
             'posts_per_page' => 60,
+            'orderby' => 'menu_order',
+	        'order' => 'ASC'
         );
         $count = 0;
 
+        if ($atributos["post_type"] == "jugadores") {
+            $posiciones = [
+                "Arquero" => "Arqueros",
+                "Defensor" => "Defensores",
+                "Mediocampista" => "Mediocampistas",
+                "Delantero" => "Delanteros",
+                "Cuerpo Técnico" => "Cuerpo Técnico"
+            ];
+        } else {
+            $posiciones = [
+                "Arquera" => "Arqueras",
+                "Defensora" => "Defensoras",
+                "Mediocampista" => "Mediocampistas",
+                "Delantera" => "Delanteras",
+                "Cuerpo Técnico" => "Cuerpo Técnico"
+            ];
+        }
+
+        
+
         $jugadores = new WP_Query( $args_jugadores );
-
-        while ( $jugadores->have_posts() ) : $jugadores->the_post();
-        $atributos = get_fields( $post->ID);
-        ?>
-
+        foreach ($posiciones as $posicion => $posicion_label) { ?>
+            <h3 class="w-100-p azul-fg"><?php echo $posicion_label; ?></h3>
+            <?php
+            while ( $jugadores->have_posts() ) : $jugadores->the_post();
+            $atributos = get_fields( $post->ID);
+            ?>
+            <?php if ($posicion ==  $atributos["posicion"]) { ?>
             <div class="lista-jugador-container">
 
                     <div class="jugador br-20">
@@ -64,10 +88,11 @@ get_header();
                     </div>
                 </div>
 
-
+            <?php } ?>
             <?php
-        $count++;
-        endwhile;
+            $count++;
+            endwhile;
+        }
         wp_reset_postdata();
         ?>
         </div>
