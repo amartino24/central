@@ -1,0 +1,193 @@
+.plantilla    .toolbar-amarilla
+{
+    height: 70px;
+    background-color: #F9DF34;
+   
+}
+
+.plantilla .toolbar-amarilla .plantel-label
+{
+    margin-left: 12px;
+}
+
+
+.plantilla .slider-jugadores
+{
+    display: flex !important;
+    position: relative;
+    min-height: 640px;
+}
+
+.plantilla .slider-jugadores .posicion
+{
+    font-size: 1.3125rem;
+    margin-bottom: 12px;
+}
+
+
+.plantilla .slider-jugadores .nombre
+{
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+}
+
+
+.plantilla .slider-jugadores .label
+{
+    margin-bottom: 16px;
+}
+
+.plantilla .slider-jugadores .label .icono
+{
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    margin-right: 32px;
+}
+
+.plantilla .slider-jugadores .trayectoria
+{
+    margin-left: 50px;
+    max-width: 300px;
+}
+
+.plantilla .slider-jugadores .trayectoria .data-value
+{
+    line-height: 2rem;
+}
+.trayectoria h1, .trayectoria h2, .trayectoria h3, .trayectoria h4, .trayectoria h5, .trayectoria h6
+{
+    margin-top: 0px;
+}
+.plantilla .slider-jugadores .label  .data-title
+{
+   font-size: 0.875rem;
+   margin-bottom: 4px;
+}
+
+.plantilla .slider-jugadores .label  .data-value
+{
+   font-size: 1.25rem;
+   color: white;
+}
+
+.plantilla .slider-jugadores .jugador
+{
+    height: 100%;
+    position: relative;
+}
+
+.plantilla .slider-jugadores .owl-carousel
+{
+    display: flex !important;
+}
+
+.plantilla .slider-jugadores .jugador-info
+{
+    justify-content:center;
+}
+.plantilla .slider-jugadores .imagen-container
+{
+    margin-left: 70px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 600px;
+    height: 600px;
+}
+
+.plantilla .slider-jugadores .imagen-container img
+{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.plantilla .slider-jugadores .flechas
+{
+    position: absolute;
+    top: 50%;
+    /* display: flex; */
+    width: 100%;
+    z-index: 100000;
+    padding: 0px 70px;
+}
+
+.plantilla .slider-jugadores .flechas .next
+{
+    position: absolute;
+    right: 70px;
+}
+
+
+@media (max-width: 1240px)
+{
+
+    .plantilla .slider-jugadores .flechas
+    {
+        padding: 0px 20px;
+    }
+
+    .plantilla .slider-jugadores .flechas .next
+    {
+        right: 20px;
+    }
+
+    .plantilla .slider-jugadores .imagen-container
+    {
+
+        right: 0px;
+        width: 400px;
+        height: 400px;
+        /* height: 600px; */
+    }
+    .plantilla .slider-jugadores
+    {
+        min-height: auto;
+    }
+
+    .plantilla .slider-jugadores .jugador
+    {
+        max-width: 1040px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+}
+
+@media (max-width: 768px)
+{
+    .plantilla .slider-jugadores .imagen-container {
+        width: 340px;
+        height: 360px;
+        /* height: 600px; */
+    }
+}
+
+@media (max-width: 480px)
+{
+
+    .plantilla .slider-jugadores .imagen-container
+    {
+        position: relative;
+        margin-left: 0px;
+        margin-bottom: 36px;
+
+    }
+
+    .plantilla .slider-jugadores .trayectoria {
+        margin-left: 62px;
+    }
+
+    .plantilla .slider-jugadores .jugador-info {
+        order:2;
+    }
+    .plantilla .slider-jugadores .nombre {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+    .plantilla .slider-jugadores .jugador {
+        padding: 70px 30px 0px 30px;
+    }
+
+}

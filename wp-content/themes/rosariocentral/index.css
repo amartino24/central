@@ -422,6 +422,10 @@ section.redes-sociales {
 
 .plantel .jugador-info {
     padding-left: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 .plantel .jugador-info .posicion {
@@ -556,6 +560,21 @@ flex-grow: 1;
     flex: 1 1 70%;
 }
 
+.publicidad-larga
+{
+    padding-top: 30px;
+}
+.publicidad-larga img
+{
+    width: 100%;
+}
+
+.publicidad-larga .container
+{
+   display: flex;
+    justify-content:center;
+}
+
 @media (max-width: 480px) {
 
     .main-banner
@@ -601,6 +620,7 @@ flex-grow: 1;
 }
 
 @media (max-width: 768px) {
+
 
 
 
@@ -709,6 +729,10 @@ flex-grow: 1;
         margin-top: 24px;
     }
 
+    .sede-virtual
+    {
+        padding: 70px 0px;
+    }
     .sede-virtual .sede-virtual-titulo {
         margin-bottom: 36px;
         margin-right: 36px;

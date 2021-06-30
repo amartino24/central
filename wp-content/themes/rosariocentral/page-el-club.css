@@ -95,7 +95,7 @@ filter: invert(78%) sepia(73%) saturate(469%) hue-rotate(
 
 
 .secretariado {
-    width:  25%;
+    margin-right: 36px;
 }
 
 .secretariado .secretariado-titulo{
@@ -155,6 +155,7 @@ filter: invert(78%) sepia(73%) saturate(469%) hue-rotate(
 
     .el-club .secretariado {
         width:  100%;
+        margin-right: 0px;
     }
 
     .el-club .secretariados .line-separator

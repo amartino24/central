@@ -17,13 +17,19 @@ get_header();
     <div class="lista bg-white">
         <div class="container">
 
-            <?php $content =  get_the_content();
-            if ($content != '') { ?>
-                <div class="contenido-pagina azul-fg">
-                    <?php echo $content; ?>
+
+
+                <div class="flex j-between">
+                    <?php $content =  get_the_content();       if ($content != '') { ?>
+                    <div class="contenido-pagina azul-fg">
+                        <?php echo $content; ?>
+                    </div>
+                        <img class="featured-img" src="<?php echo get_the_post_thumbnail_url(); ?>">
+                      <?php } ?>
                 </div>
-                <?php }
-            $categorias = CFS()->get('categorias');
+
+
+            <?php $categorias = CFS()->get('categorias');
 
             if (isset($categorias)) {
 
@@ -40,10 +46,13 @@ get_header();
                                     <div class="icon" title="Mas Información"></div>
                                 </div>
                                 <div class="content">
+                                    <?php if (isset(wp_get_attachment_image_src($item['imagen'], 'noticia-chica')[0]))
+                                     { ?>
                                     <div class="imagen-container">
 
                                         <img src="<?php echo wp_get_attachment_image_src($item['imagen'], 'noticia-chica')[0] ?>">
                                     </div>
+                                    <?php } ?>
                                     <div class="data">
                                         <div class="redes-sociales-item">
                                             <?php if (isset($item["whatsapp"]) && $item["whatsapp"] != '') { ?>
@@ -68,7 +77,7 @@ get_header();
                                                 </a>
                                             <?php } ?>
                                         </div>
-                                        <div class="info">
+                                        <div class="info azul-fg">
                                             <?php echo $item['contenido']; ?>
                                         </div>
                                     </div>
@@ -96,10 +105,13 @@ get_header();
                             <div class="icon" title="Mas Información"></div>
                         </div>
                         <div class="content">
+                        <?php if (isset(wp_get_attachment_image_src($item['imagen'], 'noticia-chica')[0]))
+                                     { ?>
                             <div class="imagen-container">
 
                                 <img src="<?php echo wp_get_attachment_image_src($item['imagen'], 'noticia-chica')[0] ?>">
                             </div>
+                            <?php } ?>
                             <div class="data">
                                 <div class="redes-sociales-item">
                                     <?php if (isset($item["whatsapp"]) && $item["whatsapp"] != '') { ?>
@@ -125,7 +137,7 @@ get_header();
                                         </a>
                                     <?php } ?>
                                 </div>
-                                <div class="info">
+                                <div class="info azul-fg">
                                     <?php echo $item['contenido']; ?>
                                 </div>
                             </div>

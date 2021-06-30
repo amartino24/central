@@ -122,7 +122,23 @@
             </div>
         </div>
     </section>
+    <section class="publicidad-larga  flex-column bg-grey">
+        <div class="container">
+            <a href="<?php echo ot_get_option( 'banner_1_enlace' ) ?>">
+
+                <img class="banner" src="<?php echo ot_get_option( 'banner_1' ); ?>">
+            </a>
+        </div>
+
+    </section>
     <?php include 'inc/noticias-home.php'; ?>
+    <div class="publicidad-larga  flex-column bg-dark-blue">
+        <div class="container">
+        <a href="<?php echo ot_get_option( 'banner_2_enlace' ) ?>">
+
+            <img class="banner" src="<?php echo ot_get_option( 'banner_2' ); ?>">
+        </a></div>
+    </div>
     <section class="sede-virtual ">
         <div class="container flex a-center">
             <div class="sede-virtual-titulo    flex-column j-center ">
@@ -243,7 +259,14 @@
     </section>
     
     <?php include "inc/videos.php"; ?>
+    <div class="publicidad-larga  flex-column bg-dark-blue">
+        <div class="container">
+        <a href="<?php echo ot_get_option( 'banner_3_enlace' ) ?>">
 
+            <img class="banner" src="<?php echo ot_get_option( 'banner_3' ); ?>">
+        </a>
+        </div>
+    </div>
     <div class="plantel bg-dark-blue ">
         <div class="container flex a-center">
             <div class="plantel-carousel owl-carousel" id="plantel-carousel">
@@ -260,7 +283,7 @@
                     $atributos = get_fields( $post->ID);
             ?>
                 <div class="jugador flex">
-                    <div class="jugador-info  bg-dark-blue flex-column j-center">
+                    <div class="jugador-info  bg-dark-blue flex-column">
                         <div class="posicion amarillo-fg">
                             <?php echo $atributos["posicion"]; ?>
                         </div>
@@ -268,7 +291,7 @@
                             <?php echo $atributos["nombre"]; ?> <span class="apellido"><?php echo $atributos["apellido"]; ?></span>
                         </div>
                         <div class="botones gt-xs ">
-                            <button class="radius-button ver-ficha azul-claro-fg">Ver ficha
+                            <a class="radius-button ver-ficha azul-claro-fg"  href="<?php echo get_permalink($post->ID); ?>">Ver ficha
                                 <svg xmlns="http://www.w3.org/2000/svg" width="21.559" height="14.792"
                                     viewBox="0 0 21.559 14.792">
                                     <path id="Icon_ionic-ios-arrow-round-forward" data-name="Icon ionic-ios-arrow-round-forward"
@@ -276,16 +299,16 @@
                                         transform="translate(-7.375 -10.752)" fill="#2680eb" stroke="#2680eb"
                                         stroke-width="1" />
                                 </svg>
-                            </button>
+                            </a>
         
-                            <button class="radius-button ver-plantel amarillo-fg">Ver plantel
+                            <a class="radius-button ver-plantel amarillo-fg" href='<?php echo get_home_url(); ?>/plantel-masculino'>Ver plantel
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.711"
                                     viewBox="0 0 20.559 13.711">
                                     <path id="Icon_ionic-ios-arrow-round-forward" data-name="Icon ionic-ios-arrow-round-forward"
                                         d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
                                         transform="translate(-7.875 -11.252)" fill="#f9df34" />
                                 </svg>
-                            </button>
+                            </a>
                         </div>
                     </div>
                     <div class="imagen-container h-100-p">
@@ -323,13 +346,13 @@
                     </svg>
                 </button>
 
-                <button class="radius-button ver-plantel amarillo-fg">Ver plantel
+                <a href="" class="radius-button ver-plantel amarillo-fg">Ver plantel
                     <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.711" viewBox="0 0 20.559 13.711">
                         <path id="Icon_ionic-ios-arrow-round-forward" data-name="Icon ionic-ios-arrow-round-forward"
                             d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
                             transform="translate(-7.875 -11.252)" fill="#f9df34" />
                     </svg>
-                </button>
+                </a>
             </div>
         </div>
     </div>

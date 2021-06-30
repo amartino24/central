@@ -190,6 +190,7 @@ $(document).ready(function () {
         items: 1,
         loop: true,
         nav: false,
+        autoplay: true
     });
 
     $('#nextJugadorBtn').click(function() {

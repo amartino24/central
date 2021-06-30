@@ -11,86 +11,6 @@
 }
 
 
-.plantilla .slider-jugadores
-{
-    display: flex !important;
-}
-
-.plantilla .slider-jugadores .posicion
-{
-    font-size: 1.3125rem;
-    margin-bottom: 12px;
-}
-
-
-.plantilla .slider-jugadores .nombre
-{
-    font-size: 2.5rem;
-    margin-bottom: 60px;
-}
-
-
-.plantilla .slider-jugadores .label
-{
-    margin-bottom: 16px;
-}
-
-.plantilla .slider-jugadores .label .icono
-{
-    display: flex;
-    justify-content: center;
-    width: 30px;
-    margin-right: 32px;
-}
-
-.plantilla .slider-jugadores .trayectoria
-{
-    margin-left: 50px;
-    max-width: 300px;
-}
-
-.plantilla .slider-jugadores .trayectoria .data-value
-{
-    line-height: 2rem;
-}
-.trayectoria h1, .trayectoria h2, .trayectoria h3, .trayectoria h4, .trayectoria h5, .trayectoria h6
-{
-    margin-top: 0px;
-}
-.plantilla .slider-jugadores .label  .data-title
-{
-   font-size: 0.875rem;
-   margin-bottom: 4px;
-}
-
-.plantilla .slider-jugadores .label  .data-value
-{
-   font-size: 1.25rem;
-   color: white;
-}
-
-.plantilla .slider-jugadores .jugador
-{
-    height: 100%;
-    position: relative;
-    padding: 70px 0px;
-}
-
-.plantilla .slider-jugadores .imagen-container
-{
-    margin-left: 70px;
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    width: 600px;
-    height: 600px;
-}
-
-.plantilla .slider-jugadores .imagen-container img
-{
-    position: absolute;
-    bottom: 0px;
-}
 
 .lista-jugadores
 {
@@ -99,6 +19,75 @@
 
 .lista-jugador-container
 {
-    width: 33%;
-    padding: 32px;
+    width: 25%;
+    padding: 12px;
+}
+
+.lista-jugadores .jugador
+{
+    background: white;
+    border-radius: 20px;
+
+}
+
+
+.lista-jugadores .jugador .info
+{
+   padding: 32px 40px;
+
+}
+
+.lista-jugadores .jugador .imagen
+{
+    height: 220px;
+    border-radius: 20px 20px 0px 0px;
+}
+.lista-jugadores .jugador .info .nombre
+{
+    font-size: 1.375rem;
+    margin-top: 12px;
+}
+
+.lista-jugadores .jugador .info .ver-ficha
+{
+    display: flex;
+    align-items:center;
+    margin-top: 18px;
+    border: 1px solid;
+}
+
+.lista-jugadores .jugador .info .ver-ficha svg
+{
+    margin-left: 12px;
+}
+
+@media (max-width: 1240px)
+{
+    .lista-jugador-container
+    {
+        width: 33%;
+    }
+    .lista-jugadores .jugador .imagen {
+        height:260px;
+    }
+
+}
+
+@media (max-width: 768px)
+{
+    .lista-jugador-container
+    {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px)
+{
+    .lista-jugador-container
+    {
+        width: 100%;
+    }
+
+
+
 }

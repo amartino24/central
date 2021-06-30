@@ -32,7 +32,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .amarillo-fg {
-    color: #F9DF34;
+    color: #F9DF34 !important;
 }
 
 .azul-fg {
@@ -946,6 +946,10 @@ footer .copyright {
         max-width: 100%;
     }
 
+    footer nav {
+        display: none;
+    }
+
 
 
 }
@@ -1152,7 +1156,8 @@ footer .copyright {
     }
 
     footer nav {
-        display: none;
+        width: 100%;
+        margin-top: 36px;
     }
 
     footer .footer-navigation .social {
@@ -1166,6 +1171,11 @@ footer .copyright {
         margin: 48px auto;
     }
 
+    .footer .footer-navigation
+    {
+        align-items: center;
+        justify-content: center;
+    }
     footer .footer-navigation .enlaces-externos .enlace {
         margin: 0px 12px;
     }
