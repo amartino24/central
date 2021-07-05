@@ -9,6 +9,8 @@
                     $args_noticias = array(  
                         'post_type' => 'noticia',
                         'post_status' => 'publish',
+                        'orderby' => 'menu_order',
+                        'order' => 'ASC',
                         'posts_per_page' => 150, 
                     );
                     $noticias = new WP_Query( $args_noticias ); 
@@ -25,7 +27,11 @@
                         <div class="main-banner-post-info flex-column j-center">
                             <a class="pointer amarillo-fg  owl-slide-animated owl-slide-category bold post-category uppercase"><?php echo get_the_category($post->ID)[0]->name; ?></a>
                             <a class="pointer post-title  owl-slide-animated owl-slide-title"><?php echo get_the_title($post->ID); ?></a>
-                            <p class="pointer post-subtitle owl-slide-animated owl-slide-subtitle"><?php echo get_the_excerpt($post->ID); ?></p>
+                            <?php $subtitle = get_the_excerpt($post->ID); 
+                        if (isset($subtitle) && $subtitle != '') {?>
+                                           <p class="pointer post-subtitle owl-slide-animated owl-slide-subtitle"><?php echo get_the_excerpt($subtitle); ?></p>
+                        <?php } ?>
+
                             <a href="<?php echo get_permalink($post->ID); ?>" class="radius-button owl-slide-animated owl-slide-cta   ver-mas-button azul-claro-fg bg-blue">VER
                                 MÁS
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.711"
@@ -59,15 +65,19 @@
 
 
     </section>
+    <?php $option = ot_get_option( 'banner_principal' ); if (isset($option) && $option != '') { ?>
     <div class="publicidad small">
                     <img class="banner" src="<?php echo ot_get_option( 'banner_principal' ); ?>">
     </div> 
+    <?php } ?>
     <section class="sponsors-section main bg-grey">
         <div class="container flex j-center a-center">
             <?php 
             $args_sponsors = array(  
                 'post_type' => 'sponsors',
                 'post_status' => 'publish',
+                'orderby' => 'menu_order',
+                'order' => 'ASC',
                 'posts_per_page' => 15, 
             );
         
@@ -338,15 +348,15 @@
 
             </div>
             <div class="botones xs ">
-                <button class="radius-button ver-ficha azul-claro-fg">Ver ficha
+                <a class="radius-button ver-ficha azul-claro-fg" href="<?php echo get_permalink($post->ID); ?>">Ver ficha
                     <svg xmlns="http://www.w3.org/2000/svg" width="21.559" height="14.792" viewBox="0 0 21.559 14.792">
                         <path id="Icon_ionic-ios-arrow-round-forward" data-name="Icon ionic-ios-arrow-round-forward"
                             d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
                             transform="translate(-7.375 -10.752)" fill="#2680eb" stroke="#2680eb" stroke-width="1" />
                     </svg>
-                </button>
+                </a>
 
-                <a href="" class="radius-button ver-plantel amarillo-fg">Ver plantel
+                <a  href='<?php echo get_home_url(); ?>' class="radius-button ver-plantel amarillo-fg">Ver plantel
                     <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.711" viewBox="0 0 20.559 13.711">
                         <path id="Icon_ionic-ios-arrow-round-forward" data-name="Icon ionic-ios-arrow-round-forward"
                             d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"

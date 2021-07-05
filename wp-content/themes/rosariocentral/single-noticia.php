@@ -68,8 +68,11 @@
                     </div>
                     <div class="content flex-column">
                         <a class="pointer post-title bold"><?php echo get_the_title($post->ID); ?></a>
-                        <p class="pointer post-subtitle"><?php echo get_the_excerpt($post->ID); ?></p>
-                        <img src="<?php echo $atributos["image"]["url"] ?>" class="br-20">
+                        <?php $subtitle = get_the_excerpt($post->ID); 
+                        if (isset($subtitle) && $subtitle != '') {?>
+                        <p class="pointer post-subtitle"><?php echo  $subtitle?></p>
+                        <?php } ?>
+             
                         <div class="text azul-secundario-fg"><?php echo get_the_content($post->ID); ?></div>
                     </div>
                 </div>

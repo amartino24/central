@@ -926,8 +926,16 @@ footer .copyright {
         margin-right: 0px !important;
         margin-left: 0px !important;
     }
+    .noticias {
+        padding: 45px 0px;
+    }
+    .socios-newsletter .hacete-socio, .socios-newsletter .newsletter {
+        padding: 70px 0px;
+    }
 
-
+    .plantel {
+        padding: 70px 0px;
+    }
     .noticias .posts-fixture-container .fixture .widget.tabla {
 
         height: 400px;

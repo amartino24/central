@@ -52,6 +52,8 @@
                     $args_noticias = array(
                         'post_type' => 'noticia',
                         'post_status' => 'publish',
+                        'orderby' => 'menu_order',
+                        'order' => 'ASC',
                         'posts_per_page' => 4,
                     );
                     if (!empty(get_queried_object()->term_id)) {
@@ -72,7 +74,11 @@
                                 <div class="info flex-column j-center">
                                     <a class="pointer amarillo-fg bold post-category uppercase"><?php echo get_the_category($post->ID)[0]->name; ?></a>
                                     <a class="pointer post-title bold"><?php echo get_the_title($post->ID); ?></a>
-                                    <p class="pointer post-subtitle"><?php echo get_the_excerpt($post->ID); ?></p>
+                                    <?php $subtitle = get_the_excerpt($post->ID); 
+                        if (isset($subtitle) && $subtitle != '') {?>
+    <p class="pointer post-subtitle"><?php echo get_the_excerpt($subtitle); ?></p>
+                        <?php } ?>
+                                
                                     <a href="<?php echo get_permalink($post->ID); ?>" class="radius-button  ver-mas-button azul-claro-fg bg-blue">VER
                                         MÁS
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.711"

@@ -76,7 +76,7 @@ function my_scripts_method() {
     }	
 }
 add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
-
+remove_filter( 'get_the_excerpt', 'wp_trim_excerpt' );
 function realhero_ajax_subscribe() {
     check_ajax_referer( 'noncy_nonce', 'nonce' );
     $data = urldecode( $_POST['data'] );

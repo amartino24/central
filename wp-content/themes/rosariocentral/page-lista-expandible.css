@@ -161,5 +161,26 @@
     .deportes .deporte .content .imagen-container,
     .deportes .deporte .content .data {
         padding: 24px 0px;
+        flex: 1 1 100%;
+    }
+
+    .deportes .deporte .content .imagen-container img
+    {
+        padding-right: 0px;
+    }
+
+    .deportes .contenido-pagina {
+        
+        max-width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .deportes .info
+    {
+        margin-bottom: 64px;
+    }
+
+    .deportes .deporte .title .text {
+        font-size: 1.2rem;
     }
 }

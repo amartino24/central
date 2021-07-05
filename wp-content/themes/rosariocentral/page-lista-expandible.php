@@ -19,7 +19,7 @@ get_header();
 
 
 
-                <div class="flex j-between">
+                <div class="flex info j-between">
                     <?php $content =  get_the_content();       if ($content != '') { ?>
                     <div class="contenido-pagina azul-fg">
                         <?php echo $content; ?>

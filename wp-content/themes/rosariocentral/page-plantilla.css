@@ -86,6 +86,8 @@
     .lista-jugador-container
     {
         width: 100%;
+        padding: 0px;
+        margin-bottom: 24px;
     }
 
 
