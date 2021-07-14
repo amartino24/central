@@ -56,7 +56,7 @@ section h2 {
 }
 
 
-.single-noticia .posts-fixture-container .post-principal .content img {
+.single-noticia .posts-fixture-container .post-principal .content .main-img  {
   max-height: 600px;
   height: 100%;
   width: 100%;

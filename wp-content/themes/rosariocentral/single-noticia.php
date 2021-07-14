@@ -73,7 +73,7 @@
                         <p class="pointer post-subtitle"><?php echo  $subtitle?></p>
                         <?php } ?>
                         <?php if ($atributos["mostrar_imagen_contenido"]) { ?>
-                        <img src="<?php echo $atributos["image"]["url"] ?>" class="br-20">
+                        <img src="<?php echo $atributos["image"]["url"] ?>" class="br-20 main-img ">
                         <?php } ?>
                         <div class="text azul-secundario-fg"><?php echo get_the_content($post->ID); ?></div>
                     </div>
