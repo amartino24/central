@@ -31,6 +31,19 @@
     margin-bottom: 60px;
 }
 
+.slider-jugadores .volver
+{
+    margin-bottom: 24px;
+    color: white;
+}
+
+.slider-jugadores .volver  svg
+{
+    margin-right: 4px;
+    transform: rotateY(
+        180deg
+        );
+}
 
 .plantilla .slider-jugadores .label
 {

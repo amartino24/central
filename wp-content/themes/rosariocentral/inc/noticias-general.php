@@ -76,7 +76,7 @@
                                     <a class="pointer post-title bold"><?php echo get_the_title($post->ID); ?></a>
                                     <?php $subtitle = get_the_excerpt($post->ID); 
                         if (isset($subtitle) && $subtitle != '') {?>
-    <p class="pointer post-subtitle"><?php echo get_the_excerpt($subtitle); ?></p>
+    <p class="pointer post-subtitle"><?php echo $subtitle ?></p>
                         <?php } ?>
                                 
                                     <a href="<?php echo get_permalink($post->ID); ?>" class="radius-button  ver-mas-button azul-claro-fg bg-blue">VER

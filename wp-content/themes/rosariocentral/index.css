@@ -12,7 +12,12 @@
     z-index: 2;
     background: linear-gradient(90deg, rgb(23 59 106 / 89%) 1%, rgb(23 59 106 / 38%) 90%);
 }
-
+.main-banner .owl-dots .owl-dot span {
+ 
+    border-radius: 0px !important;
+    height: 3px !important;
+    width: 20px !important;
+}
 
 .main-banner .main-banner-post .main-banner-post-info {
     height: 100%;

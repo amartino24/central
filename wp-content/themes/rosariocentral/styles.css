@@ -833,7 +833,6 @@ footer .copyright {
 .floating-whatsapp img
 {
     width: 70px;
-    filter: invert(69%) sepia(39%) saturate(6440%) hue-rotate(101deg) brightness(105%) contrast(95%);
 }
 @media (max-width: 1560px) {
     .container {
@@ -877,10 +876,7 @@ footer .copyright {
         display: none !important;
     }
 
-    .noticias .posts-fixture-container .posts .post .info .post-title {
-        min-height: 0px;
-    }
-
+    
 
 }
 
@@ -950,7 +946,7 @@ footer .copyright {
     }
 
     .posts-fixture-container .posts .post-principal .info {
-        padding: 60px 10%;
+        padding: 60px 5%;
         max-width: 100%;
     }
 

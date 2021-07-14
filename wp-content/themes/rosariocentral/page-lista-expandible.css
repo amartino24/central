@@ -28,6 +28,7 @@
     height: 18px;
     transform: rotate(180deg);
     position: relative;
+    margin-right: 18px;
 
 }
 
@@ -83,12 +84,11 @@
 .deportes .deporte .content .imagen-container,
 .deportes .deporte .content .data {
     flex: 1 1 50%;
-    padding: 24px 12px;
+    padding: 12px 0px;
 }
 
 .deportes .deporte .content .imagen-container img {
-    max-height: 600px;
-    width: 100%;
+
     padding-right: 120px;
 }
 
@@ -97,10 +97,40 @@
     height: 160px;
 }
 
-.deportes .categoria-titulo {
+.deportes .categoria
+{
+    border: 1px solid white;
+}
+.deportes .categoria .categoria-contenido
+{
+    max-height: 0px;
+    height: 100%;
+    overflow: hidden;
+    transition: max-height 1s ease;
+}
+
+.deportes .categoria.expanded .categoria-contenido
+{
+    max-height: 3000px;
+}
+.deportes .categoria .categoria-titulo {
     font-size: 1.6rem;
     padding: 12px;
+    cursor: pointer;
 }
+
+.deportes .categoria.expanded .categoria-titulo svg
+{
+    transform: rotateX(
+180deg
+);
+}
+
+.deportes .categoria .categoria-titulo svg {
+    margin-right: 12px;
+    transition: transform 1s ease;
+}
+
 
 .deportes .contenido-pagina {
     margin-bottom: 40px;
@@ -160,15 +190,27 @@
 
     .deportes .deporte .content .imagen-container,
     .deportes .deporte .content .data {
-        padding: 24px 0px;
         flex: 1 1 100%;
     }
 
     .deportes .deporte .content .imagen-container img
     {
         padding-right: 0px;
+        
+     width: 100%;
     }
 
+    .deportes .lista > .container {
+        padding:  0px;
+    }
+
+    .deportes .deporte .title {
+        padding: 24px 15px;
+    }
+
+    .deportes .deporte.expanded .content {
+        padding: 0px 15px;
+    }
     .deportes .contenido-pagina {
         
         max-width: 100%;
@@ -178,6 +220,9 @@
     .deportes .info
     {
         margin-bottom: 64px;
+        
+    padding: 0px 15px;
+
     }
 
     .deportes .deporte .title .text {

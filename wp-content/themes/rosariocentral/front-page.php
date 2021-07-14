@@ -13,10 +13,13 @@
                         'order' => 'ASC',
                         'posts_per_page' => 150, 
                     );
+                    $i = 0;
                     $noticias = new WP_Query( $args_noticias ); 
                     if ( $noticias->have_posts() ) : while ( $noticias->have_posts() ) : $noticias->the_post();
                     $atributos = get_fields( $post->ID);
-                    if ($atributos["slider_del_home"]) {
+            
+                    if ($atributos["slider_del_home"] && $i < 3) {
+                        $i++;
                 ?>
                 <div class="owl-slide">
                     <div class="main-banner-gradient">
@@ -29,7 +32,7 @@
                             <a class="pointer post-title  owl-slide-animated owl-slide-title"><?php echo get_the_title($post->ID); ?></a>
                             <?php $subtitle = get_the_excerpt($post->ID); 
                         if (isset($subtitle) && $subtitle != '') {?>
-                                           <p class="pointer post-subtitle owl-slide-animated owl-slide-subtitle"><?php echo get_the_excerpt($subtitle); ?></p>
+                                           <p class="pointer post-subtitle owl-slide-animated owl-slide-subtitle"><?php echo $subtitle; ?></p>
                         <?php } ?>
 
                             <a href="<?php echo get_permalink($post->ID); ?>" class="radius-button owl-slide-animated owl-slide-cta   ver-mas-button azul-claro-fg bg-blue">VER
@@ -348,7 +351,7 @@
 
             </div>
             <div class="botones xs ">
-                <a class="radius-button ver-ficha azul-claro-fg" href="<?php echo get_permalink($post->ID); ?>">Ver ficha
+                <a class="radius-button ver-ficha azul-claro-fg"   href="<?php echo get_permalink($post->ID); ?>">Ver ficha
                     <svg xmlns="http://www.w3.org/2000/svg" width="21.559" height="14.792" viewBox="0 0 21.559 14.792">
                         <path id="Icon_ionic-ios-arrow-round-forward" data-name="Icon ionic-ios-arrow-round-forward"
                             d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"
@@ -356,7 +359,7 @@
                     </svg>
                 </a>
 
-                <a  href='<?php echo get_home_url(); ?>' class="radius-button ver-plantel amarillo-fg">Ver plantel
+                <a  href='<?php echo get_home_url(); ?>/plantel-masculino' class="radius-button ver-plantel amarillo-fg">Ver plantel
                     <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.711" viewBox="0 0 20.559 13.711">
                         <path id="Icon_ionic-ios-arrow-round-forward" data-name="Icon ionic-ios-arrow-round-forward"
                             d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z"

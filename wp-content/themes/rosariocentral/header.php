@@ -64,7 +64,7 @@
      {; ?>
     <a class='floating-whatsapp'  href='https://wa.me/<?php echo ot_get_option( 'nro_whatsapp' ) ?>' title="Contactate con nosotros" target="_blank">
 
-    <img src='<?php echo get_template_directory_uri(); ?>/imagenes/social/whatsapp.png'>
+    <img src='<?php echo ot_get_option( 'whastsapp_call_icon' ); ?>'>
 
 </a> 
 <?php } ?>
