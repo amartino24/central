@@ -91,10 +91,10 @@
                     endwhile; 
                     endif;
                     ?>
-                       <div class="fixture-container">
+    <!--                   <div class="fixture-container">
 
-<?php include "fixture.php"; ?>
-</div>
+//
+</div> -->
 <?php
                 $primera = true;
                      if ( $noticias->have_posts() ) : while ( $noticias->have_posts() ) : $noticias->the_post();
