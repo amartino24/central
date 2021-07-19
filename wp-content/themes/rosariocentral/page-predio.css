@@ -54,10 +54,15 @@ filter: invert(78%) sepia(73%) saturate(469%) hue-rotate(
 {
     margin-top: 12px;
 }
+
+.pagina-secretariado .contact
+{
+    
+    margin-right:12px;
+}
 .pagina-secretariado  .redes-sociales
 {
     margin-top: 0px;
-    margin-left:12px;
 }
 
 

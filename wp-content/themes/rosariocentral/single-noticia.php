@@ -75,7 +75,7 @@
                         <?php if ($atributos["mostrar_imagen_contenido"]) { ?>
                         <img src="<?php echo $atributos["image"]["url"] ?>" class="br-20 main-img ">
                         <?php } ?>
-                        <div class="text azul-secundario-fg"><?php echo get_the_content($post->ID); ?></div>
+                        <div class="text azul-secundario-fg noticia-contenido"><?php echo get_the_content($post->ID); ?></div>
                     </div>
                 </div>
                 <?php include "inc/banner-newsletter.php"; ?>

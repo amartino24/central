@@ -142,6 +142,10 @@ section h2 {
     width: 100%;
 }
 
+.single-noticia .noticia-contenido
+{
+    padding: 24px 0px;
+}
 
 
 .single-noticia .posts-fixture-container .fixture {

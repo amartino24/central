@@ -18,7 +18,7 @@ get_header();
             <div class='titulo azul-fg'>
                 <?php echo get_the_title() ?>
             </div>
-            <div class="ubicacion amarillo-fg">
+            <div class="amarillo-fg">
         
             <div class='subtitulo azul-fg'>
                 <?php echo CFS()->get('subtitulo', $post->ID); ?>

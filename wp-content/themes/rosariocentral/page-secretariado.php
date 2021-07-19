@@ -33,28 +33,34 @@ get_header();
             <div class='titulo azul-fg'>
                 <?php echo get_the_title() ?>
             </div>
-            <div class="ubicacion amarillo-fg flex a-center">
+            <div class="ubicacion amarillo-fg flex a-center">  
+                <?php $contacto =  CFS()->get('contacto', $post->ID); 
+                if (isset($contacto) && $contacto != '' { ?>
+                <span class="azul-claro-fg contacto">
+                -      <?php echo $contact ?>
+                </span>
+                <?php } ?>
             <span class="azul-claro-fg contacto">
                     <?php echo CFS()->get('contacto', $post->ID); ?>
                 </span>
                 <div class="redes-sociales">
-                <?php  $wp = $cfs->get('whatsapp'); if (isset($wp)) { ?>
+                <?php  $wp = $cfs->get('whatsapp'); if (isset($wp) && $wp != '') { ?>
                                                 <a class="whatsapp" target="_blank" title="Contactanos por whatsapp" href="https://wa.me/<?php echo $wp ?>" target="_blank">
                                                     <img src='<?php echo get_template_directory_uri(); ?>/imagenes/social/whatsapp.png'>
                                                 </a>
 
                                             <?php }   $fb= $cfs->get('facebook');
-                                            if (isset($fb)) { ?>
+                                            if (isset($fb)  && $fb != '') { ?>
                                                 <a class="facebook" title="Seguinos en Facebook" href="<?php echo $fb ?>" target="_blank">
                                                     <img src='<?php echo get_template_directory_uri(); ?>/imagenes/social/facebook.png'>
                                                 </a>
                                             <?php }  $tw= $cfs->get('twitter');
-                                            if (isset($tw)) { ?>
+                                            if (isset($tw)  && $tw != '') { ?>
                                                 <a class="twitter" title="Seguinos en Twiiter" href="<?php echo $tw ?>" target="_blank">
 
                                                     <img src='<?php echo get_template_directory_uri(); ?>/imagenes/social/twitter.png'></a>
                                             <?php }  $ig= $cfs->get('instagram');
-                                            if (isset($ig)) { ?>
+                                            if (isset($ig)  && $ig != '') { ?>
                                                 <a class="instagram" title="Seguinos en Instagram" href="<?php echo $ig ?>" target="_blank">
                                                     <img src='<?php echo get_template_directory_uri(); ?>/imagenes/social/instagram.png'>
                                                 </a>
@@ -83,6 +89,8 @@ get_header();
 
                         <?php } ?>
                     </div>
+                    <?php if (count($imagenes) > 1)
+                    { ?>
                     <div class="arrows">
                         <svg xmlns="http://www.w3.org/2000/svg" id="prevImgBtn" class="pointer" width="8.399" height="14.69" viewBox="0 0 8.399 14.69">
                             <path id="Icon_ionic-ios-arrow-forward" data-name="Icon ionic-ios-arrow-forward" d="M5.867,7.342.308,1.788a1.045,1.045,0,0,1,0-1.483A1.059,1.059,0,0,1,1.8.305L8.094,6.6a1.048,1.048,0,0,1,.031,1.448L1.8,14.384A1.05,1.05,0,0,1,.313,12.9Z" transform="translate(8.399 14.69) rotate(180)" fill="#2680eb" />
@@ -93,6 +101,7 @@ get_header();
                         </svg>
 
                     </div>
+                    <?php } ?>
                 </div>
             <?php } ?>
 

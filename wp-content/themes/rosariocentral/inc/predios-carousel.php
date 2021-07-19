@@ -19,8 +19,10 @@
             $args = array(
                 'post_type' => 'predio',
                 'post_status' => 'publish',
-                'orderby' => 'menu_order',
-                'order' => 'ASC',
+                'orderby' => array( 
+                    'date'      => 'DESC', 
+                    'menu_order' => 'ASC' 
+                 ) ,
                 'posts_per_page' => 150,
             );
             $predios = new WP_Query($args);

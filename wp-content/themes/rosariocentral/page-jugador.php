@@ -172,46 +172,8 @@ get_header();
                                 </div>
                             </div>
 
-                            <div class="label flex">
-                                <div class="icono">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="11.396" height="20.12" viewBox="0 0 11.396 20.12">
-  <g id="height" transform="translate(-111)">
-    <g id="Grupo_302" data-name="Grupo 302" transform="translate(111)">
-      <path id="Trazado_346" data-name="Trazado 346" d="M122.4,0H111V1.572h5.648L112.63,5.59,113.741,6.7l2.132-2.132v11l-2.132-2.132-1.111,1.111,4,4H111V20.12h11.4V18.548h-5.711l4-4-1.111-1.111-2.132,2.132v-11L119.576,6.7l1.111-1.111L116.67,1.572H122.4Z" transform="translate(-111)" fill="#2680eb"/>
-    </g>
-  </g>
-</svg>
-
-
-                                </div>
-                                <div class="data">
-                                    <div class="data-title azul-claro-fg">
-                                    ALTURA
-                                    </div>
-                                    <div class="data-value">
-                                        <?php echo $atributos["altura"]; ?>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="label flex">
-                                <div class="icono">
-
-                                <svg id="weight-scale" xmlns="http://www.w3.org/2000/svg" width="26.5" height="26.5" viewBox="0 0 26.5 26.5">
-  <path id="Trazado_347" data-name="Trazado 347" d="M24.171,0H2.329A2.332,2.332,0,0,0,0,2.329V24.171A2.332,2.332,0,0,0,2.329,26.5H24.171A2.332,2.332,0,0,0,26.5,24.171V2.329A2.332,2.332,0,0,0,24.171,0Zm.776,24.171a.777.777,0,0,1-.776.776H2.329a.777.777,0,0,1-.776-.776V2.329a.777.777,0,0,1,.776-.776H24.171a.777.777,0,0,1,.776.776Zm0,0" fill="#2680eb"/>
-  <path id="Trazado_348" data-name="Trazado 348" d="M95.218,64.984a14.926,14.926,0,0,0-17.908,0,.776.776,0,0,0-.155,1.088l4.1,5.452a.776.776,0,0,0,1.087.155,6.542,6.542,0,0,1,7.848,0,.776.776,0,0,0,1.086-.155l4.1-5.452a.777.777,0,0,0-.155-1.088ZM90.478,70a8,8,0,0,0-3.437-1.145V66.489a.776.776,0,0,0-1.553,0v2.366A8,8,0,0,0,82.051,70l-3.174-4.223a13.377,13.377,0,0,1,14.775,0Zm0,0" transform="translate(-73.014 -58.791)" fill="#2680eb"/>
-</svg>
-
-
-                                </div>
-                                <div class="data">
-                                    <div class="data-title azul-claro-fg">
-                                    PESO
-                                    </div>
-                                    <div class="data-value">
-                                        <?php echo $atributos["peso"]; ?>
-                                    </div>
-                                </div>
-                            </div>
+                  
+                       
                             </div>
                             <div class="columna">
                             <div class="data">
@@ -238,7 +200,7 @@ get_header();
         ?>
         </div>
     </section>
-    <?php include "inc/videos.php"; ?>
+    <?php include 'inc/productos.php'; ?>
 
 </div>
 <script>

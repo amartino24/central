@@ -14,6 +14,16 @@
     margin-bottom: 4px;
 }
 
+.predios-carousel .post-title
+{
+    height: auto  !important;
+    margin-bottom: 4px;
+}
+
+.predios-carousel .post-subtitle {
+    height: 115px !important;
+}
+
 .predios-carousel .ubicacion
 {
     height: 40px;

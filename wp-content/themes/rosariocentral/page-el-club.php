@@ -133,11 +133,11 @@ get_header();
             <div class="sede-virtual-titulo    flex-column j-center ">
 
                 <a class="pointer azul-claro-fg bold exclusivo">ROSARIO CENTRAL</a>
-                <h2>IMAGEN<br><b>INSTITUCIONAL</b></h2>
+                <h2>ENLACES<br><b>DE INTERES</b></h2>
 
             </div>
             <div class="sede-virtual-funciones flex j-between a-center">
-                <a class="funcion br-20 flex-column j-between" href="/central/noticia/prensa/">
+                <a class="funcion br-20 flex-column j-between" href="mailto:Rrhhcv@rosariocentral.com">
                     <svg xmlns="http://www.w3.org/2000/svg" width="36.199" height="34.259" viewBox="0 0 36.199 34.259">
                         <g id="credential" transform="translate(0 -13.723)">
                             <path id="Trazado_323" data-name="Trazado 323" d="M35.139,22.369H23l6.835-6.835a1.061,1.061,0,0,0-1.5-1.5l-8.23,8.23a1.067,1.067,0,0,0-.091.105H16.2L7.86,14.034a1.061,1.061,0,0,0-1.5,1.5L13.2,22.369H1.061A1.061,1.061,0,0,0,0,23.43V46.922a1.061,1.061,0,0,0,1.061,1.061H35.139A1.061,1.061,0,0,0,36.2,46.922V23.43A1.061,1.061,0,0,0,35.139,22.369ZM34.078,45.861H2.121V24.49h13.2l1.854,1.854a1.06,1.06,0,1,0,1.5-1.5l-.354-.354H34.078Z" fill="#2680eb" />
@@ -148,7 +148,7 @@ get_header();
                         </g>
                     </svg>
 
-                    Prensa
+                    Trabajá con nosotros: Envianos tu CV
                 </a>
                 <a class="funcion br-20 flex-column j-between" href="http://www.rosariocentral.com/tools/redirect.php?t=3&i=29988&s=85edd7ec9bef0d2738fcc24d4ec2a6f5" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32.059" height="30.723" viewBox="0 0 32.059 30.723">

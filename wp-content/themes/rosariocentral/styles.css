@@ -336,7 +336,9 @@ header .main-navigation .sub-menu {
     padding-top: 24px;
     box-shadow: rgb(0 0 0 / 35%) 9px 16px 14px;
 }
-
+footer .escudo-nav img {
+    height: 90px;
+}
 
 header .main-navigation .sub-menu li {
     text-align: left;
@@ -1155,9 +1157,7 @@ footer .copyright {
         justify-content: center;
     }
 
-    footer .escudo-nav img {
-        height: 90px;
-    }
+  
 
     footer nav {
         width: 100%;

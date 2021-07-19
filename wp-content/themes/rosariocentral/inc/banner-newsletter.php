@@ -1,7 +1,11 @@
     
                 <div class='sidebar-banner'>
-                    <div class='banner w-100-p'>
-                    </div>
+                <?php $option = ot_get_option( 'banner_noticias' ); if (isset($option) && $option != '') { ?>
+                    <a href="<?php echo ot_get_option( 'banner_noticias_enlace' ) ?>">
+                    <img class="banner" src="<?php echo ot_get_option( 'banner_noticias' ); ?>">
+                    </a>
+    <?php } ?>
+              
                     <div class='banner-newsletter  w-100-p'>
                     <div class="newsletter  flex-column j-center a-center azul-fg">
       

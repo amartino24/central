@@ -52,8 +52,10 @@
                     $args_noticias = array(
                         'post_type' => 'noticia',
                         'post_status' => 'publish',
-                        'orderby' => 'menu_order',
-                        'order' => 'ASC',
+                        'orderby' => array( 
+                            'date'      => 'DESC', 
+                            'menu_order' => 'ASC' 
+                         ) ,
                         'posts_per_page' => 4,
                     );
                     if (!empty(get_queried_object()->term_id)) {

@@ -195,20 +195,22 @@ section.redes-sociales {
 .redes-sociales .iconos {
     font-weight: bold;
     color: white;
-    flex: 0 1 640px;
-    min-width: 590px;
-    margin: 0px 36px;
+    flex: 0 1 580px;
+    min-width: 550px;
+    margin: 0px 10px;
 }
 
 
 .redes-sociales .icon {
     font-weight: bold;
     color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 
 .redes-sociales .iconos .icon img {
-    margin-right: 12px;
+    margin-bottom: 4px;
 }
 
 
@@ -654,7 +656,7 @@ flex-grow: 1;
     }
 
     .redes-sociales .iconos .icon img {
-        height: 40px;
+        height: 30px;
         margin-right: 0px;
         margin-bottom: 12px;
     }

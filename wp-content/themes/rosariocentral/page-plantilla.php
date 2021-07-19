@@ -40,15 +40,21 @@ get_header();
                 "Defensor" => "Defensores",
                 "Mediocampista" => "Mediocampistas",
                 "Delantero" => "Delanteros",
-                "Cuerpo Técnico" => "Cuerpo Técnico"
+                "Cuerpo Técnico" => "Cuerpo Técnico",
+                "Cuerpo Médico" => "Cuerpo Médico",
+                "Auxiliares" => "Auxiliares",
+                "Seguridad y Utileros" => "Seguridad y Utileros",
             ];
         } else {
             $posiciones = [
-                "Arquera" => "Arqueras",
-                "Defensora" => "Defensoras",
+                "Arquero" => "Arqueras",
+                "Defensor" => "Defensoras",
                 "Mediocampista" => "Mediocampistas",
-                "Delantera" => "Delanteras",
-                "Cuerpo Técnico" => "Cuerpo Técnico"
+                "Delantero" => "Delanteras",
+                "Cuerpo Técnico" => "Cuerpo Técnico",
+                "Cuerpo Médico" => "Cuerpo Médico",
+                "Auxiliares" => "Auxiliares",
+                "Seguridad y Utileros" => "Seguridad y Utileros",
             ];
         }
 

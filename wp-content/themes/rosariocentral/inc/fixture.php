@@ -7,7 +7,7 @@
     </div>
     <div class="widget tabla">
         <iframe
-            src="https://www.rosariocentral.com/files/incoming/df/html/v3/minapp/page/page.html?channel=deportes.futbol.copalpf&lang=es_LA&page=posiciones"
+            src="http://www.rosariocentral.com/files/incoming/df/html/v3/index.html?channel=deportes.futbol.primeraa.posiciones&lang=es_LA"
             width="100%" height="100%" scrolling="auto"
             style="width: 1px; min-width: 100%; *width: 100%;" class=""></iframe>
     </div>
