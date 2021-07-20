@@ -565,6 +565,7 @@ flex-grow: 1;
 .noticias-principal .post-principal
 {
     flex: 1 1 100%;
+    margin-right: 24px;
 }
 
 .publicidad-larga

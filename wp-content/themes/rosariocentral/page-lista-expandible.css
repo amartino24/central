@@ -200,6 +200,10 @@
      width: 100%;
     }
 
+    .deportes .redes-sociales-item {
+        padding: 0px 14px;
+    }
+
     .deportes .lista > .container {
         padding:  0px;
     }
@@ -216,10 +220,14 @@
 
     .deportes .info
     {
-        margin-bottom: 64px;
-        
+        margin-bottom: 40px;
     padding: 0px 15px;
 
+    }
+
+    .deportes .info img
+    {
+        width: 100%;
     }
 
     .deportes .deporte .title .text {

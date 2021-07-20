@@ -2,14 +2,14 @@
         <div class="container">
             <div class="titulo azul-fg">La actualidad <b>del club</b></div>
             <div class="search-bar flex a-center ">
-                <div class="search-input flex a-center br-20">
+               <!-- <div class="search-input flex a-center br-20">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18.872" height="18.877" viewBox="0 0 18.872 18.877">
                         <path id="Icon_ionic-ios-search" data-name="Icon ionic-ios-search"
                               d="M23.151,22l-5.249-5.3a7.48,7.48,0,1,0-1.135,1.15l5.214,5.264a.808.808,0,0,0,1.14.029A.813.813,0,0,0,23.151,22ZM12.024,17.92A5.906,5.906,0,1,1,16.2,16.19,5.87,5.87,0,0,1,12.024,17.92Z"
                               transform="translate(-4.5 -4.493)" fill="#b4b4b4" />
                     </svg>
                     <input placeholder="Buscar novedades">
-                </div>
+                </div> -->
                 <div class="categorias flex a-center br-20">
                     <ul>
                         <?php $args = array(

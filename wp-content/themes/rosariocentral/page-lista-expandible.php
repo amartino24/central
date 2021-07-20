@@ -19,15 +19,15 @@ get_header();
 
 
 
+        <?php  $content =  get_the_content();  if ($content != '') { ?>
                 <div class="flex info j-between">
-                    <?php $content =  get_the_content();       if ($content != '') { ?>
                     <div class="contenido-pagina azul-fg">
                         <?php echo $content; ?>
                     </div>
                         <img class="featured-img" src="<?php echo get_the_post_thumbnail_url(); ?>">
-                      <?php } ?>
+               
                 </div>
-
+                <?php } ?>
 
             <?php $categorias = CFS()->get('categorias');
 

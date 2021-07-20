@@ -35,7 +35,7 @@ get_header();
             </div>
             <div class="ubicacion amarillo-fg flex a-center">  
                 <?php $contacto =  CFS()->get('contacto', $post->ID); 
-                if (isset($contacto) && $contacto != '' { ?>
+                if (isset($contacto) && $contacto != '') { ?>
                 <span class="azul-claro-fg contacto">
                 -      <?php echo $contact ?>
                 </span>
