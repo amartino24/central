@@ -133,4 +133,8 @@ filter: invert(78%) sepia(73%) saturate(469%) hue-rotate(
         flex-direction: column;
     }
 
+    .predio .owl-item img {
+        width: 100% !important;
+    }
+
 }
