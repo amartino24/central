@@ -38,7 +38,7 @@ get_header();
                 <?php $contacto =  CFS()->get('contacto', $post->ID); 
                 if (isset($contacto) && $contacto != '') { ?>
                 <span class="azul-claro-fg contacto">
-                -      <?php echo $contact ?>
+                -      <?php echo $contacto ?>
                 </span>
                 <?php } ?>
             </div>
