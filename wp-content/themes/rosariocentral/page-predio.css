@@ -123,3 +123,14 @@ filter: invert(78%) sepia(73%) saturate(469%) hue-rotate(
 .predio .contenido .texto {
     font-size: 1.2rem;
 }
+
+@media (max-width: 480px)
+{
+
+    
+     .toolbar .breadcumb {
+        display: flex;
+        flex-direction: column;
+    }
+
+}

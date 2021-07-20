@@ -23,7 +23,7 @@ get_header();
                     <span class="amarillo-fg categoria">SECRETARIADOS</span> <span class="azul-claro-fg"> <?php echo strtoupper(get_the_title()) ?> </span>
                 </div>
                 <a class="azul-fg volver pointer" href="<?php echo get_home_url(); ?>/el-club">
-                    VOLVER AL CLUB <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.712" viewBox="0 0 20.559 13.712">
+                    VOLVER <svg xmlns="http://www.w3.org/2000/svg" width="20.559" height="13.712" viewBox="0 0 20.559 13.712">
                         <path id="Icon_ionic-ios-arrow-round-forward" data-name="Icon ionic-ios-arrow-round-forward" d="M20.986,11.514a.933.933,0,0,0-.007,1.314l4.342,4.349H8.8a.928.928,0,0,0,0,1.857H25.313l-4.342,4.349a.94.94,0,0,0,.007,1.314.925.925,0,0,0,1.307-.007l5.884-5.927h0a1.042,1.042,0,0,0,.193-.293.886.886,0,0,0,.071-.357.931.931,0,0,0-.264-.65l-5.884-5.927A.91.91,0,0,0,20.986,11.514Z" transform="translate(-7.875 -11.252)" fill="#173b6a" />
                     </svg>
 
