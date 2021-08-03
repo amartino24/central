@@ -18,10 +18,13 @@ a {
     text-decoration: none;
 }
 
-a, a:hover, a:visited, a:active {
+a,
+a:hover,
+a:visited,
+a:active {
     color: inherit;
     text-decoration: none;
-   }
+}
 
 .uppercase {
     text-transform: uppercase;
@@ -263,9 +266,28 @@ header .banner-container .main-escudo.fixed {
 }
 
 header .navbar-container {
-    padding: 70px 0px;
-    margin-top: 80px;
+    max-height: 140px;
+    height: 100%;
+    position: fixed;
+    width: 100%;
     color: white !important;
+    transition: max-height 0.5s ease;
+    top: 80px;
+    z-index: 1000000;
+
+}
+
+header .navbar-container.fixed {
+    max-height: 80px;
+}
+
+.header-separator {
+    margin-top: 220px;
+    transition: margin-top 1s ease;
+}
+
+.header-separator.fixed {
+    margin-top: 160px;
 }
 
 header .navbar-container .data {
@@ -336,6 +358,7 @@ header .main-navigation .sub-menu {
     padding-top: 24px;
     box-shadow: rgb(0 0 0 / 35%) 9px 16px 14px;
 }
+
 footer .escudo-nav img {
     height: 90px;
 }
@@ -446,7 +469,7 @@ header .main-navigation .sub-menu li a {
 
 
 .noticias .search-bar .categorias {
-  /* margin-left: 12px; */
+    /* margin-left: 12px; */
     flex-grow: 1;
     /* padding: 0px 34px 0px 58px; */
     padding: 0px 24px;
@@ -812,17 +835,16 @@ footer .copyright {
     padding: 85px 0px;
 }
 
-#plantel-carousel
-{
+#plantel-carousel {
     display: flex !important;
 }
+
 .owl-carousel .owl-stage {
     display: flex;
     align-items: stretch;
 }
 
-.floating-container
-{
+.floating-container {
     position: fixed;
     bottom: 40px;
     z-index: 10000;
@@ -830,10 +852,10 @@ footer .copyright {
     z-index: 10000000;
 }
 
-.floating-container .whatsapp img
-{
+.floating-container .whatsapp img {
     width: 70px;
 }
+
 @media (max-width: 1560px) {
     .container {
         padding: 0px 30px;
@@ -876,7 +898,7 @@ footer .copyright {
         display: none !important;
     }
 
-    
+
 
 }
 
@@ -917,24 +939,26 @@ footer .copyright {
         margin-left: 0px;
     }
 
-    .noticias.general .search-bar
-    {
+    .noticias.general .search-bar {
         display: none;
     }
+
     .noticias .posts-fixture-container .fixture .widget {
         max-width: 100%;
         margin-right: 0px !important;
         margin-left: 0px !important;
     }
+
     .noticias {
         padding: 45px 0px;
     }
 
-    .single-noticia .noticias
-    {
+    .single-noticia .noticias {
         padding: 0px 0px 0px !important;
     }
-    .socios-newsletter .hacete-socio, .socios-newsletter .newsletter {
+
+    .socios-newsletter .hacete-socio,
+    .socios-newsletter .newsletter {
         padding: 70px 0px;
     }
 
@@ -945,6 +969,7 @@ footer .copyright {
     .plantel {
         padding: 70px 0px;
     }
+
     .noticias .posts-fixture-container .fixture .widget.tabla {
 
         height: 400px;
@@ -969,11 +994,10 @@ footer .copyright {
     }
 
 
-    .floating-container
-    {
+    .floating-container {
         bottom: 20px;
     }
-    
+
 }
 
 @media (max-width:1024px) {
@@ -1113,10 +1137,32 @@ footer .copyright {
     }
 
     header .navbar-container {
-        padding: 30px 0px;
         color: white;
-        margin-top: 120px;
+        margin-top: 40px;
+        height: auto !important;
+        max-height: auto !important;
+        min-height: 60px;
+    }
 
+    .header-separator {
+        margin-top: 179px;
+    }
+
+    header .navbar-container .data  {
+        min-height: 60px;
+        padding: 0px;
+    }
+
+    header .main-navigation
+    {
+        padding: 0px 15px;
+    }
+
+    header .mobile-navigation
+    {
+        position: relative;
+        left: 15px;
+        top: 4px;
     }
 
     header .navbar-container .xs-escudo {
@@ -1173,7 +1219,7 @@ footer .copyright {
         justify-content: center;
     }
 
-  
+
 
     footer nav {
         width: 100%;
@@ -1191,11 +1237,11 @@ footer .copyright {
         margin: 48px auto;
     }
 
-    .footer .footer-navigation
-    {
+    .footer .footer-navigation {
         align-items: center;
         justify-content: center;
     }
+
     footer .footer-navigation .enlaces-externos .enlace {
         margin: 0px 12px;
     }

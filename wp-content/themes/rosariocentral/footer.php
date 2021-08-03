@@ -86,24 +86,24 @@
                     </div>
                     <div class="social flex a-center j-between grow">
 
-                        <a class="tiktok" title="Seguinos en Tiktok" href="https://www.tiktok.com/@carcoficial"
+                        <a class="tiktok" title="Seguinos en Tiktok" href="<?php echo ot_get_option( 'red_tiktok' ); ?>"
                             target="_blank">
                             <img src='<?php echo get_template_directory_uri(); ?>/imagenes/social/tiktok.png'>
                             </a>
-                        <a class="facebook" title="Seguinos en Facebook" href="https://facebook.com/CARCoficial/"
+                        <a class="facebook" title="Seguinos en Facebook" href="<?php echo ot_get_option( 'red_facebook' ); ?>"
                             target="_blank">
                             <img src='<?php echo get_template_directory_uri(); ?>/imagenes/social/facebook.png'>
                             </a>
-                        <a class="twitter" title="Seguinos en Twiiter" href="https://twitter.com/CARCoficial"
+                        <a class="twitter" title="Seguinos en Twiiter" href="<?php echo ot_get_option( 'red_twitter' ); ?>"
                             target="_blank">
 
                             <img src='<?php echo get_template_directory_uri(); ?>/imagenes/social/twitter.png'></a>
-                        <a class="instagram" title="Seguinos en Instagram" href="https://www.instagram.com/carcoficial"
+                        <a class="instagram" title="Seguinos en Instagram" href="<?php echo ot_get_option( 'red_instagram' ); ?>"
                             target="_blank">
                             <img src='<?php echo get_template_directory_uri(); ?>/imagenes/social/instagram.png'>
                             </a>
                         <a class="youtube" title="Seguinos en Youtube"
-                            href="https://www.youtube.com/user/CARCoficial2013" target="_blank">
+                            href="<?php echo ot_get_option( 'red_youtube' ); ?>" target="_blank">
                             <img src='<?php echo get_template_directory_uri(); ?>/imagenes/social/youtube.png'></a>
 
                     </div>
@@ -122,16 +122,7 @@
             var x = document.getElementById("navigation");
             x.classList.toggle('show');
         }
-        window.addEventListener('scroll', function (e) {
-            last_known_scroll_position = window.scrollY;
-            var x = document.getElementById("main-escudo");
-            if (last_known_scroll_position >= 80) {
-
-                x.classList.add('fixed');
-            } else {
-                x.classList.remove('fixed');
-            }
-        });
+      
 
      
     </script>

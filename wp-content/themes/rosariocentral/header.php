@@ -137,7 +137,7 @@
             </div>
 
         </div>
-        <div class="navbar-container bg-blue">
+        <div class="navbar-container bg-blue" id="main-navbar">
             <div class="data container flex a-center j-between">
                 <a href="javascript:void(0);" class="mobile-navigation" onclick="myFunction(this)">
                     <div class="bar1"></div>
@@ -168,3 +168,23 @@
         </div>
 
     </header>
+    <div class="header-separator"></div>
+
+    <script>
+      window.addEventListener('scroll', function (e) {
+            last_known_scroll_position = window.scrollY;
+            var x = document.getElementById("main-escudo");
+            var navbar = document.getElementById("main-navbar");
+            var headersep = document.getElementById("header-separator");
+            
+            if (last_known_scroll_position >= 200) {
+ navbar.classList.add('fixed');
+                x.classList.add('fixed');
+                headersep.classList.add('fixed');
+            } else {
+                 navbar.classList.remove('fixed');
+                x.classList.remove('fixed');
+                headersep.classList.add('fixed');
+            }
+        });
+    </script>
