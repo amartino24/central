@@ -3,6 +3,10 @@
     src: url("fonts/circularstd-book.otf") format("opentype");
 }
 
+html
+{
+    background-color: #173b6a;
+}
 body {
     margin: 0px;
     font-family: "Circular Std";
