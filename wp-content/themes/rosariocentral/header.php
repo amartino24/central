@@ -59,14 +59,27 @@
 
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
-    <?php if (ot_get_option( 'mostrar_icono_whatsapp' ) == 'si')
+    <div class="d-flex a-center floating-container">
+    <?php $wp_icon = ot_get_option( 'whastsapp_call_icon' );
+    $cta_image = ot_get_option( 'cta_image' );
+       if (isset($cta_image) && $cta_image != '')
+       {; ?>
+      <a class='cta_image'  href='<?php echo ot_get_option( 'cta_link' ) ?>' target="_blank">
+  
+      <img src='<?php echo $cta_image ?>'>
+  
+  </a> 
+  <?php }
+    if (isset($wp_icon) && $wp_icon != '')
      {; ?>
-    <a class='floating-whatsapp'  href='https://wa.me/<?php echo ot_get_option( 'nro_whatsapp' ) ?>' title="Contactate con nosotros" target="_blank">
+    <a class='whatsapp'  href='https://wa.me/<?php echo ot_get_option( 'nro_whatsapp' ) ?>' title="Contactate con nosotros" target="_blank">
 
-    <img src='<?php echo ot_get_option( 'whastsapp_call_icon' ); ?>'>
+    <img src='<?php echo $wp_icon ?>'>
 
 </a> 
 <?php } ?>
+    </div>
+   
     <header>
         <div class=" banner-container  bg-white azul-fg">
             <div class="container flex a-center j-between">

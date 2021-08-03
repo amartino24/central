@@ -587,7 +587,7 @@ flex-grow: 1;
 
     .main-banner
     {
-        height: 600px;
+        height: 520px;
     }
     .tienda-oficial .container {
         display: block;
@@ -762,6 +762,12 @@ flex-grow: 1;
 
     .main-banner .main-banner-post .main-banner-post-info {
         max-width: 100%;
+        padding-top: 70px;
+        justify-content: flex-start !important;
+    }
+
+    .main-banner .main-banner-post .main-banner-post-info .post-title {
+        font-size: 2.5rem;
     }
 
 

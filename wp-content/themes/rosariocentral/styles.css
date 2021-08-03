@@ -373,9 +373,6 @@ header .main-navigation .sub-menu li a {
     justify-content: center;
 }
 
-.sponsors-section.main .sponsor-container:first-child {
-    padding-left: 0px;
-}
 
 .sponsors-section.main .sponsor-container:last-child {
     padding-right: 0px;
@@ -824,16 +821,16 @@ footer .copyright {
     align-items: stretch;
 }
 
-.floating-whatsapp
+.floating-container
 {
     position: fixed;
     bottom: 40px;
     z-index: 10000;
     right: 20px;
-
+    z-index: 10000000;
 }
 
-.floating-whatsapp img
+.floating-container .whatsapp img
 {
     width: 70px;
 }
@@ -845,7 +842,7 @@ footer .copyright {
 
     .half-container {
 
-        padding: 0px 30px;
+        padding: 0px 15px;
 
     }
 
@@ -920,6 +917,10 @@ footer .copyright {
         margin-left: 0px;
     }
 
+    .noticias.general .search-bar
+    {
+        display: none;
+    }
     .noticias .posts-fixture-container .fixture .widget {
         max-width: 100%;
         margin-right: 0px !important;
@@ -928,8 +929,17 @@ footer .copyright {
     .noticias {
         padding: 45px 0px;
     }
+
+    .single-noticia .noticias
+    {
+        padding: 0px 0px 0px !important;
+    }
     .socios-newsletter .hacete-socio, .socios-newsletter .newsletter {
         padding: 70px 0px;
+    }
+
+    .noticias .container>.titulo {
+        margin-bottom: 12px;
     }
 
     .plantel {
@@ -946,6 +956,7 @@ footer .copyright {
 
     .single-noticia .posts-fixture-container {
         padding-bottom: 24px;
+        margin-top: 0px !important;
     }
 
     .posts-fixture-container .posts .post-principal .info {
@@ -958,7 +969,11 @@ footer .copyright {
     }
 
 
-
+    .floating-container
+    {
+        bottom: 20px;
+    }
+    
 }
 
 @media (max-width:1024px) {
@@ -1204,6 +1219,7 @@ footer .copyright {
 
     .noticias .search-bar {
         justify-content: space-between;
+        display: none;
     }
 
 
