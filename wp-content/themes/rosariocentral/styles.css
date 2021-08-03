@@ -1171,10 +1171,10 @@ footer .copyright {
 
     header .navbar-container .xs-escudo {
           transform: translateX(-50%);
-          height: 48px;
+          height: 40px;
           position: absolute;
           left: 50%;
-          top: 6px;
+          top: 10px;
           display: block;
     }
 
