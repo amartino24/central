@@ -209,7 +209,14 @@ section h2 {
     }
     .single-noticia .share {
         margin-left: 0px;
+        width: 100%;
         margin-top: 12px;
+    }
+
+
+
+    .single-noticia .posts-fixture-container .post-principal .header-info .category {
+        font-size: 12px;
     }
 
     .single-noticia .posts-fixture-container .post-principal .post-title {
@@ -220,9 +227,7 @@ section h2 {
         max-width: 100%;
     }
 
-    .single-noticia .posts-fixture-container .post-principal .text {
-        margin-top: 30px;
-    }
+
 
     .single-noticia .search-bar .search-input {
         max-width: 80%;

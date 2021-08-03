@@ -1,6 +1,3 @@
-
-
-
 .noticias-principal .posts-fixture-container .posts .post:not(.principal) {
     flex: 1 1 25%;
     position: relative;
@@ -47,8 +44,7 @@
 
 
 
-.noticias-principal .post:not(.principal) .post-subtitle
-{
+.noticias-principal .post:not(.principal) .post-subtitle {
     height: 155px;
     overflow: hidden;
 }
@@ -81,16 +77,14 @@
     margin-left: 12px;
 }
 
-.fixture-container
-{
+.fixture-container {
     margin-bottom: 24px;
     display: flex;
     flex: 1 1 30%;
     flex-direction: column;
 }
 
-.fixture .widget.tabla
-{
+.fixture .widget.tabla {
     flex-grow: 1;
 }
 
@@ -111,11 +105,10 @@
 
 .fixture .widget:not(:last-child) {
     margin-bottom: 24px;
-    
+
 }
 
-.fixture .widget.partidos
-{
+.fixture .widget.partidos {
     margin-bottom: 24px;
     height: 130px;
     overflow: hidden;
@@ -153,14 +146,12 @@
 
 
 
-@media (max-width: 768px)
-{
-    .fixture-container
-    {
+@media (max-width: 768px) {
+    .fixture-container {
         order: 10;
     }
 
-    
+
     .noticias-principal .posts-fixture-container .posts .post:not(.principal) {
         max-width: 100%;
         flex: 1 1 100%;
@@ -171,22 +162,31 @@
 
 
 
-@media (max-width: 480px)
-{
-    .fixture-container
-    {
+@media (max-width: 480px) {
+    .fixture-container {
         order: 10;
         flex: 1 1 100%;
     }
 
+    .noticias-principal .post-principal {
+        margin-right: 0px;
+    }
+
+    .noticias-principal .search-bar
+    {
+        display: none;
+    }
+    .noticias-principal .posts-fixture-container {
+        margin-top: 0px;
+    }
     .noticias-principal .posts-fixture-container .posts .post:not(.principal) {
         margin-bottom: 24px;
         padding-right: 0px;
     }
 
     .noticias-principal .posts-fixture-container .posts .post:not(.principal) {
-       max-width: 100%;
-       flex: 1 1 100%;
+        max-width: 100%;
+        flex: 1 1 100%;
         padding-right: 0px;
     }
 }
