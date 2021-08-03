@@ -1170,12 +1170,12 @@ footer .copyright {
     }
 
     header .navbar-container .xs-escudo {
-        transform: translateX(-50%);
-        height: 69px;
-        position: absolute;
-        left: 50%;
-        top: -14px;
-        display: block;
+          transform: translateX(-50%);
+          height: 48px;
+          position: absolute;
+          left: 50%;
+          top: 6px;
+          display: block;
     }
 
     header .navbar-container .data .asociate-texto {
