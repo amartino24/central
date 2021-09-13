@@ -31,8 +31,12 @@
                  ) ,
                 'posts_per_page' => 150,
             );
-            if (!empty(get_queried_object()->term_id)) {
-                $args_noticias['category__in'] = get_queried_object()->term_id;
+            if (isset($_REQUEST['noticias']) && !empty($_REQUEST['noticias'])) {
+                $args_noticias['post_title_like'] = $_REQUEST['noticias'];
+            } else {
+                if (!empty(get_queried_object()->term_id)) {
+                    $args_noticias['category__in'] = get_queried_object()->term_id;
+                }
             }
 
             $primera = true;
