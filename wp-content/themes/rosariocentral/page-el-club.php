@@ -150,14 +150,14 @@ get_header();
 
                     Trabajá con nosotros: Envianos tu CV
                 </a>
-                <a class="funcion br-20 flex-column j-between" href="http://www.rosariocentral.com/tools/redirect.php?t=3&i=29988&s=85edd7ec9bef0d2738fcc24d4ec2a6f5" target="_blank">
+                <a class="funcion br-20 flex-column j-between" href="<?php echo get_template_directory_uri(); ?>/upload-files/escudos.zip"s=85edd7ec9bef0d2738fcc24d4ec2a6f5" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32.059" height="30.723" viewBox="0 0 32.059 30.723">
                         <path id="star" d="M7.176,31.215a1.706,1.706,0,0,1-1.66-2.084l2.062-9.085L.584,13.912a1.705,1.705,0,0,1,.966-2.982l9.255-.84,3.659-8.563a1.7,1.7,0,0,1,3.134,0l3.659,8.564,9.253.84a1.706,1.706,0,0,1,.969,2.982l-6.994,6.133,2.062,9.085a1.7,1.7,0,0,1-2.535,1.841L16.03,26.2,8.05,30.973a1.708,1.708,0,0,1-.874.242Zm8.854-7.068a1.708,1.708,0,0,1,.874.242l7.531,4.5-1.946-8.575a1.7,1.7,0,0,1,.54-1.66l6.6-5.792-8.738-.793a1.7,1.7,0,0,1-1.416-1.033L16.03,2.96l-3.453,8.082a1.7,1.7,0,0,1-1.412,1.029l-8.739.793,6.6,5.792a1.7,1.7,0,0,1,.54,1.662L7.625,28.892l7.531-4.5a1.707,1.707,0,0,1,.874-.242Zm-5.3-13.891a0,0,0,0,1,0,0Zm10.59,0v0S21.325,10.253,21.324,10.252Zm0,0" transform="translate(-0.001 -0.492)" fill="#2680eb" />
                     </svg> 
 
                     Escudo oficial
                 </a>
-                <a class="funcion br-20 flex-column j-between" href="http://www.rosariocentral.com/files/content/29/29986/manualdeuso-escudocarc-2019.pdf" target="_blank">
+                <a class="funcion br-20 flex-column j-between" href="<?php echo get_template_directory_uri(); ?>/upload-files/manualdeuso-escudocarc-2019.pdf" target="_blank">
                  
                 <svg xmlns="http://www.w3.org/2000/svg" width="34.353" height="30.193" viewBox="0 0 34.353 30.193">
                         <path id="portfolio" d="M33.353,4.026H24.222V3.019A3.023,3.023,0,0,0,21.2,0H13.151a3.023,3.023,0,0,0-3.019,3.019V4.026H1.007A1.009,1.009,0,0,0,0,5.032V27.174A3.023,3.023,0,0,0,3.02,30.193H31.334a3.023,3.023,0,0,0,3.019-3.019V5.049a.977.977,0,0,0-1-1.023ZM12.145,3.019a1.008,1.008,0,0,1,1.006-1.006H21.2a1.008,1.008,0,0,1,1.006,1.006V4.026H12.145ZM31.951,6.039l-3.125,9.376a1,1,0,0,1-.955.688H22.209V15.1A1.006,1.006,0,0,0,21.2,14.09H13.151A1.006,1.006,0,0,0,12.145,15.1V16.1H6.483a1,1,0,0,1-.955-.688L2.4,6.039ZM20.2,16.1v2.013H14.158V16.1ZM32.341,27.174a1.008,1.008,0,0,1-1.006,1.006H3.02a1.008,1.008,0,0,1-1.006-1.006V11.234l1.606,4.817a3.015,3.015,0,0,0,2.864,2.065h5.662v1.006a1.006,1.006,0,0,0,1.006,1.006H21.2a1.006,1.006,0,0,0,1.006-1.006V18.116h5.662a3.015,3.015,0,0,0,2.864-2.065l1.606-4.817Zm0,0" transform="translate(0)" fill="#2680eb" />

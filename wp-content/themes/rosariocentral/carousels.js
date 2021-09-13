@@ -9,7 +9,7 @@ $(document).ready(function () {
             </p>
         </div>
     </div>`
-    $.get("https://www.googleapis.com/youtube/v3/playlistItems?part=snippet%2CcontentDetails&maxResults=6&playlistId=UURIiYwaYzI_8cvzkjdScK_Q&key=AIzaSyB-A69ZY2EPopbIiZMUqvDmQUXXafExMZE",
+    $.get("https://www.googleapis.com/youtube/v3/playlistItems?part=snippet%2CcontentDetails&maxResults=6&playlistId=UURIiYwaYzI_8cvzkjdScK_Q&key=AIzaSyDJ1vQw-RJF4e1avM4KfZsUaRLYs1mg0EI",
         function (data) {
             $.each(data.items, (index, video) => {
                 let contentReplaced = content.replace('[descripcion]', video.snippet.title);

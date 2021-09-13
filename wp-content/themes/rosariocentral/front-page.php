@@ -174,7 +174,7 @@
                 </a>
             </div>
             <div class="sede-virtual-funciones flex j-between a-center">
-                <div class="funcion br-20 flex-column j-between">
+                <a class="funcion br-20 flex-column j-between"  href="https://rosariocentral.miclub.info/login.php">
                     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="32" viewBox="0 0 26 32">
                         <g id="Icon_feather-file-text" data-name="Icon feather-file-text" transform="translate(-5 -2)">
                             <path id="Trazado_151" data-name="Trazado 151"
@@ -193,8 +193,8 @@
 
                     Resumen<br>de cuenta
 
-                </div>
-                <div class="funcion br-20 flex-column j-between">
+                </a>
+                <a class="funcion br-20 flex-column j-between"  href="https://rosariocentral.miclub.info/login.php">
                     <svg xmlns="http://www.w3.org/2000/svg" width="31.933" height="31.933" viewBox="0 0 31.933 31.933">
                         <g id="Icon_feather-clock" data-name="Icon feather-clock" transform="translate(-2 -2)">
                             <path id="Trazado_147" data-name="Trazado 147"
@@ -207,8 +207,8 @@
                         </g>
                     </svg>
                     Solicitar<br>Turnos
-                </div>
-                <div class="funcion br-20 flex-column j-between">
+                </a>
+                <a class="funcion br-20 flex-column j-between"  href="https://rosariocentral.miclub.info/login.php">
                     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="32" viewBox="0 0 26 32">
                         <g id="Icon_feather-flag" data-name="Icon feather-flag" transform="translate(-5 -2)">
                             <path id="Trazado_156" data-name="Trazado 156"
@@ -220,8 +220,8 @@
                         </g>
                     </svg>
                     Venta<br>de entradas
-                </div>
-                <div class="funcion br-20 flex-column j-between">
+                </a>
+                <a class="funcion br-20 flex-column j-between"  href="https://rosariocentral.miclub.info/login.php">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32.388" height="24.1" viewBox="0 0 32.388 24.1">
                         <g id="Icon_feather-credit-card" data-name="Icon feather-credit-card"
                             transform="translate(-0.5 -5)">
@@ -235,7 +235,7 @@
                         </g>
                     </svg>
                     Débito<br>automático
-                </div>
+                </a>
             </div>
         </div>
     </section>

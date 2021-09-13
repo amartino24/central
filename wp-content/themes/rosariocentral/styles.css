@@ -473,7 +473,7 @@ header .main-navigation .sub-menu li a {
 
 
 .noticias .search-bar .categorias {
-    /* margin-left: 12px; */
+    margin-left: 12px; 
     flex-grow: 1;
     /* padding: 0px 34px 0px 58px; */
     padding: 0px 24px;
